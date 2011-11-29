@@ -1,1 +1,13 @@
-This repository contains Q7 test suites for projects
+*** Description
+    This repository contains sample [[http://www.xored.com/q7][Q7]] tests for various projects. Each top-level folder is independent Q7 project named as application-under-test. 
+
+*** Running Q7 tests using maven build
+    Just /cd/ into project dir and run /mvn clean package/
+   
+*** Running Q7 tests in Q7 IDE
+    1. Install free Q7 version into existing Eclipse installation from  [[http://marketplace.eclipse.org/content/q7-platform][Eclipse marketplace]] or download it from [[http://www.xored.com/q7/downloads][Xored website]]
+    2. Prepare application-under-test based on README file in project you are interested in. Mostly applications-under-tests are just eclipse packages, but in some cases you might need to install some extra features from [[http://marketplace.eclipse.org][Eclipse marketpace]].
+    3. Run Q7, import project, add application-under-test
+
+
+
