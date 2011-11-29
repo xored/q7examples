@@ -40,12 +40,12 @@
             
             <injections>
               <injection>
-                <site>file:/Users/ivaninozemtsev/work/q7/mirrors/m2e/target/repository</site>
+                <site>http://download.xored.com/q7/dogfood/m2e/</site>
               </injection>
             </injections>
           </aut>
           <q7>
-            <!-- licenseFile>${project.basedir}/q7-runner-license.l9</licenseFile-->
+            <licenseFile>${project.basedir}/q7-runner-license.l9</licenseFile>
           </q7>
         </configuration>
       </plugin>

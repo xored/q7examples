@@ -1,0 +1,3 @@
+As an application-under-test we used [[http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/indigosr1][Eclipse Indigo SR1 for Java EE Developers]] with [[http://marketplace.eclipse.org/content/maven-integration-eclipse][Maven integration for Eclipse]] installed from marketplace.
+During excution with Q7 Maven Plugin we "install" m2eclipse from [[http://download.xored.com/q7/dogfood/m2e][our mirror]] into eclipse jee package
+

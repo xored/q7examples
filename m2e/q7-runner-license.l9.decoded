@@ -1,0 +1,11 @@
+{"id":"052e4214-ae84-1240-6373-12313b0c818c",
+"subject":"com.xored.q7.runner",
+"additionalData":"{\"allowedBundles\":[\"com.xored.*\",\"org.eclipse.*\",\"org.fantom.*\",\"org.fantom\",\"org.aspectj.*\",\"javax.*\",\"java_cup.runtime\",\"com.ibm.icu\",\"com.jcraft.jsch\",\"com.ning.async-http-client\",\"com.sun.syndication\",\"org.apache.*\",\"ch.qos.logback.*\",\"net.sourceforge*\",\"org.slf4j.api\",\"org.uddi4j\",\"org.hamcrest.core\",\"org.jboss.*\",\"org.jdom\",\"org.junit\",\"org.junit4\",\"org.mortbay.jetty.*\",\"org.mozilla.*\",\"org.objectweb.asm\",\"org.sat4j.*\"]}",
+"expirationDate":"2012-10-31",
+"licenseType":"LOCKED",
+"customer":"opensource",
+"activationDate":"2011-10-30",
+"activationNodeID":"not supposed to be checked",
+"activationCount":1,
+"_id":"6f4950dad6e42737fbb3b0e68221d95a",
+"_rev":"2-558bd3c2e4aab948d124e266c87d8e16"}
