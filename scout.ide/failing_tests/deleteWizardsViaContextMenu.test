@@ -1,0 +1,151 @@
+--- Q7 testcase ---
+Q7-vendor: www.xored.com/q7
+Format-Version: 1.0
+Element-Name: deleteWizardsViaContextMenu
+Tags: skipExecution
+External-Reference: 
+Element-Version: 3.0
+Contexts: _d6ToQBA2EeGsidg8rWUY2Q,_OeWmoBDxEeG4uLPhxlgFkQ
+Save-Time: 11/29/11 12:44 PM
+Id: _EA5oYBpJEeGyjbWLF1aiiA
+
+------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa
+Entry-Name: .description
+Content-Type: text/plain
+
+Pre-conditions:
+Open Scout Project with Wizards
+
+Actions:
+1. Select Wizard and choose "Delete..." from context menu (typo in context menu - "Delete Delete......")
+2. Press "Cancel" button 
+3. Make sure that wizard is not deleted
+4. Choose "Delete..." from context menu again
+5. Press "Ok" button
+6. Make sure that wizard is deleted
+
+
+------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa--
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac
+Entry-Name: .content
+Content-Type: text/ecl
+
+with [get-view "Scout Explorer" | get-tree] {
+    get-item "Scout Projects/org.eclipse.scout.helloworld/client/Wizards" | get-property caption | equals Wizards 
+        | verify-true
+    get-item "Scout Projects/org.eclipse.scout.helloworld/client/Wizards" | get-property childCount | equals 1 
+        | verify-true
+    get-item "Scout Projects/org.eclipse.scout.helloworld/client/Wizards/PasswordWizard \\(Password\\)" 
+        | get-property caption | equals "PasswordWizard (Password)" | verify-true
+}
+get-view "Scout Explorer" | get-tree 
+    | select "Scout Projects/org.eclipse.scout.helloworld/client/Wizards/PasswordWizard \\(Password\\)"
+set-dialog-result MessageBox 256
+get-view "Scout Explorer" | get-tree | get-menu "Delete..." | click -nowait
+get-view "Scout Explorer" | get-tree | get-item "Scout Projects/org.eclipse.scout.helloworld/client/Wizards" 
+    | get-property childCount | equals 1 | verify-true
+with [get-view "Scout Explorer" | get-tree] {
+    get-item "Scout Projects/org.eclipse.scout.helloworld/client/Wizards/PasswordWizard \\(Password\\)" 
+        | get-property caption | equals "PasswordWizard (Password)" | verify-true
+    get-item "Scout Projects/org.eclipse.scout.helloworld/client/Wizards/PasswordWizard \\(Password\\)" 
+        | get-property childCount | equals 2 | verify-true
+}
+get-view "Scout Explorer" | get-tree 
+    | select "Scout Projects/org.eclipse.scout.helloworld/client/Wizards/PasswordWizard \\(Password\\)"
+set-dialog-result MessageBox 32
+get-view "Scout Explorer" | get-tree | get-menu "Delete..." | click -nowait
+with [get-view "Scout Explorer" | get-tree] {
+    get-item "Scout Projects/org.eclipse.scout.helloworld/client/Wizards" | get-property caption | equals Wizards 
+        | verify-true
+    get-item "Scout Projects/org.eclipse.scout.helloworld/client/Wizards" | get-property childCount | equals 0 
+        | verify-true
+}
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac--
+------=_.q7.content-3d2e0690-ce48-3609-83e0-c704d49f1eaf
+Content-Type: q7/binary
+Entry-Name: .q7.content
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnR9kF1PwjAYhe9N/A9N721lfkCWFbLp
+MBqIEj8mV2Sur6OytWPtXPHX2xHBaIx37Tnnfd72BCNbFugdai2UZLhHjjECmSkuZM5wY16PBng0PDwI
+MlUSq2rgZN0nOgOZ1kL5918HZEvh7yleR3FcqX2nM7w0pvIpbduWqDInqs7p8/R6F/mTvB9yLt26dN2n
+O5dA5iSMZFoCwxwKMJCIj7Tm+kmkF0oasGYKssHfXzvpHiU4w4s4PFPzqLqJ4Wrz9pJMxr1UiBAjk+aa
+Yb0SVWwha4wbc+KmcisgK7BrASHXwxauhwt+/qBmUeg5jBY8H9TJ49ybBXSf+JW/haRU0aV1+dNmcre0
+RT5e/cx3l/9qdpFPUEsHCJa+2dASAQAAsQEAAFBLAQIUABQACAAIAAAAIQCWvtnQEgEAALEBAAAIAAAA
+AAAAAAAAAAAAAAAAAAAuY29udGVudFBLBQYAAAAAAQABADYAAABIAQAAAAA=
+------=_.q7.content-3d2e0690-ce48-3609-83e0-c704d49f1eaf--
+------=_.content.raw-c2dfba28-ebef-3afe-bd39-76376d333cc9
+Content-Type: q7/binary
+Entry-Name: .content.raw
+
+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
+SwUGAAAAAAEAAQA2AAAAMRAAAAAA
+------=_.content.raw-c2dfba28-ebef-3afe-bd39-76376d333cc9--

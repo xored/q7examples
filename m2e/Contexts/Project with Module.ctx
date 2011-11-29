@@ -1,0 +1,442 @@
+--- Q7 testcase ---
+Q7-vendor: www.xored.com/q7
+Format-Version: 1.0
+Element-Name: Project with Module
+Element-Version: 2.0
+Save-Time: 11/28/11 4:52 PM
+Id: _nuJFABmmEeGCX_GL4ahY_Q
+
+------=_contents/example-project/maven-module/.settings/org.eclipse.jdt.core.prefs-40d0af5b-f9f9-3d46-9703-d201859c6e8f
+Content-Type: q7/binary
+Entry-Name: contents/example-project/maven-module/.settings/org.eclipse.jdt.core.prefs
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnSNTksKwjAQ3QveIeB+aIqKCj2CVUTc
+p800RJKZMIn1+mbTdd08Hrzv7sqkep5Ve1L6eNmfL41W/e31VG2j9XaDY/ApIyTBCQVpxAwzSvZMXZVZ
+HCyWty0wsmCFmHxAqcSiQ4JixGG5B1MmlthpOKwnYwre1Ll/3El4CBihtg/eWqTHcrb7GiFPbq0h80eW
+rR9QSwcIuLYVeJAAAAATAQAAUEsBAhQAFAAIAAgAAAAhALi2FXiQAAAAEwEAAAgAAAAAAAAAAAAAAAAA
+AAAAAC5jb250ZW50UEsFBgAAAAABAAEANgAAAMYAAAAAAA==
+------=_contents/example-project/maven-module/.settings/org.eclipse.jdt.core.prefs-40d0af5b-f9f9-3d46-9703-d201859c6e8f--
+------=_contents/maven-module/src/test/java/org/maven/module/AppTest.java-897a83cb-45b3-378c-bdd6-3a66b8e60e59
+Content-Type: q7/binary
+Entry-Name: contents/maven-module/src/test/java/org/maven/module/AppTest.java
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnR9kcFuwjAMhu95Ch9LpZX7uDBx32HA
+A4TW7TLaJHIcmDTx7nNSOibWkUMi+bf//6vrdX3UHYKjrhr0CW01uCb2uFLKDN4Rw0e0hquW9IBnR8dq
+h4FXj8SNDviwYRsNp4BlWSooYS8dwFKH1hEEGewRXryvRFwqHw+9qaHudQipmgxAgRz8ZLRNgClTfeVy
+dk2nhA2hZgR+x9G/Tl2jNrWsvRa2LL8KI9h0uXZ2ZpnfK9AVpYAtk7HdzWGRu0aWdEL0SMUvfZWli7qn
+XRNyJJujQ1pR5pCxAAecIrCZgwmsWZ68mzxa3FNcvS2e4ecXFNNHVON2/yV7M52L5OK4a3h+WsxBnJxp
+MqO4/skXfyTeUZRUlvsWdlHfUEsHCGTNQc4YAQAAhAIAAFBLAQIUABQACAAIAAAAIQBkzUHOGAEAAIQC
+AAAIAAAAAAAAAAAAAAAAAAAAAAAuY29udGVudFBLBQYAAAAAAQABADYAAABOAQAAAAA=
+------=_contents/maven-module/src/test/java/org/maven/module/AppTest.java-897a83cb-45b3-378c-bdd6-3a66b8e60e59--
+------=_contents/example-project/target/classes/org/xored/examples/App.class-d2b3f480-e9ce-3bd8-a82a-0aa708adefde
+Content-Type: q7/binary
+Entry-Name: contents/example-project/target/classes/org/xored/examples/App.class
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnRtkMtOwkAUhv+RSy9WQRDEO7gCFzau
+XGBMjIlx0agJBheuBpjUIW2nKcXgY+lCExc+gA9lPC0kxKSzOP+cM+c/8838/H59AzjFkYYVhrqKXHum
+IjGyxYz7oScm9mUYasgzlMf8hdseD1z7bjAWw5iheC4DGV8w5NqdPkP+So2EiRwMCwUUGUqODMTt1B+I
+6IEPPMFQcdSQe30eySRfFPPxs5wwNJzs27vU4XMZEF77yVlS9OJIBm630zewgaqGyj/G3uskFr6FTdSI
+T00JtzY3S2XfkzMmv+B+V8cWg3UjPE81H1XkjVomtrGrYYehmmGwsId9Bi1MSh5R1dpZUATNI5eeVc1g
+ZjB7ahoNxbVMPkCnV54kTWiBYJGsFdrRJ1LUKLNJGWnh+BP6W3psUiymRQ2rFK15A+kaqYF1lBbms3QY
+1d5RrtQ/0FgOMElBdp1syyEGDnBIytBMO1t/UEsHCA0749FdAQAAJwIAAFBLAQIUABQACAAIAAAAIQAN
+O+PRXQEAACcCAAAIAAAAAAAAAAAAAAAAAAAAAAAuY29udGVudFBLBQYAAAAAAQABADYAAACTAQAAAAA=
+
+------=_contents/example-project/target/classes/org/xored/examples/App.class-d2b3f480-e9ce-3bd8-a82a-0aa708adefde--
+------=_contents/example-project/maven-module/.settings/org.eclipse.m2e.core.prefs-ab8ba0fb-cffd-3e57-90c0-aee1f9cf85de
+Content-Type: q7/binary
+Entry-Name: contents/example-project/maven-module/.settings/org.eclipse.m2e.core.prefs
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnRNy0EKwjAQBdB9IHcYcF+aIqKFHMHq
+QnRdhl+IhkyYiTm/unP/3u4shRbpNB0pHOb9aR4DLZf7jaYxBO9WbqnjqrKlDIvegXOqhqEqNigKw4YO
+tSQlfr3CJHc8RF9WV/7NJ7hZbPqGd3/yA1BLBwgBcUwaawAAAHoAAABQSwECFAAUAAgACAAAACEAAXFM
+GmsAAAB6AAAACAAAAAAAAAAAAAAAAAAAAAAALmNvbnRlbnRQSwUGAAAAAAEAAQA2AAAAoQAAAAAA
+------=_contents/example-project/maven-module/.settings/org.eclipse.m2e.core.prefs-ab8ba0fb-cffd-3e57-90c0-aee1f9cf85de--
+------=_contents/maven-module/.settings/org.eclipse.jdt.core.prefs-78392db0-e8bc-33d8-aa09-bbaacb6c8e2d
+Content-Type: q7/binary
+Entry-Name: contents/maven-module/.settings/org.eclipse.jdt.core.prefs
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnSNTksKwjAQ3QveIeB+aIqKCj2CVUTc
+p800RJKZMIn1+mbTdd08Hrzv7sqkep5Ve1L6eNmfL41W/e31VG2j9XaDY/ApIyTBCQVpxAwzSvZMXZVZ
+HCyWty0wsmCFmHxAqcSiQ4JixGG5B1MmlthpOKwnYwre1Ll/3El4CBihtg/eWqTHcrb7GiFPbq0h80eW
+rR9QSwcIuLYVeJAAAAATAQAAUEsBAhQAFAAIAAgAAAAhALi2FXiQAAAAEwEAAAgAAAAAAAAAAAAAAAAA
+AAAAAC5jb250ZW50UEsFBgAAAAABAAEANgAAAMYAAAAAAA==
+------=_contents/maven-module/.settings/org.eclipse.jdt.core.prefs-78392db0-e8bc-33d8-aa09-bbaacb6c8e2d--
+------=_contents/example-project/maven-module/target/test-classes/org/maven/module/AppTest.class-8c913ad7-f52b-3e1e-aeb2-83884ad5826c
+Content-Type: q7/binary
+Entry-Name: contents/example-project/maven-module/target/test-classes/org/maven/module/AppTest.class
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnR1UF1LAkEUPaOrq9uWZWraJ0GBGrRE
+j4YQQk+LL4pQb1NNtrbuyuyu/a16Mgr6Af2o6M66RJTtwMydOeeee85+fL6+AzjBno4UQ9WXQ2vMp8Kz
+xv5t5ArrfDLpiyDUoRE6ijwntO4kH4tHXz5YCunwQDBkzxyC2gzluj3iU2653BtavVA63rDVGDBoHf9W
+GEgjbyKDLEPBdjzRjcbXQvb5tUsaRdu/4e6AS0fdk0ctvHcChk37P2cthlxIZ5dMKY0/0xkyQeSEBFbr
+DXtRhJaOdYbaIqinOg0UUVa2Kwyln/k6Lg+COJ6uLJAjhnS9MTBAjk1sYZvBIIqQYV9GKk39SrGNnh/J
+G3HhqIRmEuRY6WKfWtNQX5oq+lO063RrI0ULyDaPZsg9U5WCQbsRv5aIWcYSVZU5CyaWY5UsVlAgjTxW
+sZZoNZMJxhuKl0U2Q+npW0/NA7ZjLaXEsIFq0ndKp0Iz2gtqvy0cQMNh3GbOSYkFhp2YufsFUEsHCDoL
+6op4AQAAawIAAFBLAQIUABQACAAIAAAAIQA6C+qKeAEAAGsCAAAIAAAAAAAAAAAAAAAAAAAAAAAuY29u
+dGVudFBLBQYAAAAAAQABADYAAACuAQAAAAA=
+------=_contents/example-project/maven-module/target/test-classes/org/maven/module/AppTest.class-8c913ad7-f52b-3e1e-aeb2-83884ad5826c--
+------=_contents/example-project/src/test/java/org/xored/examples/AppTest.java-e792a02d-4116-3708-b9cb-df5d3add3e90
+Content-Type: q7/binary
+Entry-Name: contents/example-project/src/test/java/org/xored/examples/AppTest.java
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnR9kcFugzAMhu95Ch8p0uA+Lp1632Ft
+HyAFw7JSEjnOijT13eeEsk4dqw+JZP/5/w/jdH3UHYKlrhgtYVPgqE+uR18pZU7OEsNHGAwXLekTni0d
+ix16rh4NN9rjQ8E2GBaFKvNcQQ57UQBLH1pL4E3MhxfnChmWyoVDb2qoe+197EYDUCCFI+PQeJgz1Vdq
+J9dYOWwINSPwO07+dVRNs1mydlrY0vhVGGGIh20X35TpvgJdUTLYMpmhuzmskmpiieWDQ8p+zas0uqh7
+2jUhBxpStI8rShzyzMMB5whslmA8a5Yr7SY9ze4prt4DnuHnF2TzRxTTdv8lezOdDWTDtGt4flotQXxa
+0yRGcf2TL/5IvKMgqSznLeyivgFQSwcIUZL2vRoBAACGAgAAUEsBAhQAFAAIAAgAAAAhAFGS9r0aAQAA
+hgIAAAgAAAAAAAAAAAAAAAAAAAAAAC5jb250ZW50UEsFBgAAAAABAAEANgAAAFABAAAAAA==
+------=_contents/example-project/src/test/java/org/xored/examples/AppTest.java-e792a02d-4116-3708-b9cb-df5d3add3e90--
+------=_contents/example-project/maven-module/target/classes/META-INF/maven/org.xored.examples/maven-module/pom.properties-832ae9fb-d352-3bee-a144-8a58f6b049c0
+Content-Type: q7/binary
+Entry-Name: contents/example-project/maven-module/target/classes/META-INF/maven/org.xored.examples/maven-module/pom.properties
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnRVjk9rg0AUxO+C3+FBzopKKY3gIZTQ
+BhoTyJ/Tu2zWF7F1fcvb1SbfPtuSi7dhhpn5LT5oIFGeGrjcYasmGmAzeGqD1/EAVxZY676zjuJosQ1O
+zRMUb5C/li/LMiug3p2PUGR5HkcTiQulKk+z5FCv9ofP3TGOWuHRbpqKpU1vLNSkdFPG9uTiyBSUWuFv
+0r5WhirzB5AYbsaeZukX63+g6h1LxJMLT4jrsQ30iL8sP84qHeRzOnnWEOeLSnx3VdoHnHnwAFBLBwg2
+u8HsxQAAAAgBAABQSwECFAAUAAgACAAAACEANrvB7MUAAAAIAQAACAAAAAAAAAAAAAAAAAAAAAAALmNv
+bnRlbnRQSwUGAAAAAAEAAQA2AAAA+wAAAAAA
+------=_contents/example-project/maven-module/target/classes/META-INF/maven/org.xored.examples/maven-module/pom.properties-832ae9fb-d352-3bee-a144-8a58f6b049c0--
+------=_contents/example-project/pom.xml-e2f41fc0-aa53-34d6-85a3-f65d7b003ed4
+Content-Type: q7/binary
+Entry-Name: contents/example-project/pom.xml
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnSNks1OwzAQhM/0KarcY6eUQ1WZSBxA
+ILW0UgFxNfaSpiS2FTtNeHv8k6aJUBE37+y3u6ORiarkAZiZtmUh9G20N0YtMS7pEQSiirI9IFlleLtZ
+4xuUoCQK5LLVeU83TYOaueeuk2SG39ernR0saZwLbahgEE2mUzux1F5eSUZNLsU/zk0vEa3mQYw9h2wd
+pfYKKSWH4g0qbQ+kvkfwSJs4KqtkrZ54alehVlbAEbS0VAVogk89x9HK5J+UGVt2QNwlRvCg59Bjt3+G
+knj3fLfdPW5eCD6pjrDuv2iWiyxVsiT4XHpLgpbw+4hXXbuuivRCGAS7pl9i5xRYX6DdUBDcIvRR5wVH
+WtYVg3vBJHd3X18e4oU18hfjtuLhWidwUCA4CHY+1EvfQRiEfKhFbka5+vYgv44YJ+qhU35ztECzUZy+
+rZk1lhrQdjq8gxs8tjOoO8fun9RFeF91RRo+VCj8r3GiH+/pPq108gNQSwcIH99P52sBAAA8AwAAUEsB
+AhQAFAAIAAgAAAAhAB/fT+drAQAAPAMAAAgAAAAAAAAAAAAAAAAAAAAAAC5jb250ZW50UEsFBgAAAAAB
+AAEANgAAAKEBAAAAAA==
+------=_contents/example-project/pom.xml-e2f41fc0-aa53-34d6-85a3-f65d7b003ed4--
+------=_contents/maven-module/.settings/org.eclipse.core.resources.prefs-f0e9e87d-8f87-3fec-b6a6-68386ff8dfdd
+Content-Type: q7/binary
+Entry-Name: contents/maven-module/.settings/org.eclipse.core.resources.prefs
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnRT9s3PU/DLL1MwslAwNLMysbQyMFTw
+8w8LUTAyMDTk5UpNzsksKE7VKyhKTUstSs1LTi3WK0stKs7Mz7MFSecl56dk5qXr6xcXJevnJmbm6Wcl
+liXahoa46VqgS5ekFpdgl7YpKMrPSk0usYPJAABQSwcIK3+QZ28AAACXAAAAUEsBAhQAFAAIAAgAAAAh
+ACt/kGdvAAAAlwAAAAgAAAAAAAAAAAAAAAAAAAAAAC5jb250ZW50UEsFBgAAAAABAAEANgAAAKUAAAAA
+AA==
+------=_contents/maven-module/.settings/org.eclipse.core.resources.prefs-f0e9e87d-8f87-3fec-b6a6-68386ff8dfdd--
+------=_contents/example-project/src/main/java/org/xored/examples/App.java-ea6d1358-4d8d-3e2c-8138-5379fbbc4efb
+Content-Type: q7/binary
+Entry-Name: contents/example-project/src/main/java/org/xored/examples/App.java
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnQtjbEOwjAQQ/f7CtOJdkg/oBMbewcG
+xHA0URRxbaIkhSLUfye0WJasOz3LgYcHWwMfrVp8NFqZhccgJnVEbdMQGpyNiMfLR9GHche3FOa7uAGD
+cEo4hQD6EIr+/5Q5l3h6pzGym47oc3STvd7A0SbUG7xXfurfKZtR+TmrULgspVHtu5dtt0LdbfRKK30B
+UEsHCBrMoPmOAAAAtQAAAFBLAQIUABQACAAIAAAAIQAazKD5jgAAALUAAAAIAAAAAAAAAAAAAAAAAAAA
+AAAuY29udGVudFBLBQYAAAAAAQABADYAAADEAAAAAAA=
+------=_contents/example-project/src/main/java/org/xored/examples/App.java-ea6d1358-4d8d-3e2c-8138-5379fbbc4efb--
+------=_contents/example-project/maven-module/pom.xml-c1d543c1-666b-3351-8c9f-f272a180b1fc
+Content-Type: q7/binary
+Entry-Name: contents/example-project/maven-module/pom.xml
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnSNUcFuwjAMvfMVVe9NytgBoSxoh02b
+BAMJNu2aJR4UtUmVpLT7+4Wkg7YSEznFfs/28zOZN0UeHUGbTMmHeIzSeE5HpNTqANxGjclmhu+hYAvF
+mfWcvbXlDOOCHUEiVjIHI6V3eL1a4nuUojS6xmiMCMnE85CL48jNl+aGrvEocs+zZ07WuaKua1RPPPcu
+Tcf4c7nYeMVJJo1lkkNMXSkplID8IyxKfUeCe7kTqWQapKV+FGHaZt+M21dBoWFFmUPS+kJwBwvknVZV
+6SKnAzVKg0BtjSH4DwvM1mzqvE42b4/rzctqS/CxowJfZNzatys2WOx2q3IYKr1humQFDHr41AmrdE6v
+XIrgE+hN1KoENxVMu3HrGvqqslwgoyrN4UlyJTK5o+/b52TqVv6PE0zptSUCSpACJL/MOad+QqJj36GS
+mR1cou9ayxgetmPZBE3RuOeVhw13uqgF46rDP6jBfTmd2Cs+r0xHv1BLBwgx3iCcagEAAIUDAABQSwEC
+FAAUAAgACAAAACEAMd4gnGoBAACFAwAACAAAAAAAAAAAAAAAAAAAAAAALmNvbnRlbnRQSwUGAAAAAAEA
+AQA2AAAAoAEAAAAA
+------=_contents/example-project/maven-module/pom.xml-c1d543c1-666b-3351-8c9f-f272a180b1fc--
+------=_contents/maven-module/target/classes/META-INF/maven/org.xored.examples/maven-module/pom.xml-f3d591ae-47ec-38a1-90c9-e51cc24c4c80
+Content-Type: q7/binary
+Entry-Name: contents/maven-module/target/classes/META-INF/maven/org.xored.examples/maven-module/pom.xml
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnSNUcFuwjAMvfMVVe9NytgBoSxoh02b
+BAMJNu2aJR4UtUmVpLT7+4Wkg7YSEznFfs/28zOZN0UeHUGbTMmHeIzSeE5HpNTqANxGjclmhu+hYAvF
+mfWcvbXlDOOCHUEiVjIHI6V3eL1a4nuUojS6xmiMCMnE85CL48jNl+aGrvEocs+zZ07WuaKua1RPPPcu
+Tcf4c7nYeMVJJo1lkkNMXSkplID8IyxKfUeCe7kTqWQapKV+FGHaZt+M21dBoWFFmUPS+kJwBwvknVZV
+6SKnAzVKg0BtjSH4DwvM1mzqvE42b4/rzctqS/CxowJfZNzatys2WOx2q3IYKr1humQFDHr41AmrdE6v
+XIrgE+hN1KoENxVMu3HrGvqqslwgoyrN4UlyJTK5o+/b52TqVv6PE0zptSUCSpACJL/MOad+QqJj36GS
+mR1cou9ayxgetmPZBE3RuOeVhw13uqgF46rDP6jBfTmd2Cs+r0xHv1BLBwgx3iCcagEAAIUDAABQSwEC
+FAAUAAgACAAAACEAMd4gnGoBAACFAwAACAAAAAAAAAAAAAAAAAAAAAAALmNvbnRlbnRQSwUGAAAAAAEA
+AQA2AAAAoAEAAAAA
+------=_contents/maven-module/target/classes/META-INF/maven/org.xored.examples/maven-module/pom.xml-f3d591ae-47ec-38a1-90c9-e51cc24c4c80--
+------=_contents/maven-module/target/classes/META-INF/maven/org.xored.examples/maven-module/pom.properties-41dd896a-1413-345a-be03-127fe7d13637
+Content-Type: q7/binary
+Entry-Name: contents/maven-module/target/classes/META-INF/maven/org.xored.examples/maven-module/pom.properties
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnRVjk9rg0AUxO+C3+FBzopKKY3gIZTQ
+BhoTyJ/Tu2zWF7F1fcvb1SbfPtuSi7dhhpn5LT5oIFGeGrjcYasmGmAzeGqD1/EAVxZY676zjuJosQ1O
+zRMUb5C/li/LMiug3p2PUGR5HkcTiQulKk+z5FCv9ofP3TGOWuHRbpqKpU1vLNSkdFPG9uTiyBSUWuFv
+0r5WhirzB5AYbsaeZukX63+g6h1LxJMLT4jrsQ30iL8sP84qHeRzOnnWEOeLSnx3VdoHnHnwAFBLBwg2
+u8HsxQAAAAgBAABQSwECFAAUAAgACAAAACEANrvB7MUAAAAIAQAACAAAAAAAAAAAAAAAAAAAAAAALmNv
+bnRlbnRQSwUGAAAAAAEAAQA2AAAA+wAAAAAA
+------=_contents/maven-module/target/classes/META-INF/maven/org.xored.examples/maven-module/pom.properties-41dd896a-1413-345a-be03-127fe7d13637--
+------=_contents/maven-module/target/test-classes/org/maven/module/AppTest.class-dfc11ffc-7cb8-3253-a96e-c37175e9c94d
+Content-Type: q7/binary
+Entry-Name: contents/maven-module/target/test-classes/org/maven/module/AppTest.class
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnR1UF1LAkEUPaOrq9uWZWraJ0GBGrRE
+j4YQQk+LL4pQb1NNtrbuyuyu/a16Mgr6Af2o6M66RJTtwMydOeeee85+fL6+AzjBno4UQ9WXQ2vMp8Kz
+xv5t5ArrfDLpiyDUoRE6ijwntO4kH4tHXz5YCunwQDBkzxyC2gzluj3iU2653BtavVA63rDVGDBoHf9W
+GEgjbyKDLEPBdjzRjcbXQvb5tUsaRdu/4e6AS0fdk0ctvHcChk37P2cthlxIZ5dMKY0/0xkyQeSEBFbr
+DXtRhJaOdYbaIqinOg0UUVa2Kwyln/k6Lg+COJ6uLJAjhnS9MTBAjk1sYZvBIIqQYV9GKk39SrGNnh/J
+G3HhqIRmEuRY6WKfWtNQX5oq+lO063RrI0ULyDaPZsg9U5WCQbsRv5aIWcYSVZU5CyaWY5UsVlAgjTxW
+sZZoNZMJxhuKl0U2Q+npW0/NA7ZjLaXEsIFq0ndKp0Iz2gtqvy0cQMNh3GbOSYkFhp2YufsFUEsHCDoL
+6op4AQAAawIAAFBLAQIUABQACAAIAAAAIQA6C+qKeAEAAGsCAAAIAAAAAAAAAAAAAAAAAAAAAAAuY29u
+dGVudFBLBQYAAAAAAQABADYAAACuAQAAAAA=
+------=_contents/maven-module/target/test-classes/org/maven/module/AppTest.class-dfc11ffc-7cb8-3253-a96e-c37175e9c94d--
+------=_contents/maven-module/.project-53a2344e-1f72-3be5-9270-ca812435470d
+Content-Type: q7/binary
+Entry-Name: contents/maven-module/.project
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnStkbEOwiAQhmdNfAfT3aJODrRN1Di6
+qA+AcGloCjRAGx9foFRTTRMHt/v/u5/vAFw8RL3sQBuuZJZs0nWyBEkV47LMktv1tNolRb6Y40arCqg9
+gqGaN9ZNO3eGJRGQC9KBXAnF2howCpbvUSUESJtjNFTejQeZINBI3Vtes0sD1KsoDy5KJAtOxCldpkBr
+3hhIK2ZTqrQrSEdCAPR7BZcgumw920SNxgZGX5SfuGILPTfcfbv/Bzk6wwM4qG01xOleTN+97/sFwtxU
+5mPv81dqqD329T3jX38CUEsHCJVOkNHZAAAANAIAAFBLAQIUABQACAAIAAAAIQCVTpDR2QAAADQCAAAI
+AAAAAAAAAAAAAAAAAAAAAAAuY29udGVudFBLBQYAAAAAAQABADYAAAAPAQAAAAA=
+------=_contents/maven-module/.project-53a2344e-1f72-3be5-9270-ca812435470d--
+------=_contents/example-project/maven-module/target/classes/org/maven/module/App.class-050d0827-ccde-3407-862e-00fface591f0
+Content-Type: q7/binary
+Entry-Name: contents/example-project/maven-module/target/classes/org/maven/module/App.class
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnRtkMtKw0AUhv/pLRejrb1519ZV68Lg
+ykVFEEFcBBUqdeFq2g5xSpIpaVLwsXSh4MIH8KHEk7RQhMzi/Jlzzn/ynfn5/foGcIZjDTmGugpd2+dz
+Edi+GseesK+mUw0FhsqEz7nt8cC174cTMYoYShcykNElQ77THTAUrtVYmMjDsFBEiaHsyEDcxf5QhI98
+6AmGqqNG3BvwUCb3ZbIQvcgZQ9PJ+neP6j6XAdU7z86KoR+FMnB73YGBTdQ0VP8R9l9nkfAt1NEgOhUT
+bGNhlsp+IGdEfsH9no4tButWeJ5qPanQG7dN7GBPwy5DLcNgYR8HDNo0SXlE1ehkQRE0D11aqpbBzGD2
+VRyOxI1M1tdpy9OkCW0QLJKToy96Qooa3WxSRlo8+YT+lpZNiqU0qWGNorVoIF0nNbCB8tJ8ng6j3Dsq
+1eYHtlcDTFKQXSfbaoiBQxyRMrTSzvYfUEsHCFl+QXFaAQAAIwIAAFBLAQIUABQACAAIAAAAIQBZfkFx
+WgEAACMCAAAIAAAAAAAAAAAAAAAAAAAAAAAuY29udGVudFBLBQYAAAAAAQABADYAAACQAQAAAAA=
+------=_contents/example-project/maven-module/target/classes/org/maven/module/App.class-050d0827-ccde-3407-862e-00fface591f0--
+------=_contents/example-project/maven-module/src/test/java/org/maven/module/AppTest.java-41bc7b0b-2e2d-341e-acaf-201a88dc5b0a
+Content-Type: q7/binary
+Entry-Name: contents/example-project/maven-module/src/test/java/org/maven/module/AppTest.java
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnR9kcFuwjAMhu95Ch9LpZX7uDBx32HA
+A4TW7TLaJHIcmDTx7nNSOibWkUMi+bf//6vrdX3UHYKjrhr0CW01uCb2uFLKDN4Rw0e0hquW9IBnR8dq
+h4FXj8SNDviwYRsNp4BlWSooYS8dwFKH1hEEGewRXryvRFwqHw+9qaHudQipmgxAgRz8ZLRNgClTfeVy
+dk2nhA2hZgR+x9G/Tl2jNrWsvRa2LL8KI9h0uXZ2ZpnfK9AVpYAtk7HdzWGRu0aWdEL0SMUvfZWli7qn
+XRNyJJujQ1pR5pCxAAecIrCZgwmsWZ68mzxa3FNcvS2e4ecXFNNHVON2/yV7M52L5OK4a3h+WsxBnJxp
+MqO4/skXfyTeUZRUlvsWdlHfUEsHCGTNQc4YAQAAhAIAAFBLAQIUABQACAAIAAAAIQBkzUHOGAEAAIQC
+AAAIAAAAAAAAAAAAAAAAAAAAAAAuY29udGVudFBLBQYAAAAAAQABADYAAABOAQAAAAA=
+------=_contents/example-project/maven-module/src/test/java/org/maven/module/AppTest.java-41bc7b0b-2e2d-341e-acaf-201a88dc5b0a--
+------=_contents/maven-module/target/classes/org/maven/module/App.class-90f7e649-5ea6-36d0-8742-d310b870b327
+Content-Type: q7/binary
+Entry-Name: contents/maven-module/target/classes/org/maven/module/App.class
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnRtkMtKw0AUhv/pLRejrb1519ZV68Lg
+ykVFEEFcBBUqdeFq2g5xSpIpaVLwsXSh4MIH8KHEk7RQhMzi/Jlzzn/ynfn5/foGcIZjDTmGugpd2+dz
+Edi+GseesK+mUw0FhsqEz7nt8cC174cTMYoYShcykNElQ77THTAUrtVYmMjDsFBEiaHsyEDcxf5QhI98
+6AmGqqNG3BvwUCb3ZbIQvcgZQ9PJ+neP6j6XAdU7z86KoR+FMnB73YGBTdQ0VP8R9l9nkfAt1NEgOhUT
+bGNhlsp+IGdEfsH9no4tButWeJ5qPanQG7dN7GBPwy5DLcNgYR8HDNo0SXlE1ehkQRE0D11aqpbBzGD2
+VRyOxI1M1tdpy9OkCW0QLJKToy96Qooa3WxSRlo8+YT+lpZNiqU0qWGNorVoIF0nNbCB8tJ8ng6j3Dsq
+1eYHtlcDTFKQXSfbaoiBQxyRMrTSzvYfUEsHCFl+QXFaAQAAIwIAAFBLAQIUABQACAAIAAAAIQBZfkFx
+WgEAACMCAAAIAAAAAAAAAAAAAAAAAAAAAAAuY29udGVudFBLBQYAAAAAAQABADYAAACQAQAAAAA=
+------=_contents/maven-module/target/classes/org/maven/module/App.class-90f7e649-5ea6-36d0-8742-d310b870b327--
+------=_contents/example-project/.project-b0e0de3f-7ad4-36dd-b351-411d757420e2
+Content-Type: q7/binary
+Entry-Name: contents/example-project/.project
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnStkb0OwiAUhWdNfIeme4t2csCaqHF0
+UR8A6U2DKT8B2vTxBUo11Zg4uN1zOCffBfC2503SgTZMik26ypdpAoLKiol6k14vx2ydbsvFHCst70Dt
+AQzVTFmXdu4MC8KhhJ5w1UAWMxgF1x9TyTkIW2I0Tt6NORMEmqhby5rqrIB6FeXeVYmoghOJUtc50IYp
+A/m9sjmV2g2kI6EA+rWCaxBdt55tokZTA6MPyk9cXsDA5aQDUez+QY7O+AAOalsNMT2I73cfzv0CIfet
+87b36aM1zh77/J7pxz8AUEsHCEnVSnXZAAAANwIAAFBLAQIUABQACAAIAAAAIQBJ1Up12QAAADcCAAAI
+AAAAAAAAAAAAAAAAAAAAAAAuY29udGVudFBLBQYAAAAAAQABADYAAAAPAQAAAAA=
+------=_contents/example-project/.project-b0e0de3f-7ad4-36dd-b351-411d757420e2--
+------=_.q7.content-3d2e0690-ce48-3609-83e0-c704d49f1eaf
+Content-Type: q7/binary
+Entry-Name: .q7.content
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnTtWV1v2jAUfZ+0/xDlPfZWTeqEYBWr
+oGIa1aYitXtCUXKBsDhObfPx82dCwkdiJ4a1IZ32lvgeX/ue65zrC+2bNQmtJTAe0Khjf0QfbAsij/pB
+NO3YCzFxPts3X96/a3uUoDVl4KPna7Si7DePXQ9aj9nTLY0ErIW1JkFr5+5q404uEPGWHO/YMyHiFsar
+1QpRMkWUTfHTcJBB1EvsZmFpx4kdP1/jnR2BJ8dsK3KJxP5gdA6esFaBmFlD6i9CaQr8jj2OFt/63a+E
+9ODu9ml89/2TO/s1/mlbXggue9yvNnFDDrYM2bJk0DKoSCQv8jXeOufpWrB2SRyCkw7bKUwCJ0EIGQp5
+oculbzGzsQaROdDY4w0vJDwy09CXJGcOOAghE8b3W8i5kExLnsIg5oA2dCEGnC6YB1wuDhN+4Ltk5twX
+29knzCFXoJ7TxmkQuqiIu4TIIdsc6pZSslvNbyXDZhz/Dcvn8XwO0yquC/Fx5uUjy2UjiI4BBcjcXbp5
+SAEkd1zEqHOvwhWRhfNxDD4gqxvHKNkjVjtWkFRt01nU45rR45AEcPH2qR7JKJpIt8G3IFw2BVH6OSSy
+A7wiTcPeqOsM7vuqVB2wNezeD/q9hxEa9hVkmearmP20mqZ1qrBZvXuF6mo3v9FOKbAxMBFAXqxK5uT1
+9gBaw8kw+1jOpL6MvYIiJSdJyUTtouOYnepLUZUoymXoUlxWqq4vuYJaWU4NFP6MPCQKYJCHKo0wLaOX
+Vu5C6XxLtJaXzIad72KRNCmR1VybMX0Cz8aKW9sJVetsA6gpVdg6TlkbZz22pudWX0/+N9wv0XA3o2K9
+yiWrIaJ6sXr1atexhhBbT7XStXPGzZxZVs5q5E5u405v4oxbuFobl+o6aUaznqt/9gLx0sQ07frQxvsf
+8DfPRv9gSOwfUEsHCIj76+qzAgAAFRkAAFBLAQIUABQACAAIAAAAIQCI++vqswIAABUZAAAIAAAAAAAA
+AAAAAAAAAAAAAAAuY29udGVudFBLBQYAAAAAAQABADYAAADpAgAAAAA=
+------=_.q7.content-3d2e0690-ce48-3609-83e0-c704d49f1eaf--
+------=_contents/example-project/.settings/org.eclipse.m2e.core.prefs-4d0e56f6-17e3-3abf-95be-59a6715d1d22
+Content-Type: q7/binary
+Entry-Name: contents/example-project/.settings/org.eclipse.m2e.core.prefs
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnRNy0EKwjAQBdB9IHcIdF+atogUcgRb
+F6LrMvxCNGTCTMz51Z3797oLZ7dyc+PZ+dMyD8s8uXW739w4eG/NTjU2XIWPmKDBGlCKRdEXwQFBJmjf
+IBo5h68XKKeGB8tLy06/+QRVDVXesOZPfgBQSwcIdov0emwAAAB6AAAAUEsBAhQAFAAIAAgAAAAhAHaL
+9HpsAAAAegAAAAgAAAAAAAAAAAAAAAAAAAAAAC5jb250ZW50UEsFBgAAAAABAAEANgAAAKIAAAAAAA==
+
+------=_contents/example-project/.settings/org.eclipse.m2e.core.prefs-4d0e56f6-17e3-3abf-95be-59a6715d1d22--
+------=_contents/maven-module/target/classes/META-INF/MANIFEST.MF-3075d6ea-dd2d-3cf5-863e-3d4e5c343411
+Content-Type: q7/binary
+Entry-Name: contents/maven-module/target/classes/META-INF/MANIFEST.MF
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnTzTczLTEstLtENSy0qzszPs1Iw1DPg
+5XIqzcwp0XWqtFJwLU1PzUuFiKToeqVkg1SY6RnEG1nycjkXpSaWpKaAFfomlqXmKXjmlaSmFyWWAI1S
+SMsvUnBNzsksKAbq5+UCAFBLBwj6ZH8XYgAAAGsAAABQSwECFAAUAAgACAAAACEA+mR/F2IAAABrAAAA
+CAAAAAAAAAAAAAAAAAAAAAAALmNvbnRlbnRQSwUGAAAAAAEAAQA2AAAAmAAAAAAA
+------=_contents/maven-module/target/classes/META-INF/MANIFEST.MF-3075d6ea-dd2d-3cf5-863e-3d4e5c343411--
+------=_contents/example-project/maven-module/.classpath-c1a715af-c393-31a3-8f4f-794952caa495
+Content-Type: q7/binary
+Entry-Name: contents/example-project/maven-module/.classpath
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnSdkUFLw0AQhc8K/oew9+zagOAhsYQS
+0WKjNLHXsu4O6dZkNuzOFvvvbaqlUkTR4wzvfbx5k47fujbagPPGYsZG/JJFgMpqg03Gnuvb+JqNby7O
+U9VK73tJq91wdpwAyW2jV4M6Y94pFtlAfaCMkXQNkNgLwbNoEO8lopMGxVpuJBN/YxF4ir8BDvtfgcri
+wWNdw0G1pvfA15p4KwOq1e5gPp0Xy8ljWef3ZTEXpzqDBA5lyzW8hIYH8+kExyuSqKXTi1m97UFMk6qI
+R/zqH4G6BPgsXxRlspw85FX1lNd3x0w/AT/aOjBP+h98qfj6xHdQSwcIqqi4q/AAAAD6AQAAUEsBAhQA
+FAAIAAgAAAAhAKqouKvwAAAA+gEAAAgAAAAAAAAAAAAAAAAAAAAAAC5jb250ZW50UEsFBgAAAAABAAEA
+NgAAACYBAAAAAA==
+------=_contents/example-project/maven-module/.classpath-c1a715af-c393-31a3-8f4f-794952caa495--
+------=_contents/example-project/maven-module/src/main/java/org/maven/module/App.java-810bf613-3434-33f9-b63f-f63942d6d419
+Content-Type: q7/binary
+Entry-Name: contents/example-project/maven-module/src/main/java/org/maven/module/App.java
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnQtjbEOgzAQQ/f7CpepMIQPYOrWnaFD
+xXCFKIp6IVESqKqKf28KtSxZd3qWA49PNho+GuV41bNyflpEd0Rt0xAaXLWIx8tHmU7lLm4pLA+xI0bh
+lHAJAfQhFP3/KXMusXo7wbGdz+hztLO5D+BoEuodPio/9e+UtVN+ySoULktpVMfubd+tUHc7vdFGX1BL
+BwgzgPvGjAAAALMAAABQSwECFAAUAAgACAAAACEAM4D7xowAAACzAAAACAAAAAAAAAAAAAAAAAAAAAAA
+LmNvbnRlbnRQSwUGAAAAAAEAAQA2AAAAwgAAAAAA
+------=_contents/example-project/maven-module/src/main/java/org/maven/module/App.java-810bf613-3434-33f9-b63f-f63942d6d419--
+------=_contents/example-project/maven-module/target/classes/META-INF/maven/org.xored.examples/maven-module/pom.xml-ebe5d924-9995-377d-82f0-6a99e2f4ea78
+Content-Type: q7/binary
+Entry-Name: contents/example-project/maven-module/target/classes/META-INF/maven/org.xored.examples/maven-module/pom.xml
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnSNUcFuwjAMvfMVVe9NytgBoSxoh02b
+BAMJNu2aJR4UtUmVpLT7+4Wkg7YSEznFfs/28zOZN0UeHUGbTMmHeIzSeE5HpNTqANxGjclmhu+hYAvF
+mfWcvbXlDOOCHUEiVjIHI6V3eL1a4nuUojS6xmiMCMnE85CL48jNl+aGrvEocs+zZ07WuaKua1RPPPcu
+Tcf4c7nYeMVJJo1lkkNMXSkplID8IyxKfUeCe7kTqWQapKV+FGHaZt+M21dBoWFFmUPS+kJwBwvknVZV
+6SKnAzVKg0BtjSH4DwvM1mzqvE42b4/rzctqS/CxowJfZNzatys2WOx2q3IYKr1humQFDHr41AmrdE6v
+XIrgE+hN1KoENxVMu3HrGvqqslwgoyrN4UlyJTK5o+/b52TqVv6PE0zptSUCSpACJL/MOad+QqJj36GS
+mR1cou9ayxgetmPZBE3RuOeVhw13uqgF46rDP6jBfTmd2Cs+r0xHv1BLBwgx3iCcagEAAIUDAABQSwEC
+FAAUAAgACAAAACEAMd4gnGoBAACFAwAACAAAAAAAAAAAAAAAAAAAAAAALmNvbnRlbnRQSwUGAAAAAAEA
+AQA2AAAAoAEAAAAA
+------=_contents/example-project/maven-module/target/classes/META-INF/maven/org.xored.examples/maven-module/pom.xml-ebe5d924-9995-377d-82f0-6a99e2f4ea78--
+------=_contents/example-project/.settings/org.eclipse.core.resources.prefs-ed44ecf8-d9ba-3171-b323-51cb3fcd05bc
+Content-Type: q7/binary
+Entry-Name: contents/example-project/.settings/org.eclipse.core.resources.prefs
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnRT9s3PU/DLL1MwslAwNLMyMbAyMVbw
+8w8LUTAyMDTk5UpNzsksKE7VKyhKTUstSs1LTi3WK0stKs7Mz7MFSecl56dk5qXr6xcXJevnJmbm6Wcl
+liXahoa46VqgS5ekFpdgl7YpKMrPSk0usYPJAABQSwcI4dzs0m8AAACXAAAAUEsBAhQAFAAIAAgAAAAh
+AOHc7NJvAAAAlwAAAAgAAAAAAAAAAAAAAAAAAAAAAC5jb250ZW50UEsFBgAAAAABAAEANgAAAKUAAAAA
+AA==
+------=_contents/example-project/.settings/org.eclipse.core.resources.prefs-ed44ecf8-d9ba-3171-b323-51cb3fcd05bc--
+------=_contents/example-project/.classpath-f71060a1-b0bf-3873-94f7-2e3ed08dfdb9
+Content-Type: q7/binary
+Entry-Name: contents/example-project/.classpath
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnSdkUFLw0AQhc8K/oew9+zagOAhsYQS
+0WKjNLHXsu4O6dZkNuzOFvvvbaqlUkTR4wzvfbx5k47fujbagPPGYsZG/JJFgMpqg03Gnuvb+JqNby7O
+U9VK73tJq91wdpwAyW2jV4M6Y94pFtlAfaCMkXQNkNgLwbNoEO8lopMGxVpuJBN/YxF4ir8BDvtfgcri
+wWNdw0G1pvfA15p4KwOq1e5gPp0Xy8ljWef3ZTEXpzqDBA5lyzW8hIYH8+kExyuSqKXTi1m97UFMk6qI
+R/zqH4G6BPgsXxRlspw85FX1lNd3x0w/AT/aOjBP+h98qfj6xHdQSwcIqqi4q/AAAAD6AQAAUEsBAhQA
+FAAIAAgAAAAhAKqouKvwAAAA+gEAAAgAAAAAAAAAAAAAAAAAAAAAAC5jb250ZW50UEsFBgAAAAABAAEA
+NgAAACYBAAAAAA==
+------=_contents/example-project/.classpath-f71060a1-b0bf-3873-94f7-2e3ed08dfdb9--
+------=_contents/example-project/maven-module/target/classes/META-INF/MANIFEST.MF-1dce194e-cb39-3e36-99ef-0c0f65661739
+Content-Type: q7/binary
+Entry-Name: contents/example-project/maven-module/target/classes/META-INF/MANIFEST.MF
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnTzTczLTEstLtENSy0qzszPs1Iw1DPg
+5XIqzcwp0XWqtFJwLU1PzUuFiKToeqVkg1SY6RnEG1nycjkXpSaWpKaAFfomlqXmKXjmlaSmFyWWAI1S
+SMsvUnBNzsksKAbq5+UCAFBLBwj6ZH8XYgAAAGsAAABQSwECFAAUAAgACAAAACEA+mR/F2IAAABrAAAA
+CAAAAAAAAAAAAAAAAAAAAAAALmNvbnRlbnRQSwUGAAAAAAEAAQA2AAAAmAAAAAAA
+------=_contents/example-project/maven-module/target/classes/META-INF/MANIFEST.MF-1dce194e-cb39-3e36-99ef-0c0f65661739--
+------=_contents/maven-module/src/main/java/org/maven/module/App.java-26872c43-0473-3203-8c84-4c90600defe4
+Content-Type: q7/binary
+Entry-Name: contents/maven-module/src/main/java/org/maven/module/App.java
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnQtjbEOgzAQQ/f7CpepMIQPYOrWnaFD
+xXCFKIp6IVESqKqKf28KtSxZd3qWA49PNho+GuV41bNyflpEd0Rt0xAaXLWIx8tHmU7lLm4pLA+xI0bh
+lHAJAfQhFP3/KXMusXo7wbGdz+hztLO5D+BoEuodPio/9e+UtVN+ySoULktpVMfubd+tUHc7vdFGX1BL
+BwgzgPvGjAAAALMAAABQSwECFAAUAAgACAAAACEAM4D7xowAAACzAAAACAAAAAAAAAAAAAAAAAAAAAAA
+LmNvbnRlbnRQSwUGAAAAAAEAAQA2AAAAwgAAAAAA
+------=_contents/maven-module/src/main/java/org/maven/module/App.java-26872c43-0473-3203-8c84-4c90600defe4--
+------=_contents/maven-module/pom.xml-a0a41d3b-c7c5-337f-9fc4-08e72218885a
+Content-Type: q7/binary
+Entry-Name: contents/maven-module/pom.xml
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnSNUcFuwjAMvfMVVe9NytgBoSxoh02b
+BAMJNu2aJR4UtUmVpLT7+4Wkg7YSEznFfs/28zOZN0UeHUGbTMmHeIzSeE5HpNTqANxGjclmhu+hYAvF
+mfWcvbXlDOOCHUEiVjIHI6V3eL1a4nuUojS6xmiMCMnE85CL48jNl+aGrvEocs+zZ07WuaKua1RPPPcu
+Tcf4c7nYeMVJJo1lkkNMXSkplID8IyxKfUeCe7kTqWQapKV+FGHaZt+M21dBoWFFmUPS+kJwBwvknVZV
+6SKnAzVKg0BtjSH4DwvM1mzqvE42b4/rzctqS/CxowJfZNzatys2WOx2q3IYKr1humQFDHr41AmrdE6v
+XIrgE+hN1KoENxVMu3HrGvqqslwgoyrN4UlyJTK5o+/b52TqVv6PE0zptSUCSpACJL/MOad+QqJj36GS
+mR1cou9ayxgetmPZBE3RuOeVhw13uqgF46rDP6jBfTmd2Cs+r0xHv1BLBwgx3iCcagEAAIUDAABQSwEC
+FAAUAAgACAAAACEAMd4gnGoBAACFAwAACAAAAAAAAAAAAAAAAAAAAAAALmNvbnRlbnRQSwUGAAAAAAEA
+AQA2AAAAoAEAAAAA
+------=_contents/maven-module/pom.xml-a0a41d3b-c7c5-337f-9fc4-08e72218885a--
+------=_contents/example-project/maven-module/.settings/org.eclipse.core.resources.prefs-b6105ce9-8d6d-32a9-baa3-228b877ff42c
+Content-Type: q7/binary
+Entry-Name: contents/example-project/maven-module/.settings/org.eclipse.core.resources.prefs
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnRT9s3PU/DLL1MwslAwNLMysbQyMFTw
+8w8LUTAyMDTk5UpNzsksKE7VKyhKTUstSs1LTi3WK0stKs7Mz7MFSecl56dk5qXr6xcXJevnJmbm6Wcl
+liXahoa46VqgS5ekFpdgl7YpKMrPSk0usYPJAABQSwcIK3+QZ28AAACXAAAAUEsBAhQAFAAIAAgAAAAh
+ACt/kGdvAAAAlwAAAAgAAAAAAAAAAAAAAAAAAAAAAC5jb250ZW50UEsFBgAAAAABAAEANgAAAKUAAAAA
+AA==
+------=_contents/example-project/maven-module/.settings/org.eclipse.core.resources.prefs-b6105ce9-8d6d-32a9-baa3-228b877ff42c--
+------=_contents/maven-module/.settings/org.eclipse.m2e.core.prefs-2e4402d5-9748-3409-8582-717f87e4a772
+Content-Type: q7/binary
+Entry-Name: contents/maven-module/.settings/org.eclipse.m2e.core.prefs
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnRNy0EKwjAQBdB9IHcYcF+aIqKFHMHq
+QnRdhl+IhkyYiTm/unP/3u4shRbpNB0pHOb9aR4DLZf7jaYxBO9WbqnjqrKlDIvegXOqhqEqNigKw4YO
+tSQlfr3CJHc8RF9WV/7NJ7hZbPqGd3/yA1BLBwgBcUwaawAAAHoAAABQSwECFAAUAAgACAAAACEAAXFM
+GmsAAAB6AAAACAAAAAAAAAAAAAAAAAAAAAAALmNvbnRlbnRQSwUGAAAAAAEAAQA2AAAAoQAAAAAA
+------=_contents/maven-module/.settings/org.eclipse.m2e.core.prefs-2e4402d5-9748-3409-8582-717f87e4a772--
+------=_contents/example-project/target/test-classes/org/xored/examples/AppTest.class-345f5b2c-7efd-38fb-88cb-6b0bea5d8d07
+Content-Type: q7/binary
+Entry-Name: contents/example-project/target/test-classes/org/xored/examples/AppTest.class
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnR1UMFKw0AUnG3TRGO0GtvaalUEhbaC
+QTxWClLwFHppKehtq2tNTZuySdTP0pOi4Af4UeLbGES0JrD7dmfevJl9/3h5A3CIbQMZhvVADp37QIpL
+R9zz8dQXoXMynfZEGBnQGMqjeOJFzpXkY3EXyBtHIW0eCgb92COoxVCsuSN+yx2fT4ZON5LeZNis9xm0
+dnApTGQxbyEHnSHvehPRiccDIXt84JOG7QYX3O9z6alzeqlF117IUHX/99ZkmIto75AtpfJnPkMujL2I
+wHKt7s4K0TSwylCZBXVVpwkbRWW8xFD4mbDt8zBMAhrKAjliyNbqfRP0nBY2UGUwiSJk1JOxylM7V2yz
+G8TyQpx6KqOVBjlQutih1izUl6WK3opWg04tZOgH9Mb+E+YeqcrApNVMbgvELGKBqtIXCxYWExUdS8iT
+xjyWsZJqNdIJ5ivsM5s9ofDwrafmAdVESykxrKGc9h3RrtCc9ozKbwu70LCXtFlfpNQCw2bC3PoEUEsH
+CBlAz+57AQAAbwIAAFBLAQIUABQACAAIAAAAIQAZQM/uewEAAG8CAAAIAAAAAAAAAAAAAAAAAAAAAAAu
+Y29udGVudFBLBQYAAAAAAQABADYAAACxAQAAAAA=
+------=_contents/example-project/target/test-classes/org/xored/examples/AppTest.class-345f5b2c-7efd-38fb-88cb-6b0bea5d8d07--
+------=_contents/maven-module/.classpath-2a6bb27e-7601-3c05-b980-d856e5ec3444
+Content-Type: q7/binary
+Entry-Name: contents/maven-module/.classpath
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnSdkUFLw0AQhc8K/oew9+zagOAhsYQS
+0WKjNLHXsu4O6dZkNuzOFvvvbaqlUkTR4wzvfbx5k47fujbagPPGYsZG/JJFgMpqg03Gnuvb+JqNby7O
+U9VK73tJq91wdpwAyW2jV4M6Y94pFtlAfaCMkXQNkNgLwbNoEO8lopMGxVpuJBN/YxF4ir8BDvtfgcri
+wWNdw0G1pvfA15p4KwOq1e5gPp0Xy8ljWef3ZTEXpzqDBA5lyzW8hIYH8+kExyuSqKXTi1m97UFMk6qI
+R/zqH4G6BPgsXxRlspw85FX1lNd3x0w/AT/aOjBP+h98qfj6xHdQSwcIqqi4q/AAAAD6AQAAUEsBAhQA
+FAAIAAgAAAAhAKqouKvwAAAA+gEAAAgAAAAAAAAAAAAAAAAAAAAAAC5jb250ZW50UEsFBgAAAAABAAEA
+NgAAACYBAAAAAA==
+------=_contents/maven-module/.classpath-2a6bb27e-7601-3c05-b980-d856e5ec3444--
+------=_contents/example-project/.settings/org.eclipse.jdt.core.prefs-cbfe0074-80b6-374c-82e5-0b89b21adbd5
+Content-Type: q7/binary
+Entry-Name: contents/example-project/.settings/org.eclipse.jdt.core.prefs
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnSNTksKwjAQ3QveIeA+NLWKFHoEq4i4
+T5tpiCQzYRLr9c0m67p5PHjfw5VQjLSK9iLUue+avjuK8fZ6irZRar+D2buYQEaGBRhwhiRX4OQIhyIT
+W1ktb5PlTAwFQnQeuBADFlBmzRby3eu8EIdBydN2MkTvdJn7xx2ZJg9BlvbJGQP4qGeHr2Z0aLcaEn24
+bv0AUEsHCPUknrqRAAAAEwEAAFBLAQIUABQACAAIAAAAIQD1JJ66kQAAABMBAAAIAAAAAAAAAAAAAAAA
+AAAAAAAuY29udGVudFBLBQYAAAAAAQABADYAAADHAAAAAAA=
+------=_contents/example-project/.settings/org.eclipse.jdt.core.prefs-cbfe0074-80b6-374c-82e5-0b89b21adbd5--
+------=_contents/example-project/maven-module/.project-198bf322-d681-3470-944a-db7c73e76e97
+Content-Type: q7/binary
+Entry-Name: contents/example-project/maven-module/.project
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnStkbEOwiAQhmdNfAfT3aJODrRN1Di6
+qA+AcGloCjRAGx9foFRTTRMHt/v/u5/vAFw8RL3sQBuuZJZs0nWyBEkV47LMktv1tNolRb6Y40arCqg9
+gqGaN9ZNO3eGJRGQC9KBXAnF2howCpbvUSUESJtjNFTejQeZINBI3Vtes0sD1KsoDy5KJAtOxCldpkBr
+3hhIK2ZTqrQrSEdCAPR7BZcgumw920SNxgZGX5SfuGILPTfcfbv/Bzk6wwM4qG01xOleTN+97/sFwtxU
+5mPv81dqqD329T3jX38CUEsHCJVOkNHZAAAANAIAAFBLAQIUABQACAAIAAAAIQCVTpDR2QAAADQCAAAI
+AAAAAAAAAAAAAAAAAAAAAAAuY29udGVudFBLBQYAAAAAAQABADYAAAAPAQAAAAA=
+------=_contents/example-project/maven-module/.project-198bf322-d681-3470-944a-db7c73e76e97--

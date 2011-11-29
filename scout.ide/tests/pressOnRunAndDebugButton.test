@@ -1,0 +1,97 @@
+--- Q7 testcase ---
+Q7-vendor: www.xored.com/q7
+Format-Version: 1.0
+Element-Name: pressOnRunAndDebugButton
+External-Reference: 
+Element-Version: 3.0
+Contexts: _d6ToQBA2EeGsidg8rWUY2Q,_OeWmoBDxEeG4uLPhxlgFkQ
+Save-Time: 11/23/11 3:47 PM
+Id: _iRrTEBDkEeG4uLPhxlgFkQ
+
+------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa
+Entry-Name: .description
+Content-Type: text/plain
+
+Pre-conditions:
+There is an empty Scout project
+
+Actions:
+1. Select "ui.swing" in Scout Explorer
+2. Press on "Run" button in production section
+3. Make sure that process was run, message is displayed in the Console view
+4. Clear Console view
+5. Press on "Debug" button in production section
+6. Make sure that process was run, message is displayed in the Console view
+7. Clear Console view
+8. Make sure that these actions are reproduced for development section
+9. Make sure that these actions are reproduced for ui.swt 
+------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa--
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac
+Entry-Name: .content
+Content-Type: text/ecl
+
+get-view "Scout Explorer" | get-tree | select "Scout Projects/org.eclipse.scout.helloworld/ui.swing"
+get-view "Scout Object Properties" | get-section Links | get-group production | get-link 
+    -after [get-link "open config.ini"] | click
+with [get-view "Scout Object Properties" | get-section Links | get-group "production.*" | get-link 
+    -after [get-link "open config.ini"] -index 2] {
+    get-property enablement | equals true | verify-true
+    get-property toltip | equals "Stop product..." | verify-true
+}
+get-view "Scout Object Properties" | get-section Links | get-group "production.*" | get-link 
+    -after [get-link "open config.ini"] -index 2 | click -nowait
+get-view Console | get-editbox | get-property text | contains "!SESSION " | verify-true
+get-view Console | get-editbox | get-property text | contains "org.eclipse.scout.helloworld.ui.swing.product" | verify-true
+get-view Console | get-button "Clear Console" | click
+get-view Console | get-editbox | get-property text | equals "" | verify-true
+with [get-view "Scout Object Properties" | get-section Links] {
+    get-group production | get-link -after [get-link "open config.ini"] -index 1 | click
+    get-group "production.*" | get-link -after [get-link "open config.ini"] -index 2 | click -nowait
+}
+get-view Console | get-editbox | get-property text | contains "!SESSION" | verify-true
+get-view Console | get-editbox | get-property text | contains "org.eclipse.scout.helloworld.ui.swing.product" | verify-true
+get-view Console | get-button "Clear Console" | click
+get-view "Scout Object Properties" | get-section Links | get-group "development.*" | get-link 
+    -after [get-link "open config.ini"] | click
+get-view Console | get-button Terminate | click
+get-view Console | get-button "Clear Console" | click
+with [get-view "Scout Object Properties" | get-section Links] {
+    get-group "development.*" | get-link -after [get-link "open config.ini"] -index 1 | click
+    get-group "development.*" | get-link -after [get-link "open config.ini"] -index 2 | click
+}
+get-view Console | get-button "Clear Console" | click
+get-view "Scout Explorer" | get-tree | select "Scout Projects/org.eclipse.scout.helloworld/ui.swt"
+get-view "Scout Object Properties" | get-label "ui.swt" | get-property caption | equals "ui.swt" | verify-true
+with [get-view "Scout Object Properties" | get-section Links] {
+    get-group production | get-link -after [get-link "open config.ini"] | click
+    get-group "production.*" | get-link -after [get-link "open config.ini"] -index 2 | click
+}
+get-view Console | get-editbox | get-property text | contains "!SESSION " | verify-true
+get-view Console | get-editbox | get-property text | contains "org.eclipse.scout.helloworld.ui.swt.product" | verify-true
+get-view Console | get-button "Clear Console" | click
+with [get-view "Scout Object Properties" | get-section Links] {
+    get-group production | get-link -after [get-link "open config.ini"] -index 1 | click
+    get-group "production.*" | get-link -after [get-link "open config.ini"] -index 2 | click
+}
+get-view Console | get-editbox | get-property text | contains "!SESSION " | verify-true
+get-view Console | get-editbox | get-property text | contains "org.eclipse.scout.helloworld.ui.swt.product" | verify-true
+get-view Console | get-button "Clear Console" | click
+get-view "Scout Object Properties" | get-section Links | get-group "development.*" | get-link 
+    -after [get-link "open config.ini"] | click
+get-view Console | get-button Terminate | click
+get-view "Scout Object Properties" | get-section Links | get-group "development.*" | get-link 
+    -after [get-link "open config.ini"] -index 1 | click
+get-view Console | get-button Terminate | click
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac--
+------=_.q7.content-3d2e0690-ce48-3609-83e0-c704d49f1eaf
+Content-Type: q7/binary
+Entry-Name: .q7.content
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnR9kFFLwzAUhd8F/0PIu4lWcaO0Gyud
+IiizczJ9GrO5ZmFN0iWpzf69qbjKRHy7957vnpuTZOxlhT7AWKFVii/IOUagSs2E4ilu3PvZEI9HpydJ
+qSXx2gAjuwGxJai1ETp++i6QlyLuXaLOJfgqG4d5ijfO1TGlbdsSLTnRhtOXh7sD8qdzvxRU+qXS3YAe
+VAJlGGGk1hJSXBuwdqbmjZoolsNbw7PGOa3wT67L7kWCpXgl5mYxzfLtFG6vmvvHja/4zbbAyO3rYAVl
+hUNahEJe5cA7O1qx64UuskkUNqxgfGiWz69RkdCe+MXPYCl1lvvjC0d81/z3nQH5BFBLBwjGD5Hz+wAA
+AJkBAABQSwECFAAUAAgACAAAACEAxg+R8/sAAACZAQAACAAAAAAAAAAAAAAAAAAAAAAALmNvbnRlbnRQ
+SwUGAAAAAAEAAQA2AAAAMQEAAAAA
+------=_.q7.content-3d2e0690-ce48-3609-83e0-c704d49f1eaf--

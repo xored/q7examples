@@ -1,0 +1,173 @@
+--- Q7 testcase ---
+Q7-vendor: www.xored.com/q7
+Format-Version: 1.0
+Element-Name: Example Project
+Element-Version: 2.0
+Save-Time: 11/28/11 4:45 PM
+Id: _UC5bsBmhEeGCX_GL4ahY_Q
+
+------=_contents/example-project/target/classes/META-INF/maven/org.xored.examples/example-project/pom.properties-f984af0b-6046-3c8f-928b-ec7d7efa5297
+Content-Type: q7/binary
+Entry-Name: contents/example-project/target/classes/META-INF/maven/org.xored.examples/example-project/pom.properties
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnRlj0ELgkAQhe+C/2Ggc6JSEYKHiKig
+LNA67WVbJ7HSWWY3s3/fEl6i2/C9mffejNbYIkuLJVzesJcdtrBtLVaO1dTClRhW6lFrg7432juSUQfx
+HKJZMgmTyRSyw7mAOIwi3+uQjTtKoyAc59nimG8Ohe9VTE+9LVPiKuiJsQywl41+oPG9JsZAM91Q2Uw2
+mA7KeGA/CztS307pUiRCnIwLE2L1rNwDQryI70ZL5cY/D8m2vkplXYc/7QNQSwcIh9ZXoLoAAAAAAQAA
+UEsBAhQAFAAIAAgAAAAhAIfWV6C6AAAAAAEAAAgAAAAAAAAAAAAAAAAAAAAAAC5jb250ZW50UEsFBgAA
+AAABAAEANgAAAPAAAAAAAA==
+------=_contents/example-project/target/classes/META-INF/maven/org.xored.examples/example-project/pom.properties-f984af0b-6046-3c8f-928b-ec7d7efa5297--
+------=_contents/example-project/target/classes/META-INF/MANIFEST.MF-7971d2f6-28c0-3cb2-bb0b-1fc32d768cb0
+Content-Type: q7/binary
+Entry-Name: contents/example-project/target/classes/META-INF/MANIFEST.MF
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnTzTczLTEstLtENSy0qzszPs1Iw1DPg
+5XIqzcwp0XWqtFJwLU1PzUuFiKToeqVkg1SY6RnEG1nycjkXpSaWpKaAFfomlqXmKXjmlaSmFyWWAI1S
+SMsvUnBNzsksKAbq5+UCAFBLBwj6ZH8XYgAAAGsAAABQSwECFAAUAAgACAAAACEA+mR/F2IAAABrAAAA
+CAAAAAAAAAAAAAAAAAAAAAAALmNvbnRlbnRQSwUGAAAAAAEAAQA2AAAAmAAAAAAA
+------=_contents/example-project/target/classes/META-INF/MANIFEST.MF-7971d2f6-28c0-3cb2-bb0b-1fc32d768cb0--
+------=_contents/example-project/target/classes/org/xored/examples/App.class-d2b3f480-e9ce-3bd8-a82a-0aa708adefde
+Content-Type: q7/binary
+Entry-Name: contents/example-project/target/classes/org/xored/examples/App.class
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnRtkMtOwkAUhv+RSy9WQRDEO7gCFzau
+XGBMjIlx0agJBheuBpjUIW2nKcXgY+lCExc+gA9lPC0kxKSzOP+cM+c/8838/H59AzjFkYYVhrqKXHum
+IjGyxYz7oScm9mUYasgzlMf8hdseD1z7bjAWw5iheC4DGV8w5NqdPkP+So2EiRwMCwUUGUqODMTt1B+I
+6IEPPMFQcdSQe30eySRfFPPxs5wwNJzs27vU4XMZEF77yVlS9OJIBm630zewgaqGyj/G3uskFr6FTdSI
+T00JtzY3S2XfkzMmv+B+V8cWg3UjPE81H1XkjVomtrGrYYehmmGwsId9Bi1MSh5R1dpZUATNI5eeVc1g
+ZjB7ahoNxbVMPkCnV54kTWiBYJGsFdrRJ1LUKLNJGWnh+BP6W3psUiymRQ2rFK15A+kaqYF1lBbms3QY
+1d5RrtQ/0FgOMElBdp1syyEGDnBIytBMO1t/UEsHCA0749FdAQAAJwIAAFBLAQIUABQACAAIAAAAIQAN
+O+PRXQEAACcCAAAIAAAAAAAAAAAAAAAAAAAAAAAuY29udGVudFBLBQYAAAAAAQABADYAAACTAQAAAAA=
+
+------=_contents/example-project/target/classes/org/xored/examples/App.class-d2b3f480-e9ce-3bd8-a82a-0aa708adefde--
+------=_contents/example-project/src/test/java/org/xored/examples/AppTest.java-e792a02d-4116-3708-b9cb-df5d3add3e90
+Content-Type: q7/binary
+Entry-Name: contents/example-project/src/test/java/org/xored/examples/AppTest.java
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnR9kcFugzAMhu95Ch8p0uA+Lp1632Ft
+HyAFw7JSEjnOijT13eeEsk4dqw+JZP/5/w/jdH3UHYKlrhgtYVPgqE+uR18pZU7OEsNHGAwXLekTni0d
+ix16rh4NN9rjQ8E2GBaFKvNcQQ57UQBLH1pL4E3MhxfnChmWyoVDb2qoe+197EYDUCCFI+PQeJgz1Vdq
+J9dYOWwINSPwO07+dVRNs1mydlrY0vhVGGGIh20X35TpvgJdUTLYMpmhuzmskmpiieWDQ8p+zas0uqh7
+2jUhBxpStI8rShzyzMMB5whslmA8a5Yr7SY9ze4prt4DnuHnF2TzRxTTdv8lezOdDWTDtGt4flotQXxa
+0yRGcf2TL/5IvKMgqSznLeyivgFQSwcIUZL2vRoBAACGAgAAUEsBAhQAFAAIAAgAAAAhAFGS9r0aAQAA
+hgIAAAgAAAAAAAAAAAAAAAAAAAAAAC5jb250ZW50UEsFBgAAAAABAAEANgAAAFABAAAAAA==
+------=_contents/example-project/src/test/java/org/xored/examples/AppTest.java-e792a02d-4116-3708-b9cb-df5d3add3e90--
+------=_contents/example-project/pom.xml-e2f41fc0-aa53-34d6-85a3-f65d7b003ed4
+Content-Type: q7/binary
+Entry-Name: contents/example-project/pom.xml
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnSNkFFPwjAUhd/5Fcve1w7xgZC6xAeN
+JiAkoPG1ttcx3Nqm7dj897bdgC0G49t6znfvPTtEaXkAZqO2KoW5i/fWqgXGFT2CQFRRtgckdY436xW+
+RSlK445ctKY4003ToGYWuJs0neL31XLrBiuaFMJYKhjEkyhyEwsT5KVk1BZS/ONcdI1oDe/EJHDIvePM
+XSGV5FC+gTbuQBY8gkfaxFO5lrV65plbhVqpgSNoaaVKMASfPM9RbYtPyqx79kDSN0bwwPPosd8/RWmy
+fbnfbJ/WO4JPqidc+i+aFyLPlKwIvjxDJEEr+H0kqN6udZldKYNgb4Ylbk6BywXGD3WCX4Q+6qLkyMha
+M3gQTHJ/93X3mMxdkL8YvxUP13qBgwLBQbDLobP03QmDkg+1KOyo12AP+uuJcaMBOvU3Q3M0HdUZbMNc
+sMyCcdPdd5cGj+MM3iHx+Z+zyQ9QSwcIAXwQe1YBAAACAwAAUEsBAhQAFAAIAAgAAAAhAAF8EHtWAQAA
+AgMAAAgAAAAAAAAAAAAAAAAAAAAAAC5jb250ZW50UEsFBgAAAAABAAEANgAAAIwBAAAAAA==
+------=_contents/example-project/pom.xml-e2f41fc0-aa53-34d6-85a3-f65d7b003ed4--
+------=_contents/example-project/.settings/org.eclipse.core.resources.prefs-ed44ecf8-d9ba-3171-b323-51cb3fcd05bc
+Content-Type: q7/binary
+Entry-Name: contents/example-project/.settings/org.eclipse.core.resources.prefs
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnRT9s3PU/DLL1MwslAwNLMyMbAyMVbw
+8w8LUTAyMDTk5UpNzsksKE7VKyhKTUstSs1LTi3WK0stKs7Mz7MFSecl56dk5qXr6xcXJevnJmbm6Wcl
+liXahoa46VqgS5ekFpdgl7YpKMrPSk0usYPJAABQSwcI4dzs0m8AAACXAAAAUEsBAhQAFAAIAAgAAAAh
+AOHc7NJvAAAAlwAAAAgAAAAAAAAAAAAAAAAAAAAAAC5jb250ZW50UEsFBgAAAAABAAEANgAAAKUAAAAA
+AA==
+------=_contents/example-project/.settings/org.eclipse.core.resources.prefs-ed44ecf8-d9ba-3171-b323-51cb3fcd05bc--
+------=_contents/example-project/.classpath-f71060a1-b0bf-3873-94f7-2e3ed08dfdb9
+Content-Type: q7/binary
+Entry-Name: contents/example-project/.classpath
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnSdkUFLw0AQhc8K/oew9+zagOAhsYQS
+0WKjNLHXsu4O6dZkNuzOFvvvbaqlUkTR4wzvfbx5k47fujbagPPGYsZG/JJFgMpqg03Gnuvb+JqNby7O
+U9VK73tJq91wdpwAyW2jV4M6Y94pFtlAfaCMkXQNkNgLwbNoEO8lopMGxVpuJBN/YxF4ir8BDvtfgcri
+wWNdw0G1pvfA15p4KwOq1e5gPp0Xy8ljWef3ZTEXpzqDBA5lyzW8hIYH8+kExyuSqKXTi1m97UFMk6qI
+R/zqH4G6BPgsXxRlspw85FX1lNd3x0w/AT/aOjBP+h98qfj6xHdQSwcIqqi4q/AAAAD6AQAAUEsBAhQA
+FAAIAAgAAAAhAKqouKvwAAAA+gEAAAgAAAAAAAAAAAAAAAAAAAAAAC5jb250ZW50UEsFBgAAAAABAAEA
+NgAAACYBAAAAAA==
+------=_contents/example-project/.classpath-f71060a1-b0bf-3873-94f7-2e3ed08dfdb9--
+------=_contents/example-project/src/main/java/org/xored/examples/App.java-ea6d1358-4d8d-3e2c-8138-5379fbbc4efb
+Content-Type: q7/binary
+Entry-Name: contents/example-project/src/main/java/org/xored/examples/App.java
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnQtjbEOwjAQQ/f7CtOJdkg/oBMbewcG
+xHA0URRxbaIkhSLUfye0WJasOz3LgYcHWwMfrVp8NFqZhccgJnVEbdMQGpyNiMfLR9GHche3FOa7uAGD
+cEo4hQD6EIr+/5Q5l3h6pzGym47oc3STvd7A0SbUG7xXfurfKZtR+TmrULgspVHtu5dtt0LdbfRKK30B
+UEsHCBrMoPmOAAAAtQAAAFBLAQIUABQACAAIAAAAIQAazKD5jgAAALUAAAAIAAAAAAAAAAAAAAAAAAAA
+AAAuY29udGVudFBLBQYAAAAAAQABADYAAADEAAAAAAA=
+------=_contents/example-project/src/main/java/org/xored/examples/App.java-ea6d1358-4d8d-3e2c-8138-5379fbbc4efb--
+------=_contents/example-project/target/classes/META-INF/maven/org.xored.examples/example-project/pom.xml-ca590b9f-9566-32fb-a924-5e6dca54f9b1
+Content-Type: q7/binary
+Entry-Name: contents/example-project/target/classes/META-INF/maven/org.xored.examples/example-project/pom.xml
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnSNkFFPwjAUhd/5Fcve1w7xgZC6xAeN
+JiAkoPG1ttdR3Nql7dj897bdgC0G49t6znfvPTuk0uoAzEZtWUhzF++trRYYl/QIEtGKsj0gpXO8Wa/w
+LUpRGnfkojXiTDdNg5pZ4G7SdIrfV8utGyxpIqSxVDKIJ1HkJhYmyEvFqBVK/uNcdI1oDe/EJHDIvePM
+XSGl4lC8gTbuQBY8gkfaxFO5VnX1zDO3CrVKA0fQ0rIqwBB88jxHtRWflFn37IGkb4zggefRY79/itJk
++3K/2T6tdwSfVE+49F80FzLPDlQTfHmGSJKW8PtIUL1d6yK7UgbB3gxL3FwFLhcYP9QJfhH6qEXBkVG1
+ZvAgmeL+7uvuMZm7IH8xfiservUChwokB8kuh87SdycMSj7UUthRr8Ee9NcT40YDdOpvhuZoOqoz2Ia5
+YJkF46a77y4NHscZvEPi8z9nkx9QSwcIY5zPb1YBAAACAwAAUEsBAhQAFAAIAAgAAAAhAGOcz29WAQAA
+AgMAAAgAAAAAAAAAAAAAAAAAAAAAAC5jb250ZW50UEsFBgAAAAABAAEANgAAAIwBAAAAAA==
+------=_contents/example-project/target/classes/META-INF/maven/org.xored.examples/example-project/pom.xml-ca590b9f-9566-32fb-a924-5e6dca54f9b1--
+------=_contents/example-project/.project-b0e0de3f-7ad4-36dd-b351-411d757420e2
+Content-Type: q7/binary
+Entry-Name: contents/example-project/.project
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnStkb0OwiAUhWdNfIeme4t2csCaqHF0
+UR8A6U2DKT8B2vTxBUo11Zg4uN1zOCffBfC2503SgTZMik26ypdpAoLKiol6k14vx2ydbsvFHCst70Dt
+AQzVTFmXdu4MC8KhhJ5w1UAWMxgF1x9TyTkIW2I0Tt6NORMEmqhby5rqrIB6FeXeVYmoghOJUtc50IYp
+A/m9sjmV2g2kI6EA+rWCaxBdt55tokZTA6MPyk9cXsDA5aQDUez+QY7O+AAOalsNMT2I73cfzv0CIfet
+87b36aM1zh77/J7pxz8AUEsHCEnVSnXZAAAANwIAAFBLAQIUABQACAAIAAAAIQBJ1Up12QAAADcCAAAI
+AAAAAAAAAAAAAAAAAAAAAAAuY29udGVudFBLBQYAAAAAAQABADYAAAAPAQAAAAA=
+------=_contents/example-project/.project-b0e0de3f-7ad4-36dd-b351-411d757420e2--
+------=_contents/example-project/target/test-classes/org/xored/examples/AppTest.class-345f5b2c-7efd-38fb-88cb-6b0bea5d8d07
+Content-Type: q7/binary
+Entry-Name: contents/example-project/target/test-classes/org/xored/examples/AppTest.class
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnR1UMFKw0AUnG3TRGO0GtvaalUEhbaC
+QTxWClLwFHppKehtq2tNTZuySdTP0pOi4Af4UeLbGES0JrD7dmfevJl9/3h5A3CIbQMZhvVADp37QIpL
+R9zz8dQXoXMynfZEGBnQGMqjeOJFzpXkY3EXyBtHIW0eCgb92COoxVCsuSN+yx2fT4ZON5LeZNis9xm0
+dnApTGQxbyEHnSHvehPRiccDIXt84JOG7QYX3O9z6alzeqlF117IUHX/99ZkmIto75AtpfJnPkMujL2I
+wHKt7s4K0TSwylCZBXVVpwkbRWW8xFD4mbDt8zBMAhrKAjliyNbqfRP0nBY2UGUwiSJk1JOxylM7V2yz
+G8TyQpx6KqOVBjlQutih1izUl6WK3opWg04tZOgH9Mb+E+YeqcrApNVMbgvELGKBqtIXCxYWExUdS8iT
+xjyWsZJqNdIJ5ivsM5s9ofDwrafmAdVESykxrKGc9h3RrtCc9ozKbwu70LCXtFlfpNQCw2bC3PoEUEsH
+CBlAz+57AQAAbwIAAFBLAQIUABQACAAIAAAAIQAZQM/uewEAAG8CAAAIAAAAAAAAAAAAAAAAAAAAAAAu
+Y29udGVudFBLBQYAAAAAAQABADYAAACxAQAAAAA=
+------=_contents/example-project/target/test-classes/org/xored/examples/AppTest.class-345f5b2c-7efd-38fb-88cb-6b0bea5d8d07--
+------=_contents/example-project/.settings/org.eclipse.jdt.core.prefs-cbfe0074-80b6-374c-82e5-0b89b21adbd5
+Content-Type: q7/binary
+Entry-Name: contents/example-project/.settings/org.eclipse.jdt.core.prefs
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnSNTksKwjAQ3QveIeA+NLWKFHoEq4i4
+T5tpiCQzYRLr9c0m67p5PHjfw5VQjLSK9iLUue+avjuK8fZ6irZRar+D2buYQEaGBRhwhiRX4OQIhyIT
+W1ktb5PlTAwFQnQeuBADFlBmzRby3eu8EIdBydN2MkTvdJn7xx2ZJg9BlvbJGQP4qGeHr2Z0aLcaEn24
+bv0AUEsHCPUknrqRAAAAEwEAAFBLAQIUABQACAAIAAAAIQD1JJ66kQAAABMBAAAIAAAAAAAAAAAAAAAA
+AAAAAAAuY29udGVudFBLBQYAAAAAAQABADYAAADHAAAAAAA=
+------=_contents/example-project/.settings/org.eclipse.jdt.core.prefs-cbfe0074-80b6-374c-82e5-0b89b21adbd5--
+------=_.q7.content-3d2e0690-ce48-3609-83e0-c704d49f1eaf
+Content-Type: q7/binary
+Entry-Name: .q7.content
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnTVVt1v2jAQf5+0/yHyO/ZWbeqEYBVD
+UCGNalOZ2j0hLzkgLI5T24X8+bt8AYkNSV+67c2++93X784nD25SEXk7UDqU8ZC8p++IB7EvgzBeD8mz
+WfU+kZvPb98MfCloKhUE9Oma7qX6rRPuQ/+hOo1lbCA1XirC/sHdVeYOA8S6j/Ih2RiT9Bnb7/dUijWV
+as0e57MK4g5xsGKoZ7mePV2zg56CjzLixVwgdpJykUTgfVNyC74hXhgMyfLH+OMv/UVsJnA7flzefv3A
+Nz+X34nnR8DVwzHSikcaCJbreVgwFhSb/ILXpHCoyzhQxOmVYlLCELgKI6hQ1I+4Rt9mQ9gZROXgjD7J
+OBFRTS2jAAmuHGgwBpuljyk0XCDLyFEUJhpoRhVVoOWz8kFjcFjpE98XLLeBKaxfYCOuwG0zYGUR56rS
+yq/XU9MKHsanaguw5TteB1gQzLOJsDD5sNkoC1cOg3ZBG/SMkoTm2TGXW4uWNo1b7pI6ZfUyDGjz/9K6
+wOz/FWpb59twtQZzYcTzxdEsvYGZTxaj3uxuarfkhJn56G42ndwv6HxqEWM9qx3Erd3LHnixpS/1x91K
+e12ezTtbfIhOQJkQtLOnrauyrZmXNN3b3+UNdHsBL5h/a6nkA+Oo/dU2R6/LyP4NavLF8Jr0NCUDVn0e
+ip8FO34tsnOnfxVi/wBQSwcItWAr7AQCAACrCQAAUEsBAhQAFAAIAAgAAAAhALVgK+wEAgAAqwkAAAgA
+AAAAAAAAAAAAAAAAAAAAAC5jb250ZW50UEsFBgAAAAABAAEANgAAADoCAAAAAA==
+------=_.q7.content-3d2e0690-ce48-3609-83e0-c704d49f1eaf--
+------=_contents/example-project/.settings/org.eclipse.m2e.core.prefs-4d0e56f6-17e3-3abf-95be-59a6715d1d22
+Content-Type: q7/binary
+Entry-Name: contents/example-project/.settings/org.eclipse.m2e.core.prefs
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnRNy0EKwjAQBdB9IHcIdF+atogUcgRb
+F6LrMvxCNGTCTMz51Z3797oLZ7dyc+PZ+dMyD8s8uXW739w4eG/NTjU2XIWPmKDBGlCKRdEXwQFBJmjf
+IBo5h68XKKeGB8tLy06/+QRVDVXesOZPfgBQSwcIdov0emwAAAB6AAAAUEsBAhQAFAAIAAgAAAAhAHaL
+9HpsAAAAegAAAAgAAAAAAAAAAAAAAAAAAAAAAC5jb250ZW50UEsFBgAAAAABAAEANgAAAKIAAAAAAA==
+
+------=_contents/example-project/.settings/org.eclipse.m2e.core.prefs-4d0e56f6-17e3-3abf-95be-59a6715d1d22--

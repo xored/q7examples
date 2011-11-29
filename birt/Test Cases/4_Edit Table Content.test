@@ -1,0 +1,384 @@
+--- Q7 testcase ---
+Q7-vendor: www.xored.com/q7
+Format-Version: 1.0
+Element-Name: 4_Edit Table Content
+External-Reference: http://jira4.xored.com/browse/QS-1457
+Element-Version: 3.0
+Contexts: _Wvr-EA9ZEeGxvukDpvV-ug,_ZQowgA9cEeGxvukDpvV-ug
+Save-Time: 11/22/11 10:19 PM
+Id: _urMNkA9cEeGxvukDpvV-ug
+
+------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa
+Entry-Name: .description
+Content-Type: text/plain
+
+TEST STEPS
+
+1. Open report layout;
+2. Select Customername in Data Sets and drag it into a grid cell;
+3. Select Phone in Data Sets and drag it into a grid cell;
+4. Drag State in Group Header Row cell, configure it;
+5. Add new data binding for City;
+6. Select State cell in a grid and add group below - select City.
+------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa--
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac
+Entry-Name: .content
+Content-Type: text/ecl
+
+get-view Navigator | get-tree | select "MyProject/Customers.rptdesign" | double-click -nowait
+with [get-view "Data Explorer"] {
+    click -nowait
+    with [get-tree] {
+        select "Data Sets/Customers/CUSTOMERNAME"
+        get-item "Data Sets/Customers/CUSTOMERNAME" | drag-start 53 12 none
+    }
+}
+with [get-editor "Customers.rptdesign" | get-diagram | get-edit-part -className ReportDesignEditPart] {
+    drag-enter "-13" 54 none -detail 2 -operation 3
+    drag-over 80 60 none -detail 1 -operation 3
+    with [get-edit-part -className TableEditPart] {
+        get-edit-part -className TableCellEditPart | drag-over 266 96 none -detail 1 -operation 3
+        get-figure "0/2/1" | drag-over 283 84 none -operation 3
+        get-edit-part -className TableCellEditPart -index 3 | drag-over 297 85 none -detail 1 -operation 3
+        get-edit-part -className TableCellEditPart -index 4 | drag-over 113 96 none -detail 1 -operation 3
+        get-figure "0/2/9" | drag-over 111 84 none -operation 3
+        get-edit-part -className TableCellEditPart -index 7 | drag-over 109 91 none -detail 1 -operation 3
+    }
+    drag-exit -button none
+    get-edit-part -className TableEditPart | get-edit-part -className TableCellEditPart -index 7 
+        | drag-accept 109 91 none -detail 1 -operation 3
+}
+get-view "Data Explorer" | get-tree | get-item "Data Sources" | drag-set-data "-41" -button none
+get-editor "Customers.rptdesign" | get-diagram | get-edit-part -className ReportDesignEditPart | get-edit-part 
+    -className TableEditPart | get-edit-part -className TableCellEditPart -index 7 | drop 109 91 none -detail 1 
+    -operation 3
+with [get-view "Data Explorer" | get-tree] {
+    get-item "Data Sources" | drag-end "-41" -button none -detail 2
+    select "Data Sets/Customers/PHONE"
+    get-item "Data Sets/Customers/PHONE" | drag-start 32 7 none
+}
+with [get-editor "Customers.rptdesign" | get-diagram | get-edit-part -className ReportDesignEditPart | get-edit-part 
+    -className TableEditPart] {
+    with [get-edit-part -className TableCellEditPart -index 3] {
+        drag-enter 192 88 none -detail 2 -operation 3
+        drag-over 276 88 none -detail 1 -operation 3
+    }
+    get-figure "0/2/6" | drag-over 47 88 none -detail 1 -operation 3
+    get-edit-part -className TableCellEditPart -index 4 | drag-over 297 89 none -detail 1 -operation 3
+    get-figure "0/2/8" | drag-over 46 89 none -detail 1 -operation 3
+    get-edit-part -className TableCellEditPart -index 5 | drag-over 206 95 none -detail 1 -operation 3
+    get-figure "0/2/11" | drag-over 185 84 none -operation 3
+    get-edit-part -className TableCellEditPart -index 8 | drag-over 156 88 none -detail 1 -operation 3
+    get-edit-part -className TableCellEditPart -index 3 | drag-exit -button none
+    get-edit-part -className TableCellEditPart -index 8 | drag-accept 156 88 none -detail 1 -operation 3
+}
+get-view "Data Explorer" | get-tree | get-item "Data Sources" | drag-set-data "-41" -button none
+get-editor "Customers.rptdesign" | get-diagram | get-edit-part -className ReportDesignEditPart | get-edit-part 
+    -className TableEditPart | get-edit-part -className TableCellEditPart -index 8 | drop 156 88 none -detail 1 
+    -operation 3
+with [get-view "Data Explorer" | get-tree] {
+    get-item "Data Sources" | drag-end "-41" -button none -detail 2
+    select "Data Sets/Customers/STATE"
+    get-item "Data Sets/Customers/STATE" | drag-start 11 10 none
+    get-item "Data Sets/Customers/ADDRESSLINE2" | drag-enter 171 13 none -detail 2 -operation 3
+    get-item "Data Sets/Customers/ADDRESSLINE2" | drag-over 171 13 none -detail 2 -operation 3
+    get-item "Data Sets/Customers/ADDRESSLINE2" | drag-exit -button none
+}
+with [get-editor "Customers.rptdesign" | get-diagram | get-edit-part -className ReportDesignEditPart | get-edit-part 
+    -className TableEditPart] {
+    drag-enter 76 69 none -detail 2 -operation 3
+    drag-over 76 69 none -detail 2 -operation 3
+    get-edit-part -className TableCellEditPart -index 6 | drag-over 179 85 none -detail 1 -operation 3
+    get-figure "0/2/7" | drag-over 192 81 none -operation 3
+    get-edit-part -className TableCellEditPart -index 3 | drag-over 193 87 none -detail 1 -operation 3
+    drag-exit -button none
+    get-edit-part -className TableCellEditPart -index 3 | drag-accept 193 87 none -detail 1 -operation 3
+}
+get-view "Data Explorer" | get-tree | get-item "Data Sources" | drag-set-data "-41" -button none
+get-editor "Customers.rptdesign" | get-diagram | get-edit-part -className ReportDesignEditPart | get-edit-part 
+    -className TableEditPart | get-edit-part -className TableCellEditPart -index 3 | drop 193 87 none -detail 1 
+    -operation 3
+get-view "Data Explorer" | get-tree | get-item "Data Sources" | drag-end "-41" -button none -detail 2
+with [get-editor "Customers.rptdesign" | get-diagram] {
+    with [get-edit-part -className ReportDesignEditPart | get-edit-part -className TableEditPart | get-edit-part 
+        -className TableCellEditPart -index 6] {
+        mouse-move 179 90 button1 -height 26 -width 255
+        mouse-press 179 90 button1 -height 26 -width 255
+        mouse-release 179 90 button1 524288 -height 26 -width 255
+        mouse-press 179 90 button1 -height 26 -width 255
+        mouse-double-click 179 90 button1 -height 26 -width 255
+        mouse-release 179 90 button1 524288 -height 26 -width 255
+    }
+    with [get-figure "0/1/0/0"] {
+        mouse-hover 62 186 -height 1055 -width 815
+        mouse-move 62 186 button1 -height 1055 -width 815
+        mouse-press 62 186 button1 -height 1055 -width 815
+        mouse-release 62 186 button1 524288 -height 1055 -width 815
+    }
+}
+with [get-view "Property Editor - Table"] {
+    get-tab-folder | get-tab-item Binding | click
+    get-button "Add..." | click
+}
+with [get-window "New Data Binding"] {
+    get-editbox -after [get-label "Column Binding Name:"] | set-text City
+    get-editbox -after [get-label "Display Name:"] | set-text CITY
+    get-button -after [get-label "Expression:"] | click
+    with [get-window "Expression Builder (JavaScript)"] {
+        get-table | select "Available Data Sets" | double-click -nowait
+        get-tree | select Customers
+        get-table -after [get-label "Double Click to insert:"] -index 1 | select CITY | double-click -nowait
+        get-button OK | click
+    }
+    get-button OK | click
+}
+with [get-editor "Customers.rptdesign" | get-diagram] {
+    with [get-edit-part -className ReportDesignEditPart] {
+        mouse-hover 260 274 -height 1055 -width 815
+        with [get-edit-part -className TableEditPart | get-handle RowHandle -index 1] {
+            mouse-move 24 12 button1 -height 26 -width 40
+            mouse-press 24 12 button1 -height 26 -width 40
+        }
+        mouse-drag 9 101 -mask 524288 -height 1055 -width 815
+    }
+    mouse-drag 35 127 -mask 524288 -height 1095 -width 855
+    with [get-edit-part -className ReportDesignEditPart] {
+        mouse-drag 9 101 button1 524288 -height 1055 -width 815
+        mouse-release 9 101 button1 524288 -height 1055 -width 815
+        with [get-edit-part -className TableEditPart | get-handle RowHandle -index 1] {
+            mouse-hover 23 12 -height 26 -width 40
+            mouse-press 23 12 button3 -height 26 -width 40
+            mouse-release 23 12 button3 2097152 -height 26 -width 40
+        }
+    }
+    get-menu "Insert Group/Below" | click
+}
+with [get-window "New Group"] {
+    get-editbox -after [get-label "Name:"] | set-text City
+    get-combo -after [get-label "Group On:"] | set-text City
+    get-editbox -after [get-label "Name:"] | set-text CITY
+    get-button OK | click
+}
+with [get-editor "Customers.rptdesign"] {
+    with [get-diagram] {
+        with [get-edit-part -className ReportDesignEditPart] {
+            with [get-edit-part -className TableEditPart | get-handle ColumnHandle] {
+                mouse-move 158 11 button1 -height 19 -width 255
+                mouse-press 158 11 button1 -height 19 -width 255
+            }
+            get-edit-part -className GridEditPart | mouse-release 158 28 button1 524288 -height 31 -width 572
+            with [get-edit-part -className TableEditPart | get-handle ColumnHandle] {
+                mouse-press 158 11 button3 -height 19 -width 255
+                mouse-release 158 11 button3 2097152 -height 19 -width 255
+            }
+        }
+        get-menu "Insert/Column to the Right" | click
+    }
+ }  
+    
+
+  
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac--
+------=_.q7.content-3d2e0690-ce48-3609-83e0-c704d49f1eaf
+Content-Type: q7/binary
+Entry-Name: .q7.content
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnR9UdFOgzAUfTfxH5q+0zrF4AhsWZQY
+H2YyZ9TshbByh3W0ZaVA/fsVs2Gmxrfbe84999zTaGpFiVrQNVcyxiNygRFIpnIuixg3ZuPd4Onk/Cxi
+ShCrNORkF5Cagcw0V+HyUCAreDioXPYqTlfWoevH+N2YKqS06zqiREGULujb/OFI+VN5GHIo/ULpLqBH
+lABzLYxkJiDGfprk3KDnbF0CulXSgDT4+6ar3g3PY5w2ev64nY1ZAve2bbZ3VfviNQVG5rNyMsBKd7s1
+oGVWPsEGtAsCBiMfXGf+wWhvaq1VVwNdLL2Rfx1glxFCLiW33Zp6kr622ktm49XprogOjB/81UJ1xS9v
+J/z+8d8nOMoeUEsHCI0Ya0wPAQAAzwEAAFBLAQIUABQACAAIAAAAIQCNGGtMDwEAAM8BAAAIAAAAAAAA
+AAAAAAAAAAAAAAAuY29udGVudFBLBQYAAAAAAQABADYAAABFAQAAAAA=
+------=_.q7.content-3d2e0690-ce48-3609-83e0-c704d49f1eaf--
+------=_.content.raw-c2dfba28-ebef-3afe-bd39-76376d333cc9
+Content-Type: q7/binary
+Entry-Name: .content.raw
+
+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
+KwAAAAA=
+------=_.content.raw-c2dfba28-ebef-3afe-bd39-76376d333cc9--
