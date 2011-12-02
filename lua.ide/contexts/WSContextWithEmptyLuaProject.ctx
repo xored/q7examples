@@ -1,0 +1,49 @@
+--- Q7 testcase ---
+Q7-vendor: www.xored.com/q7
+Format-Version: 1.0
+Element-Name: WSContextWithEmptyLuaProject
+Element-Version: 2.0
+Save-Time: 12/2/11 10:47 AM
+Id: _Ye2ywByYEeGHEuYO1A29OQ
+
+------=_contents/LuaTestProject/.buildpath-2a42f51b-5bc8-3e17-a39c-d5bd073b54e5
+Content-Type: q7/binary
+Entry-Name: contents/LuaTestProject/.buildpath
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnSzsa/IzVEoSy0qzszPs1Uy1DNQUkjN
+S85PycxLt1UKDXHTtVCyt+PlskkqzcxJKUgsyQByOBG81LySokqF7My8FFul4qJkJQWQIISpD9Kmj6wP
+AFBLBwiss0HOUwAAAG0AAABQSwECFAAUAAgACAAAACEArLNBzlMAAABtAAAACAAAAAAAAAAAAAAAAAAA
+AAAALmNvbnRlbnRQSwUGAAAAAAEAAQA2AAAAiQAAAAAA
+------=_contents/LuaTestProject/.buildpath-2a42f51b-5bc8-3e17-a39c-d5bd073b54e5--
+------=_contents/LuaTestProject/.project-25e407a7-34c2-31f6-a3e2-d0635e50073f
+Content-Type: q7/binary
+Entry-Name: contents/LuaTestProject/.project
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnRdUMsOwiAQPGviPzTcBb15oPWg8eTB
+xPoBFTYNlkID1Pj58qpNvTGzMzuz0OOnl8UbjBValWiPd6gAxTQXqi3Ro75sD+hYbdZ0MPoFzJ3BMiMG
+59WeXVHV9FBdx6YG625JQkkkw5TpvgflKkqmV2DzKhsBWaDnKCS/D8ACyvDkrY3ikcmB2rQYmBSDBcyl
+6zDTBnBqFj1g5hbe1Jh2DPE2Y7IkKPkPyszUxKe60UBWJ7Ao0WkFncCSO5ymIT6q4rLZ/rt3+ZFfUEsH
+CLrqvJzHAAAAhwEAAFBLAQIUABQACAAIAAAAIQC66rycxwAAAIcBAAAIAAAAAAAAAAAAAAAAAAAAAAAu
+Y29udGVudFBLBQYAAAAAAQABADYAAAD9AAAAAAA=
+------=_contents/LuaTestProject/.project-25e407a7-34c2-31f6-a3e2-d0635e50073f--
+------=_contents/LuaTestProject/src/main.lua-6eb7aa7a-80f3-3050-9dfc-c6493af19334
+Content-Type: q7/binary
+Entry-Name: contents/LuaTestProject/src/main.lua
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnTLyU9OzFFIK81LLsnMz1PITczM09Dk
+4krNS+GCsgFQSwcIm4zGix4AAAAiAAAAUEsBAhQAFAAIAAgAAAAhAJuMxoseAAAAIgAAAAgAAAAAAAAA
+AAAAAAAAAAAAAC5jb250ZW50UEsFBgAAAAABAAEANgAAAFQAAAAAAA==
+------=_contents/LuaTestProject/src/main.lua-6eb7aa7a-80f3-3050-9dfc-c6493af19334--
+------=_.q7.content-3d2e0690-ce48-3609-83e0-c704d49f1eaf
+Content-Type: q7/binary
+Entry-Name: .q7.content
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnSNUUtPwzAMviPxH6LcSVgvg2plAjQB
+EmggkMpOKKTeGsijS1La/Xu8rd0AgcTN9veyk9G4NZp8gA/K2YwO2DElYKUrlF1ktI7zoxM6Pjs8GEln
+WOs8FGw5ZI3z76ESEtK8ry6djdBG0hqV7uyStR0G2JDiPKNljFXKedM0zJkFc37Bn+9uesrvETsVR5xv
+cL4c8h3OQOKMEisMcvPHbpFcxXJiqri6rcW9d28gIyWqyOjLDJJVc7GaTeDqelLPpoPz5HT6QInUIHy+
+j50LHYDi7YTg9Whq46bBttoahi4UI54gxD6mYyFvrjT0JPZaK11UIpaU/8HobL/hThf4mh0jeLl3/6E2
+Qlmma/FVzTt5vzfvF99exfdnret/fTByPwFQSwcIDcpD2CABAAA0AgAAUEsBAhQAFAAIAAgAAAAhAA3K
+Q9ggAQAANAIAAAgAAAAAAAAAAAAAAAAAAAAAAC5jb250ZW50UEsFBgAAAAABAAEANgAAAFYBAAAAAA==
+
+------=_.q7.content-3d2e0690-ce48-3609-83e0-c704d49f1eaf--
