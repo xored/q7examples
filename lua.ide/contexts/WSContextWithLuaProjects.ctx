@@ -1,0 +1,78 @@
+--- Q7 testcase ---
+Q7-vendor: www.xored.com/q7
+Format-Version: 1.0
+Element-Name: WSContextWithLuaProjects
+Element-Version: 2.0
+Save-Time: 12/2/11 5:46 PM
+Id: _Ye2ywByYEeGHEuYO1A29OQ
+
+------=_contents/reference/.buildpath-819185e8-9f1c-3c03-8e9f-6f551e01b398
+Content-Type: q7/binary
+Entry-Name: contents/reference/.buildpath
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnSzsa/IzVEoSy0qzszPs1Uy1DNQUkjN
+S85PycxLt1UKDXHTtVCyt+PlskkqzcxJKUgsyQByOBG81LySokqF7My8FFul4qJkJQWQIISpD9Kmj6wP
+AFBLBwiss0HOUwAAAG0AAABQSwECFAAUAAgACAAAACEArLNBzlMAAABtAAAACAAAAAAAAAAAAAAAAAAA
+AAAALmNvbnRlbnRQSwUGAAAAAAEAAQA2AAAAiQAAAAAA
+------=_contents/reference/.buildpath-819185e8-9f1c-3c03-8e9f-6f551e01b398--
+------=_contents/lua.project/src/main.lua-70209466-e9a7-37b9-9bef-9cc02a3084ce
+Content-Type: q7/binary
+Entry-Name: contents/lua.project/src/main.lua
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnTLyU9OzFFIK81LLsnMz1PITczM09Dk
+4krNS+GCsgFQSwcIm4zGix4AAAAiAAAAUEsBAhQAFAAIAAgAAAAhAJuMxoseAAAAIgAAAAgAAAAAAAAA
+AAAAAAAAAAAAAC5jb250ZW50UEsFBgAAAAABAAEANgAAAFQAAAAAAA==
+------=_contents/lua.project/src/main.lua-70209466-e9a7-37b9-9bef-9cc02a3084ce--
+------=_contents/reference/src/ref.lua-85d06b78-4a0b-3910-a18a-582c84881a86
+Content-Type: q7/binary
+Entry-Name: contents/reference/src/ref.lua
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnSFyzEKwCAMQNG5Qu/gaKF4p6CRBjSR
+JN6/7dat44f/htTVMeWcjz20xcVJONrEQo0KvJVMBp5xgsJAR7Xn3BR9KUemvgfk+rHA4hdqsh9yA1BL
+BwhH6gw1UAAAAHoAAABQSwECFAAUAAgACAAAACEAR+oMNVAAAAB6AAAACAAAAAAAAAAAAAAAAAAAAAAA
+LmNvbnRlbnRQSwUGAAAAAAEAAQA2AAAAhgAAAAAA
+------=_contents/reference/src/ref.lua-85d06b78-4a0b-3910-a18a-582c84881a86--
+------=_contents/lua.project/.buildpath-38de6011-e60f-37b3-bafd-ea54f72d45a2
+Content-Type: q7/binary
+Entry-Name: contents/lua.project/.buildpath
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnSzsa/IzVEoSy0qzszPs1Uy1DNQUkjN
+S85PycxLt1UKDXHTtVCyt+PlskkqzcxJKUgsyQByOBG81LySokqF7My8FFul4qJkJQWQIISpD9Kmj6wP
+AFBLBwiss0HOUwAAAG0AAABQSwECFAAUAAgACAAAACEArLNBzlMAAABtAAAACAAAAAAAAAAAAAAAAAAA
+AAAALmNvbnRlbnRQSwUGAAAAAAEAAQA2AAAAiQAAAAAA
+------=_contents/lua.project/.buildpath-38de6011-e60f-37b3-bafd-ea54f72d45a2--
+------=_contents/reference/.project-720564a4-f1b7-3fd9-8ad0-2fb9efd16cfb
+Content-Type: q7/binary
+Entry-Name: contents/reference/.project
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnRdkE0OwiAQhdeaeIeme0F3LmhdaLyA
+eoAKY4Plpxmo8fgCpTZ1x/dmHu8BO360Kt6ATlpTlXuyKwsw3App2qq83y7bQ3msN2vWo30B92dwHGXv
+w3ZQV8w0GmqEJ2BwAaOJ44BbrcH4mtHpFNV8i0tAF/QYpBLXHnikjKdgbYxISs6y2BLgSvYOiFC+I9wi
+kLFU8gDOLYKpwXaI8S4zXQqM/gdlZWoSUv2AkLdHWJTorIFOEiU8GacxPm2ly2b7773LP/wCUEsHCKgx
+u3rEAAAAggEAAFBLAQIUABQACAAIAAAAIQCoMbt6xAAAAIIBAAAIAAAAAAAAAAAAAAAAAAAAAAAuY29u
+dGVudFBLBQYAAAAAAQABADYAAAD6AAAAAAA=
+------=_contents/reference/.project-720564a4-f1b7-3fd9-8ad0-2fb9efd16cfb--
+------=_.q7.content-3d2e0690-ce48-3609-83e0-c704d49f1eaf
+Content-Type: q7/binary
+Entry-Name: .q7.content
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnTFUstOwzAQvCPxD5bv2LSXQpRQAaoA
+CVQQh9ATMs4mNTh26jgk/Xu2lZNWiEpw4raP2Zkdr+NpV2ryCa5W1iR0xE4pASNtpkyR0MbnJ2d0enF8
+FEtbss46yNhqwlrrPupKSIjSPrq2xkPnSVeqaKAbb+hQwNQR1hO69L6KOG/bltmyYNYV/OXhrof8LDFM
+cezzbZ+vJnzoM5BYo8SIErHpc1gkVX5534hHZ99B+poSlSX0dQHjdXu1Xszg5nbWLOajy/H5/IkSqUG4
+dCeZC10DRd+EoHMkNH6bYFoFxiCoG8FCiQYIgnKloUewt0bprBJ+SfkBRE+w37c6w2cMiNrJHfu36VIo
+w3CN/Wkexvuleb/1ARcOcnB4d/gnD6j/Nwsx351lE//qcyL2C1BLBwhooKwFKwEAAPACAABQSwECFAAU
+AAgACAAAACEAaKCsBSsBAADwAgAACAAAAAAAAAAAAAAAAAAAAAAALmNvbnRlbnRQSwUGAAAAAAEAAQA2
+AAAAYQEAAAAA
+------=_.q7.content-3d2e0690-ce48-3609-83e0-c704d49f1eaf--
+------=_contents/lua.project/.project-e41595da-700e-38a5-bb8f-3dfaa93b6e73
+Content-Type: q7/binary
+Entry-Name: contents/lua.project/.project
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnRdUEsOwiAUXGviHRr2gu5c0Hah8QLq
+ARBeGiyfBqjx+AKlNnXH/JgB2n60qt7gvLSmRkd8QBUYboU0XY0e9+v+hNpmt6WDsy/g4QKeOzmE6I7s
+hhqmoVEjw0WnJDNJ4lZrMKGhZD4ltvh8BmSFnqNU4jYAT6jAc4wyIzJT2qzrMHAlBw9YqNBjbh3gaVbO
+gFtWxBBz3ZjqfcFkTVDyX1SYeUlsDaOD4p7AakRvDfQSKxHwpKb67MqXLfHfe9e/+AVQSwcIdv2VmcAA
+AACEAQAAUEsBAhQAFAAIAAgAAAAhAHb9lZnAAAAAhAEAAAgAAAAAAAAAAAAAAAAAAAAAAC5jb250ZW50
+UEsFBgAAAAABAAEANgAAAPYAAAAAAA==
+------=_contents/lua.project/.project-e41595da-700e-38a5-bb8f-3dfaa93b6e73--

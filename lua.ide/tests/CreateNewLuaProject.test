@@ -5,7 +5,7 @@ Element-Name: CreateNewLuaProject
 External-Reference: 
 Element-Version: 3.0
 Contexts: _OjkVsByVEeGHEuYO1A29OQ
-Save-Time: 12/2/11 12:42 PM
+Save-Time: 12/2/11 3:20 PM
 Id: _KiGrYByVEeGHEuYO1A29OQ
 
 ------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa
@@ -18,6 +18,10 @@ Empty workspace
 Actions:
 1. Select "File->New->Lua Project" in main menu
 2. Enter name in New Lua Project window
+3. Press "Finish" button
+4. Make sure that Lua Project is created and displayed in Script Explorer
+5. Open main.lua file
+6. Verify context of this file
 ------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa--
 ------=_.q7.content-3d2e0690-ce48-3609-83e0-c704d49f1eaf
 Content-Type: q7/binary
