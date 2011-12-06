@@ -1,0 +1,94 @@
+--- Q7 testcase ---
+Q7-vendor: www.xored.com/q7
+Format-Version: 1.0
+Element-Name: WSContextWithLuaTestProject
+Element-Version: 2.0
+Save-Time: 12/6/11 4:32 PM
+Id: _MO4BQB_tEeGHEuYO1A29OQ
+
+------=_contents/lua.test/.buildpath-3cc223e3-20b1-3548-8434-8028b5a7a99e
+Content-Type: q7/binary
+Entry-Name: contents/lua.test/.buildpath
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnSzsa/IzVEoSy0qzszPs1Uy1DNQUkjN
+S85PycxLt1UKDXHTtVCyt+PlskkqzcxJKUgsyQByOBG81LySokqF7My8FFul4qJkJQWQIISpD9Kmj6wP
+AFBLBwiss0HOUwAAAG0AAABQSwECFAAUAAgACAAAACEArLNBzlMAAABtAAAACAAAAAAAAAAAAAAAAAAA
+AAAALmNvbnRlbnRQSwUGAAAAAAEAAQA2AAAAiQAAAAAA
+------=_contents/lua.test/.buildpath-3cc223e3-20b1-3548-8434-8028b5a7a99e--
+------=_contents/lua.test/src/main.lua-a6a70744-71b9-37ac-a41e-8fecea03228c
+Content-Type: q7/binary
+Entry-Name: contents/lua.test/src/main.lua
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnTLyU9OzFFIK81LLsnMz1PITczM09Dk
+4krNS+GCsgFQSwcIm4zGix4AAAAiAAAAUEsBAhQAFAAIAAgAAAAhAJuMxoseAAAAIgAAAAgAAAAAAAAA
+AAAAAAAAAAAAAC5jb250ZW50UEsFBgAAAAABAAEANgAAAFQAAAAAAA==
+------=_contents/lua.test/src/main.lua-a6a70744-71b9-37ac-a41e-8fecea03228c--
+------=_contents/lua.test/src/session-test.lua-de970ef0-3255-3cbe-b4d7-c727a2bc5d07
+Content-Type: q7/binary
+Entry-Name: contents/lua.test/src/session-test.lua
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnStVEtv2zAMvgfIfyDci506XpLD0ENT
+YMcdOgzFDgO6IFBipRXiyIUtBSuG7beP1CuS22IpMF1MkR9fn0ndfvr+9e7zl2+whI+z8Wg82mm5VaKV
+wOo63/PnEo6s0bwYjwAA7whUrdSHDe/IbPUGElsiH7ED2Srj2nZGtGi8mHBLd1ePXBoHPB1XupMgRWM0
+XNbm27Rb1sC+5w3mWj+x7T7PRFZCqMMClDhQMW1fkZTHppopZyIpzyYK3QllQaSsHlvdIWZ20hyETBU9
+3waFDYyQQVoCxqmPWHZ0ZR1RudbStTHBQtYPXOXUXhE7MuQUoXPPJnkyWcMFCTcwS5izLtJG//V7oBb1
+zxAp0R4YGW79MExgAdMTbof/SpBjaZKWaK1bbwxF3YsV/Fme/q5RXc5XcB3YiSu1hyq9pwpWGN8GeQNA
+kZYh6ABkGzOfS1hERj86qXhMR4i4l6YxU3w8EXgc//mFYfUDLArMEbih3glwc2Jv0KVL1qtOyIeq15uc
+NGXM9vSqiBxcQm8f1s+bnr/RCC3Dixa8n1vE9ZO2Q1Ya7+KcxXNqKmw8MsrooWhEr/73S3FGTQ4dxs0K
+1zBPnH2+hMz0Pel4rxuFmCx7zytzzgL/a1v9YhnjlPZrVsL05Xa93ps9m46z/esTb8hzzTmhqvyqopT9
+UFnQ0H4Znczi4XX82W/0JoRpTEfEpnFD8hdQSwcICKrhMRACAABdBgAAUEsBAhQAFAAIAAgAAAAhAAiq
+4TEQAgAAXQYAAAgAAAAAAAAAAAAAAAAAAAAAAC5jb250ZW50UEsFBgAAAAABAAEANgAAAEYCAAAAAA==
+
+------=_contents/lua.test/src/session-test.lua-de970ef0-3255-3cbe-b4d7-c727a2bc5d07--
+------=_contents/lua.test/src/waittable-test.lua-4e1c00d5-a526-3eb4-ba9b-51f76d9aceb5
+Content-Type: q7/binary
+Entry-Name: contents/lua.test/src/waittable-test.lua
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnTNVE2P2jAQvSPxH0Y+hRUg4LjVHnbb
+HitRiZ5KhRzHBIvENv7YFa363zu2kxCtFrEHFvUQJZmZNx/veTyZwNeDF8+04tKBU+B2woI9VMPBZAJe
+F9RxcDSvOFjuwDrqvIUHorkshCwJvOy44Z0diOQvBCpRCwfzmIMpaR08K1HAnd7nfjsGgaX03orfY1h9
+/va4hDumKjtugpQeDrZeMieUhKZOpvf8OIYQNhoOADaVKjNCXesHRqsqp2xPTu4AOf110Eph7KnhTS0s
+y4hjNdUldwuSqoyBpBAy+hRQYgtSdfO7HZfBCm0nWyoqXgT+yo4lzLSIFbHF8Iqt9Kpp/0Y1/GqpTYUN
+d95IWH15+r5c/lihLabrUZRE2iDxG0ftPusRFF2BHnRCcJIeBdSUgYA/f2OdqPFUSMuNy4ILO6FFgeoV
+61lqLrwNP6xnQePRORAekyj/ejY/H4RD+1raRq1EijaK4fwpoiFh1BJneE8sy6lhuya2C2kkCpHn9Anw
+17I0BCPs5/zXRXY3i+x/pDC1c4GkywS95marDITFw+vBc1xb0FQYm2GGERQqJdAG1zkj92Q6dQqnC9sa
+Nm86JQ99W8wRrPekX6IV3+PI1mEDgekUG3S4vfL9y8cIZYQ7JsnxLstVcbyF+soU3Kxnbf2IozjAFU9M
++3zQybmwVUzVuXoXrVeltgMZXmIbHcjbd2AkrXlECMnWsyeVX1uOG0rxD1BLBwgy9NkIIQIAAPcHAABQ
+SwECFAAUAAgACAAAACEAMvTZCCECAAD3BwAACAAAAAAAAAAAAAAAAAAAAAAALmNvbnRlbnRQSwUGAAAA
+AAEAAQA2AAAAVwIAAAAA
+------=_contents/lua.test/src/waittable-test.lua-4e1c00d5-a526-3eb4-ba9b-51f76d9aceb5--
+------=_contents/lua.test/src/wordcount-test.lua-bc0d5278-b7e5-3a54-b179-393a6c0c783a
+Content-Type: q7/binary
+Entry-Name: contents/lua.test/src/wordcount-test.lua
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnSFUF1uwyAMfkfiDhbTJNBIpB1gN5lU
+RcRt0YipiFm024+fplmfxgM2/n5sMwxSDANsMc0uZmJYptuQcM4OoSJSSHHO5NhHOljaSAEAD6CIbpj0
+F/5Y+J5CRltLuHjuxMqNqenBE6ycPF3GyzKxu+r7K8StWDS1saBetzdlYI67vpy7pa42Ft4f1kjznibk
+nAg4ZWylBrUsRDeFgq/wAUo9j9/3/Tv/ag7Hqqj3OEIh1KA+WdX40rm9ROr/IfwZKDKcyia9p+4/Z/cR
+DPAV6bk3+XDYHPYFlKLVfgFQSwcIyZBcMNsAAADEAQAAUEsBAhQAFAAIAAgAAAAhAMmQXDDbAAAAxAEA
+AAgAAAAAAAAAAAAAAAAAAAAAAC5jb250ZW50UEsFBgAAAAABAAEANgAAABEBAAAAAA==
+------=_contents/lua.test/src/wordcount-test.lua-bc0d5278-b7e5-3a54-b179-393a6c0c783a--
+------=_.q7.content-3d2e0690-ce48-3609-83e0-c704d49f1eaf
+Content-Type: q7/binary
+Entry-Name: .q7.content
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnSNklFPwjAUhd9N/A9N32mFmKCEScQQ
+NZEg0WT6REpXoNq1o71z+/newQZK0PDW9nz3nHvv1h+UqSFfygftbETb7IISZaVLtF1GNIdF64oObs7P
++tKlrHReJWzdZYXznyETUvXi5nTnLKgSSJnq3s6uU9lhgA09fI/oCiDrcV4UBXPpkjm/5G/jxwY5HrGr
+4qjzjc7XXb7TmZL4RokVKbLxS91IrGH1lItXFeDZuw8lgRKdRHQ2nlwOp8MZjNT9wyh/n7RvO9eTKSXS
+KOHjfepCmKAojk4IDo+eFjYXvGZbw1BnmlwwwBxa60gstFGNzOa5NkkmYEX5H0Rt+Et3JsE11kTwcu9+
+UJ0KbRn28KP6gAgqVN+jVTX5P1kIDSDmRp3COp9Il1s4xvZ5PUCzM94sbbtRvl9pdT7p30L2G1BLBwjJ
+fxN9PQEAAK8CAABQSwECFAAUAAgACAAAACEAyX8TfT0BAACvAgAACAAAAAAAAAAAAAAAAAAAAAAALmNv
+bnRlbnRQSwUGAAAAAAEAAQA2AAAAcwEAAAAA
+------=_.q7.content-3d2e0690-ce48-3609-83e0-c704d49f1eaf--
+------=_contents/lua.test/.project-d6ab929e-e4cd-3e41-bebf-f29cf9bef6a0
+Content-Type: q7/binary
+Entry-Name: contents/lua.test/.project
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnRdkE0OwiAUhNeaeIeGvaA7F7RdaLyA
+egCElwbLTwPUeHyBUpu64xvevBmg7Uer6g3OS2tqdMQHVIHhVkjT1ehxv+5PqG12Wzo4+wIeLuC5k0OI
+01HdUMM0NGpkOIAPlGRMOrdagwkNJfMpqWWJz0BW9BylErcBeKKC52hlRmSlRFnXYeBKDh6wUKHH3DrA
+U6fsAbe0iCbmujHF+8JkLVDyH1SUuUlMDaODMj3BqkRvDfQSKxHwdJvi81Retth/711/4RdQSwcIZDnF
+uMMAAACBAQAAUEsBAhQAFAAIAAgAAAAhAGQ5xbjDAAAAgQEAAAgAAAAAAAAAAAAAAAAAAAAAAC5jb250
+ZW50UEsFBgAAAAABAAEANgAAAPkAAAAAAA==
+------=_contents/lua.test/.project-d6ab929e-e4cd-3e41-bebf-f29cf9bef6a0--
