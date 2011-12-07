@@ -2,11 +2,10 @@
 Q7-vendor: www.xored.com/q7
 Format-Version: 1.0
 Element-Name: RenameRelatedProjectWithUpdateReferences
-Tags: skipExecution
 External-Reference: 
 Element-Version: 3.0
-Contexts: _OjkVsByVEeGHEuYO1A29OQ,_k8GwUR6KEeGGjYIJRMbRhw
-Save-Time: 12/6/11 9:01 AM
+Contexts: _OjkVsByVEeGHEuYO1A29OQ,_MO4BQB_tEeGHEuYO1A29OQ,_Ye2ywByYEeGHEuYO1A29OQ
+Save-Time: 12/7/11 11:20 AM
 Id: _Kkz2UB-kEeGHEuYO1A29OQ
 
 ------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa
@@ -15,20 +14,31 @@ Content-Type: text/plain
 
 Pre-conditions:
 There are two Lua projects in workspace: "reference" and "lua.project".
-"lua.project" project has reference to "reference" project.
 
 Actions:
-1. Select "reference" project 
-2. Choose "Refactor->Rename" from context menu
-3. Make sure that "Update references" check-box is set in the "Rename Script Project" window
-4. Rename project 
-5. Make sure that reference in the Properties of "lua.project" is updated
-6. Make sure that there is no error in Problems view
+1. In the "lua.project" project add a reference to "reference" project.
+2. Select "reference" project 
+3. Choose "Refactor->Rename" from context menu
+4. Make sure that "Update references" check-box is set in the "Rename Script Project" window
+5. Rename project 
+6. Make sure that reference in the Properties of "lua.project" is updated
+7. Make sure that there is no error in Problems view
 ------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa--
 ------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac
 Entry-Name: .content
 Content-Type: text/ecl
 
+get-view "Script Explorer" | get-tree | select "lua.project" | get-menu Properties | click
+with [get-window "Properties for lua.project"] {
+    get-tree | select "Lua/Build Path"
+    get-tab-folder | get-tab-item Projects | click
+    get-button "Add..." | click
+    with [get-window "Required Project Selection"] {
+        get-table | get-item reference | check
+        get-button OK | click
+    }
+    get-button OK | click
+}
 get-view "Script Explorer" | get-tree | select reference | get-menu "Refactor/Rename..." | click
 get-window "Rename Script Project" | get-editbox -after [get-label "New name:"] | set-text "reference.test"
 with [get-window "Rename Script Project" | get-button "Update references"] {
@@ -44,7 +54,7 @@ with [get-window "Properties for lua.project"] {
 get-window "Properties for lua.project" | get-tree -after [get-label "Required projects on the build path:"] 
     | get-property itemCount | equals 1 | verify-true
 get-window "Properties for lua.project" | get-tree -after [get-label "Required projects on the build path:"] 
-    | get-item reference | get-property caption | equals "reference.test" | verify-true
+    | get-item "reference.test" | get-property caption | equals "reference.test" | verify-true
 get-window "Properties for lua.project" | get-button OK | click
 get-view Problems | click
 get-view Problems | get-tree | get-property itemCount | equals 0 | verify-true
@@ -53,13 +63,13 @@ get-view Problems | get-tree | get-property itemCount | equals 0 | verify-true
 Content-Type: q7/binary
 Entry-Name: .q7.content
 
-UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnR9kF9PwjAUxd9N/A5N32kFE8Flg0hC
-EAlBa0B5IrO7jO5PO9bihp/eOyMYjPGp7bm/e27v8Qd1npF3KK0yOqBtdkUJaGkipeOA7t2m1aOD/uWF
-L03OalNCxHZdZiXosFTGe/6+kDpX3sml07igr7Ye6gHdOld4nFdVxUweM1PG/HU2OSJ/Op+asMq/qnzX
-5ccqA4kSJTrMIaACmlNAFjqIHkuTgHQvym0XRYSKgA2UuBJY+rPndfNDFQV0PU0/OothKx3B+H60X83b
-d53b+RMlLoxtQG2qilENcu+wDcVDgfNAZhQjIQRD0Q5qZ/vreZIu7fCwPLfx+Yn4xae9cbUQN1Pkx8lq
-8iBmb2JbnfHN47/MEfkEUEsHCB5mEUAVAQAAvgEAAFBLAQIUABQACAAIAAAAIQAeZhFAFQEAAL4BAAAI
-AAAAAAAAAAAAAAAAAAAAAAAuY29udGVudFBLBQYAAAAAAQABADYAAABLAQAAAAA=
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnSNkVFLwzAUhd8F/0PI+xJXhWlpNywM
+FRl1lU37VEp612Vtky7JbOuvNxVXUWT4lOSc7x7uId6srUr0BkpzKXw8JhcYgWAy4yL38cFsRtd4Nj0/
+85isSCsVZGQ/IZqBSBWX7vPXBbUVd4cUp0+xuUK7Vvfx1pjapbRpGiKrnEiV09fFwxH5M3kYsi79dOl+
+Qo8uAWYljERagY8j6M8IytRA9qTkDph54Wa7qjOrRLABZSuBxt89L/sNeebj5LF4d1bBqJjD3f38EIfj
+W+cmXGJkutpGAyuxbY+Q7S8MtEZPk3BXrHXQrX9OeHQgfvGL8CpYBon5Lx+D0zVBF5/g+8ep77DIB1BL
+BwjMay84BAEAANkBAABQSwECFAAUAAgACAAAACEAzGsvOAQBAADZAQAACAAAAAAAAAAAAAAAAAAAAAAA
+LmNvbnRlbnRQSwUGAAAAAAEAAQA2AAAAOgEAAAAA
 ------=_.q7.content-3d2e0690-ce48-3609-83e0-c704d49f1eaf--
 ------=_.content.raw-c2dfba28-ebef-3afe-bd39-76376d333cc9
 Content-Type: q7/binary
