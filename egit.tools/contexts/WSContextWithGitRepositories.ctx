@@ -1,0 +1,139 @@
+--- Q7 testcase ---
+Q7-vendor: www.xored.com/q7
+Format-Version: 1.0
+Element-Name: WSContextWithGitRepositories
+Element-Version: 2.0
+Save-Time: 12/2/11 11:42 AM
+Id: _omhnoBydEeGHEuYO1A29OQ
+
+------=_contents/ProjectWithRepository/FolderInGit/.classpath-170d4c91-5221-3f45-8480-fb0939ba37c7
+Content-Type: q7/binary
+Entry-Name: contents/ProjectWithRepository/FolderInGit/.classpath
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnSzsa/IzVEoSy0qzszPs1Uy1DNQUkjN
+S85PycxLt1UKDXHTtVCyt+PlsknOSSwuLkgsyQByOBG81LySokqF7My8FFul4qJkJQWQIISpj1tlcn4e
+TGV+UbpeanJOZkFxql5WSoleTmJpXnIG0HY9ryDXeGd/vxBHTz/XIHym5ZeWFJSWwAxMyswDK7bRR3Yy
+AFBLBwj1M9tAjwAAAOgAAABQSwECFAAUAAgACAAAACEA9TPbQI8AAADoAAAACAAAAAAAAAAAAAAAAAAA
+AAAALmNvbnRlbnRQSwUGAAAAAAEAAQA2AAAAxQAAAAAA
+------=_contents/ProjectWithRepository/FolderInGit/.classpath-170d4c91-5221-3f45-8480-fb0939ba37c7--
+------=_contents/ProjectWithRepository/FolderInGit/.project-4ab9b9d0-0de6-354f-8137-b71263fb4219
+Content-Type: q7/binary
+Entry-Name: contents/ProjectWithRepository/FolderInGit/.project
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnR1UEsOwiAQXWviHRr2Ft25oHWh0bgz
+sR4A6aShKZ8AbTy+QKlNTdzNezPvA+T4Fl02gLFcyQLt8x3KQDJVc9kU6Fldtgd0LDdroo1qgbkzWGa4
+dv7asysiqYCyAuvu4/4mr9wRHOmwZ0oIkK4keJoCm8xsBHiBXj3v6ocGFlCCJy+lso5MilSmyYF1XFvI
+29rlTBk/0IFGAZi5gldQ0/Qh2yaMlwTBvymJmWr4SNcbSNcj+N9g3IcC8S7azQbf5y5/8gNQSwcIJW/m
+WsMAAACIAQAAUEsBAhQAFAAIAAgAAAAhACVv5lrDAAAAiAEAAAgAAAAAAAAAAAAAAAAAAAAAAC5jb250
+ZW50UEsFBgAAAAABAAEANgAAAPkAAAAAAA==
+------=_contents/ProjectWithRepository/FolderInGit/.project-4ab9b9d0-0de6-354f-8137-b71263fb4219--
+------=_contents/TestForGit/.project-1ab31cf4-d5c6-32cb-82a4-2c5bb686632b
+Content-Type: q7/binary
+Entry-Name: contents/TestForGit/.project
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnR1UEEOgjAQPGviHwh3qd48FDho8AHi
+A2rZkBLakm0hPt+2FAkm3nZmZ3ampeVb9skEaIRWeXrOTmkCiutGqDZPn3V1vKRlcdjTAXUH3N7AcBSD
+dWrH7qhiEooajK003oWlJBB+w7WUoGxByTJ5Np4xAZANeo2ibx4DcI8ivDorU01gYpjGNgPei8FA1jU2
+4xrdwCYWDIBrBedg2I4+20RMtgQlvymRWWq4SDsiRPUM/jeY975A0IVz64Hvc7d/+AFQSwcIC/Kf0MAA
+AACCAQAAUEsBAhQAFAAIAAgAAAAhAAvyn9DAAAAAggEAAAgAAAAAAAAAAAAAAAAAAAAAAC5jb250ZW50
+UEsFBgAAAAABAAEANgAAAPYAAAAAAA==
+------=_contents/TestForGit/.project-1ab31cf4-d5c6-32cb-82a4-2c5bb686632b--
+------=_contents/TestProjectInGit/.project-b81fa9d8-a842-342d-9003-24c74fd681d0
+Content-Type: q7/binary
+Entry-Name: contents/TestProjectInGit/.project
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnR1UEsOwiAQXWviHRr2Ft25oHWh0bgz
+sR4A6aShKZ8AbTy+QKlNTdzNezPvA+T4Fl02gLFcyQLt8x3KQDJVc9kU6Fldtgd0LDdroo1qgbkzWGa4
+dv7asysiqYCyAuvu4/4mr9wRHOmwZ0oIkK4keJoCm8xsBHiBXj3v6ocGFlCCJy+lso5MilSmyYF1XFvI
+29rlTBk/0IFGAZi5gldQ0/Qh2yaMlwTBvymJmWr4SNcbSNcj+N9g3IcC8S7azQbf5y5/8gNQSwcIJW/m
+WsMAAACIAQAAUEsBAhQAFAAIAAgAAAAhACVv5lrDAAAAiAEAAAgAAAAAAAAAAAAAAAAAAAAAAC5jb250
+ZW50UEsFBgAAAAABAAEANgAAAPkAAAAAAA==
+------=_contents/TestProjectInGit/.project-b81fa9d8-a842-342d-9003-24c74fd681d0--
+------=_contents/TestProjectInGit/bin/TestClass.class-cffe40d2-f5b7-32e0-8bd0-19600065648e
+Content-Type: q7/binary
+Entry-Name: contents/TestProjectInGit/bin/TestClass.class
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnRtUE1PAjEQfeVr2WUVBPH784Ye2KMH
+jBcS42GjJhA8F2iwpLs1u8XEn6UHTTz4A/xRxulKQBN7mOm8efPmtZ9f7x8A2jh0kGNw+yI1XcXT1EGB
+oTbljzxQPJ4EN8OpGBmG0rmMpblgyLdOBgyFrh4LD3m4PoooMVRDGYvrWTQUSZ8PlWCoh3rE1YAn0tZz
+sGDuZcpQCRcLOwRGXMYuaqg7WPuzvfeUGhH5aGCdNusZGWmGWVvq4DaRsemZRPCoU8YGqV4JpfTRnU7U
+2MMWdhxsMzT+4fvYxR6D82AhFZNqK/y11RA86dh3ej09S0biUlrzqwvTbUvGMcgU7MnRjb6BokNVQJlR
+Lp6+ofyctT2KpQzMoULR/yFQXskEVhfDZ5kY4L6gWm++YnMp4FG2Q2UiL0XcuQjDfsY8+AZQSwcIqyAm
+wDsBAADcAQAAUEsBAhQAFAAIAAgAAAAhAKsgJsA7AQAA3AEAAAgAAAAAAAAAAAAAAAAAAAAAAC5jb250
+ZW50UEsFBgAAAAABAAEANgAAAHEBAAAAAA==
+------=_contents/TestProjectInGit/bin/TestClass.class-cffe40d2-f5b7-32e0-8bd0-19600065648e--
+------=_contents/ProjectWithRepository/FolderInGit/src/TestClass.java-b0b50b0c-ee9a-3405-91d2-5c97dfab052d
+Content-Type: q7/binary
+Entry-Name: contents/ProjectWithRepository/FolderInGit/src/TestClass.java
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnTj5SooTcrJTFZIzkksLlYISS0ucQaz
+qnm5OMvyM1MUchMz8zQ0gTyQCGdwZXFJaq5efmmJXkFRZl5JTp6GkkdqTk6+Qnh+UU6KkqY1UFUtLxcQ
+AQBQSwcI8KrJjlQAAABbAAAAUEsBAhQAFAAIAAgAAAAhAPCqyY5UAAAAWwAAAAgAAAAAAAAAAAAAAAAA
+AAAAAC5jb250ZW50UEsFBgAAAAABAAEANgAAAIoAAAAAAA==
+------=_contents/ProjectWithRepository/FolderInGit/src/TestClass.java-b0b50b0c-ee9a-3405-91d2-5c97dfab052d--
+------=_contents/TestProjectInGit/.classpath-883e07eb-4729-33f8-b4b2-ca290ce157a3
+Content-Type: q7/binary
+Entry-Name: contents/TestProjectInGit/.classpath
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnSzsa/IzVEoSy0qzszPs1Uy1DNQUkjN
+S85PycxLt1UKDXHTtVCyt+PlsknOSSwuLkgsyQByOBG81LySokqF7My8FFul4qJkJQWQIISpj1tlcn4e
+TGV+UbpeanJOZkFxql5WSoleTmJpXnIG0HY9ryDXeGd/vxBHTz/XIHym5ZeWFJSWwAxMyswDK7bRR3Yy
+AFBLBwj1M9tAjwAAAOgAAABQSwECFAAUAAgACAAAACEA9TPbQI8AAADoAAAACAAAAAAAAAAAAAAAAAAA
+AAAALmNvbnRlbnRQSwUGAAAAAAEAAQA2AAAAxQAAAAAA
+------=_contents/TestProjectInGit/.classpath-883e07eb-4729-33f8-b4b2-ca290ce157a3--
+------=_contents/ProjectWithRepository/.project-ad830761-8be6-3bf9-814e-776bae5c9abc
+Content-Type: q7/binary
+Entry-Name: contents/ProjectWithRepository/.project
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnRVjjsPwjAMhGeQ+A9VdghsDGm6IGbE
+Q8wltcBVE0eJi+Df0xegbP7uzqdTxcs22RNCRHK52KzWIgNnqEJ3z8XlvF9uRaEXc+UD1WB4B9EE9Nyl
+O3WmXGlBH0bvivw4gqeITOGt5OD1IUPWgmOt5Pfq1akxDiATurXYVCcPZvRSdCW3Aaa3P/wq0okfUEsH
+CCdMPqOLAAAA4QAAAFBLAQIUABQACAAIAAAAIQAnTD6jiwAAAOEAAAAIAAAAAAAAAAAAAAAAAAAAAAAu
+Y29udGVudFBLBQYAAAAAAQABADYAAADBAAAAAAA=
+------=_contents/ProjectWithRepository/.project-ad830761-8be6-3bf9-814e-776bae5c9abc--
+------=_contents/TestProjectInGit/src/TestClass.java-73a34f04-54c4-391f-84a0-650c22a24292
+Content-Type: q7/binary
+Entry-Name: contents/TestProjectInGit/src/TestClass.java
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnTj5SooTcrJTFZIzkksLlYISS0ucQaz
+qnm5OMvyM1MUchMz8zQ0gTyQCGdwZXFJaq5efmmJXkFRZl5JTp6GkkdqTk6+Qnh+UU6KkqY1UFUtLxcQ
+AQBQSwcI8KrJjlQAAABbAAAAUEsBAhQAFAAIAAgAAAAhAPCqyY5UAAAAWwAAAAgAAAAAAAAAAAAAAAAA
+AAAAAC5jb250ZW50UEsFBgAAAAABAAEANgAAAIoAAAAAAA==
+------=_contents/TestProjectInGit/src/TestClass.java-73a34f04-54c4-391f-84a0-650c22a24292--
+------=_contents/TestForGit/.classpath-fb1adf29-05f2-3587-92e5-09ffaab1bd83
+Content-Type: q7/binary
+Entry-Name: contents/TestForGit/.classpath
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnSzsa/IzVEoSy0qzszPs1Uy1DNQUkjN
+S85PycxLt1UKDXHTtVCyt+PlsknOSSwuLkgsyQByOBG81LySokqF7My8FFul4qJkJQWQIISpj1tlcn4e
+TGV+UbpeanJOZkFxql5WSoleTmJpXnIG0HY9ryDXeGd/vxBHTz/XIHym5ZeWFJSWwAxMyswDK7bRR3Yy
+AFBLBwj1M9tAjwAAAOgAAABQSwECFAAUAAgACAAAACEA9TPbQI8AAADoAAAACAAAAAAAAAAAAAAAAAAA
+AAAALmNvbnRlbnRQSwUGAAAAAAEAAQA2AAAAxQAAAAAA
+------=_contents/TestForGit/.classpath-fb1adf29-05f2-3587-92e5-09ffaab1bd83--
+------=_contents/ProjectWithRepository/FolderInGit/bin/TestClass.class-cf5e592d-8d7d-3dea-8cb4-562ad1716330
+Content-Type: q7/binary
+Entry-Name: contents/ProjectWithRepository/FolderInGit/bin/TestClass.class
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnRtUE1PAjEQfeVr2WUVBPH784Ye2KMH
+jBcS42GjJhA8F2iwpLs1u8XEn6UHTTz4A/xRxulKQBN7mOm8efPmtZ9f7x8A2jh0kGNw+yI1XcXT1EGB
+oTbljzxQPJ4EN8OpGBmG0rmMpblgyLdOBgyFrh4LD3m4PoooMVRDGYvrWTQUSZ8PlWCoh3rE1YAn0tZz
+sGDuZcpQCRcLOwRGXMYuaqg7WPuzvfeUGhH5aGCdNusZGWmGWVvq4DaRsemZRPCoU8YGqV4JpfTRnU7U
+2MMWdhxsMzT+4fvYxR6D82AhFZNqK/y11RA86dh3ej09S0biUlrzqwvTbUvGMcgU7MnRjb6BokNVQJlR
+Lp6+ofyctT2KpQzMoULR/yFQXskEVhfDZ5kY4L6gWm++YnMp4FG2Q2UiL0XcuQjDfsY8+AZQSwcIqyAm
+wDsBAADcAQAAUEsBAhQAFAAIAAgAAAAhAKsgJsA7AQAA3AEAAAgAAAAAAAAAAAAAAAAAAAAAAC5jb250
+ZW50UEsFBgAAAAABAAEANgAAAHEBAAAAAA==
+------=_contents/ProjectWithRepository/FolderInGit/bin/TestClass.class-cf5e592d-8d7d-3dea-8cb4-562ad1716330--
+------=_.q7.content-3d2e0690-ce48-3609-83e0-c704d49f1eaf
+Content-Type: q7/binary
+Entry-Name: .q7.content
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnS1lE1TwjAQhu/O+B8yuZsIF7TTyigD
+yMHBrxn05NQ20GCbLUmg9d+bQlugUgsHb9ns7rMfb1q7m0YhWjGpOAgHt8glRkx44HMxc/BSTy+ucPfm
+/Mz2ICIpSOaTRYckIL9U7HrMmhSnHgjNUo3SiFslrp3hTAGhLHPv4EDr2KI0SRIC0YyAnNG3h1ERcrhE
+mUWNn679dNGhpZ8wz9xhJNzIxE5e8kYmXAdDrp9ZDIprkJwpjLjv4A+IAgF3336fDe/7y/dx67Z9PX7C
+ZkiEzJgmW+i1YcxYwpx5WuX0x42ZsUvwN86DTfiUh6yIJXkupjt+CH2zmzxisLZGwrS5ZVQpXugqM6cO
+djjNlX7V+uRit0aF8MqU7mWFNuX2QTQn1cOV9I6Cz92V28Cu3ti0kKBGkow+ALm3w+YNnqhUtr1aZzY9
+PaXd/BVVhP+XpuueTL3gByT5U+zjpG6Q1abb7y47H/WrMbE/UEsHCN2Atf9mAQAAvgQAAFBLAQIUABQA
+CAAIAAAAIQDdgLX/ZgEAAL4EAAAIAAAAAAAAAAAAAAAAAAAAAAAuY29udGVudFBLBQYAAAAAAQABADYA
+AACcAQAAAAA=
+------=_.q7.content-3d2e0690-ce48-3609-83e0-c704d49f1eaf--

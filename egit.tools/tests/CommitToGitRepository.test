@@ -1,0 +1,271 @@
+--- Q7 testcase ---
+Q7-vendor: www.xored.com/q7
+Format-Version: 1.0
+Element-Name: CommitToGitRepository
+External-Reference: 
+Element-Version: 3.0
+Contexts: _gzengBvsEeGlb-DH3yodVw,_PIgakBvsEeGlb-DH3yodVw,_wYgboBvsEeGlb-DH3yodVw
+Save-Time: 12/12/11 12:19 AM
+Id: _Bvb_4CFLEeGif8SfL4pG3w
+
+------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa
+Entry-Name: .description
+Content-Type: text/plain
+
+Pre-conditions:
+There is project in workspace
+
+Actions:
+1. Open "Git Repositories" view
+2. Press on "Create a new Git Repository and add it to this view" button
+3. Create git repository in workspaxe
+4. Make sure that Git Repository is displayed in "Git Repositories" view
+5. Make sure that this repository is empty
+6. Open Java perspective
+7. Select project in workspace and export this project to File System
+8. Open "Git Repositories" view
+9. Select Working directory and press "Refresh" button
+10. Make sure that project is added in git repository
+11. Change file in the project
+12. Open  "Git Repositories" view
+13. Select Get Repository and choose "Commit" from context menu
+14. Make sure that "Commit Changes" window contains two files
+15. Enter message and press "Finish" button
+16. Make sure that commit is performed and this commit is displayed in History view
+------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa--
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac
+Entry-Name: .content
+Content-Type: text/ecl
+
+get-view "Git Repositories" | get-button "Create a new Git Repository and add it to this view" | click -nowait
+set-dialog-result Folder "platform:/resource/"
+with [get-window "Create a Git Repository"] {
+    get-button "Browse..." | click -nowait
+    get-editbox -after [get-label "Name:"] | set-text GitRepository
+    get-button Finish | click -nowait
+}
+wait 5000
+with [get-view "Git Repositories" | get-tree] {
+    get-item "GitRepository.*" | get-property caption 
+        | equals "GitRepository.*" | verify-true
+    get-item "GitRepository.*" | get-property childCount 
+        | equals 5 | verify-true
+}
+get-view "Git Repositories" | get-tree 
+    | get-item "GitRepository.*master\\]/Branches" 
+    | get-property caption | equals Branches | verify-true
+get-view "Git Repositories" | get-tree 
+    | get-item "GitRepository.*master\\]/Tags" 
+    | get-property caption | equals Tags | verify-true
+get-view "Git Repositories" | get-tree 
+    | get-item "GitRepository.*master\\]/References" 
+    | get-property caption | equals References | verify-true
+get-view "Git Repositories" | get-tree 
+    | get-item "GitRepository.*master\\]/Remotes" 
+    | get-property caption | equals Remotes | verify-true
+with [get-view "Git Repositories" | get-tree] {
+    get-item "GitRepository.*master\\]/Working directory.*" 
+        | get-property caption | equals "Working directory.*GitRepository" | verify-true
+    get-item "GitRepository.*master\\]/Working directory.*" 
+        | get-property childCount | equals 1 | verify-true
+}
+get-view "Git Repositories" | get-tree 
+    | get-item "GitRepository.*/Working directory.*/.git" 
+    | get-property caption | equals ".git" | verify-true
+get-button "Open Perspective" | click -nowait
+get-menu "Other..." | click -nowait
+with [get-window "Open Perspective"] {
+    get-table | select "Java \\(default\\)"
+    get-button OK | click -nowait
+}
+get-view "Package Explorer" | get-tree | select TestForGit | get-menu "Export..." | click -nowait
+with [get-window Export] {
+    get-tree | select "General/File System"
+    get-button "Next >" | click -nowait
+}
+set-dialog-result Folder "platform:/resource/GitRepository"
+with [get-window Export] {
+    get-button "Browse..." | click -nowait
+    get-button Finish | click -nowait
+}
+get-button "Open Perspective" | click -nowait
+get-menu "Other..." | click -nowait
+with [get-window "Open Perspective"] {
+    get-table | select "Git Repository Exploring"
+    get-button OK | click -nowait
+}
+with [get-view "Git Repositories"] {
+    get-tree 
+        | select "GitRepository.*/Working directory.*"
+    get-button Refresh | click -nowait
+}
+with [get-view "Git Repositories" | get-tree] {
+    get-item "GitRepository.*/Working directory.*" 
+        | get-property caption | equals "Working directory.*" | verify-true
+    get-item "GitRepository.*/Working directory.*" 
+        | get-property childCount | equals 2 | verify-true
+    get-item "GitRepository.*/Working directory.*/.git" 
+        | get-property caption | equals ".git" | verify-true
+    get-item "GitRepository.*/Working directory.*/.git" 
+        | get-property childCount | equals 7 | verify-true
+    get-item "GitRepository.*/Working directory.*/TestForGit" 
+        | get-property caption | equals TestForGit | verify-true
+    get-item "GitRepository.*/Working directory.*/TestForGit" 
+        | get-property childCount | equals 4 | verify-true
+}
+get-view "Git Repositories" | get-tree 
+    | select "GitRepository.*" | get-menu "Commit..." 
+    | click
+get-window "Identify Yourself" | get-button OK | click
+get-window "Commit Changes" | get-section "Files (0/2)" | get-button "Select All" | click
+with [get-window "Commit Changes"] {
+    with [get-section "Commit message" | get-editbox] {
+        type-text "testProject was added in Git"
+    }
+    get-button Commit | click
+}
+wait 1000
+get-view "Git Repositories" | get-tree 
+    | select "GitRepository.*" 
+    | get-menu "Show In/History" | click
+get-view History | get-table | select "testProject was added in Git"
+with [get-view History] {
+    with [get-table] {
+        get-property itemCount | equals 1 | verify-true
+        get-item "testProject was added in Git" | get-property caption | equals "testProject was added in Git" 
+            | verify-true
+    }
+}
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac--
+------=_.q7.content-3d2e0690-ce48-3609-83e0-c704d49f1eaf
+Content-Type: q7/binary
+Entry-Name: .q7.content
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnSVkNFKwzAUhu8F3yHkfonawUZpN9jU
+OpggTkSvSpumMdjkdE1sWp/eVLYKIgPvkvN/5yN/omWnKtTyxkjQMb4kFxhxzaCQWsT4w5aTOV4uzs8i
+Bop00PCC7GfEMK6zRkK4OxxQp2Q4Wq4Gi/dqE/p5jN+srUNKnXMElCDQCPpyvzkif5rHJZ/S75TuZ/SY
+Es78CCOdKR7jNSgl7RMk0j7yGoy00PT4p1QwPEcWMU5XbZ5O17fbG57Icr4rt9M6CRxGtq+9h7MK+6oI
++bLa8s6aRSo+uRar1viNKp9c3wU9FM8uoiPxi3/YiOz9H7x7FTmc5ofLqb/3yBdQSwcId5PGZPkAAADG
+AQAAUEsBAhQAFAAIAAgAAAAhAHeTxmT5AAAAxgEAAAgAAAAAAAAAAAAAAAAAAAAAAC5jb250ZW50UEsF
+BgAAAAABAAEANgAAAC8BAAAAAA==
+------=_.q7.content-3d2e0690-ce48-3609-83e0-c704d49f1eaf--
+------=_.content.raw-c2dfba28-ebef-3afe-bd39-76376d333cc9
+Content-Type: q7/binary
+Entry-Name: .content.raw
+
+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
+------=_.content.raw-c2dfba28-ebef-3afe-bd39-76376d333cc9--
