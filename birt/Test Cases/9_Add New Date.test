@@ -5,7 +5,7 @@ Element-Name: 9_Add New Date
 External-Reference: 
 Element-Version: 3.0
 Contexts: _Wvr-EA9ZEeGxvukDpvV-ug,_BsfHMBWSEeGv57d8bLRChg
-Save-Time: 11/22/11 10:30 PM
+Save-Time: 12/16/11 6:18 PM
 Id: _82azUBWVEeGv57d8bLRChg
 
 ------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa
@@ -22,6 +22,96 @@ TEST STEPS
 6. Make sure that new Dtae Time Data was created.
 7. Make sure that it's possible to change Date Time format.
 ------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa--
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac
+Entry-Name: .content
+Content-Type: text/ecl
+
+get-view Navigator | get-tree | select "MyProject/Customers.rptdesign" | double-click -nowait
+with [get-editor "Customers.rptdesign" | get-diagram] {
+    with [get-edit-part -className ReportDesignEditPart | get-edit-part -className TableEditPart | get-edit-part 
+        -className TableCellEditPart -index 1] {
+        mouse-move 153 98 button1 -height 27 -width 191
+        mouse-press 153 98 button1 -height 27 -width 191
+        mouse-release 153 98 button1 524288 -height 27 -width 191
+        mouse-hover 153 98 -height 27 -width 191
+        mouse-press 153 98 button3 -height 27 -width 191
+        mouse-release 153 98 button3 2097152 -height 27 -width 191
+    }
+    get-menu "Insert/Data" | click
+}
+with [get-window "New Data Binding"] {
+    get-combo -after [get-label "Data Type:"] | set-text "Date Time"
+    get-editbox -after [get-label "Display Name:"] | set-text "current_date"
+    get-button -after [get-label "Expression:"] | click
+    with [get-window "Expression Builder (JavaScript)"] {
+        get-table | select "Native JavaScript Functions"
+        get-tree | select Date
+        get-table -after [get-label "Double Click to insert:"] -index 1 | select "Date\\(\\)" | double-click -nowait
+        get-editbox | set-text-offset 9 0
+        get-button OK | click
+    }
+    get-button OK | click
+}
+with [get-editor "Customers.rptdesign" | get-diagram | get-edit-part -className ReportDesignEditPart] {
+    mouse-hover 241 300 -height 1055 -width 815
+    with [get-edit-part -className TableEditPart | get-edit-part -className TableCellEditPart -index 1 | get-edit-part 
+        -text "[current_date]"] {
+        mouse-move 162 87 button1 -height 20 -width 185
+        mouse-press 162 87 button1 -height 20 -width 185
+        mouse-release 162 87 button1 524288 -height 20 -width 185
+        activate-direct-edit
+        mouse-hover 147 87 -height 20 -width 185
+        mouse-move 147 87 button1 -height 20 -width 185
+        mouse-press 147 87 button1 -height 20 -width 185
+        mouse-release 147 87 button1 524288 -height 20 -width 185
+        mouse-press 147 87 button1 -height 20 -width 185
+        mouse-double-click 147 87 button1 -height 20 -width 185
+    }
+}
+get-window "Edit Data Binding" | get-button Cancel | click
+with [get-editor "Customers.rptdesign" | get-diagram | get-edit-part -className ReportDesignEditPart] {
+    mouse-move 349 227 -height 1055 -width 815
+    with [get-edit-part -className TableEditPart] {
+        get-edit-part -className TableCellEditPart -index 25 | mouse-move 178 88 -height 16 -width 191
+        get-edit-part -className TableCellEditPart -index 17 | mouse-move 178 85 -height 16 -width 191
+        mouse-move 323 81 -height 153 -width 763
+        mouse-move 323 53 -height 153 -width 763
+        get-edit-part -className TableCellEditPart -index 1 | get-edit-part -text "[current_date]" | mouse-move 175 85 
+            -height 20 -width 185
+    }
+    mouse-move 345 58 -height 1055 -width 815
+    get-edit-part -className GridEditPart | mouse-move 317 28 -height 31 -width 572
+    with [get-edit-part -className TableEditPart | get-edit-part -className TableCellEditPart -index 1 | get-edit-part 
+        -text "[current_date]"] {
+        mouse-move 152 90 button3 -height 20 -width 185
+        mouse-press 152 90 button3 -height 20 -width 185
+        mouse-release 152 90 button3 2097152 -height 20 -width 185
+    }
+}
+with [get-editor "Customers.rptdesign" | get-diagram | get-edit-part -className ReportDesignEditPart | get-edit-part 
+    -className TableEditPart | get-edit-part -className TableCellEditPart -index 1 | get-edit-part 
+    -text "[current_date]"] {
+    mouse-move 93 13 button1 -height 20 -width 185
+    mouse-press 93 13 button1 -height 20 -width 185
+    mouse-release 93 13 button1 524288 -height 20 -width 185
+    mouse-hover 93 13 -height 20 -width 185
+}
+with [get-view "Property Editor - Data"] {
+    with [get-canvas -index 7] {
+        mouse-press 26 7 button1
+        mouse-move 26 7 -mask 524288
+        mouse-release 26 7 button1 524288
+    }
+    with [get-canvas -index 8] {
+        mouse-press 41 14 button1
+        mouse-release 41 14 button1 524288
+    }
+    get-canvas -index 7 | mouse-move 130 17
+    get-combo -after [get-label "Format as:"] | set-text Custom
+    get-canvas -index 7 | mouse-move 9 1
+    get-group "Custom settings" | get-table | select "Long Date"
+}
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac--
 ------=_.q7.content-3d2e0690-ce48-3609-83e0-c704d49f1eaf
 Content-Type: q7/binary
 Entry-Name: .q7.content

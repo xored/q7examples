@@ -5,7 +5,7 @@ Element-Name: 5_Change Row Color
 External-Reference: 
 Element-Version: 3.0
 Contexts: _Wvr-EA9ZEeGxvukDpvV-ug,_BsfHMBWSEeGv57d8bLRChg
-Save-Time: 11/22/11 10:22 PM
+Save-Time: 12/16/11 5:53 PM
 Id: _36AggRWREeGv57d8bLRChg
 
 ------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa
@@ -61,7 +61,6 @@ with [get-editor "Customers.rptdesign" | get-diagram | get-edit-part -className 
     }
     mouse-move 216 288 -height 1055 -width 815
 }
-
 set-dialog-result Color "0,128,255"
 get-view "Property Editor - Data" | get-button | click
 with [get-editor "Customers.rptdesign" | get-diagram | get-edit-part -className ReportDesignEditPart] {
@@ -93,7 +92,7 @@ with [get-editor "Customers.rptdesign" | get-diagram | get-edit-part -className 
     get-edit-part -className TableEditPart | get-handle RowHandle -index 2 | mouse-hover 26 13 -height 26 -width 40
 }
 set-dialog-result Color "255,255,128"
-get-view "Property Editor - Row" | get-button -after [get-label "Color:"] | click
+get-view "Property Editor - Row" | get-button | click // -after [get-label "Color:"] | click
 get-editor "Customers.rptdesign" | get-diagram | get-edit-part -className ReportDesignEditPart | get-edit-part 
     -className TableEditPart | get-handle RowHandle -index 2 | mouse-hover 21 7 -height 26 -width 40
 set-dialog-result Color "255,255,0"

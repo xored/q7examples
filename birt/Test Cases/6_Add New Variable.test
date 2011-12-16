@@ -5,7 +5,7 @@ Element-Name: 6_Add New Variable
 External-Reference: 
 Element-Version: 3.0
 Contexts: _Wvr-EA9ZEeGxvukDpvV-ug,_BsfHMBWSEeGv57d8bLRChg
-Save-Time: 11/22/11 10:24 PM
+Save-Time: 12/16/11 4:59 PM
 Id: _7KKNMBWSEeGv57d8bLRChg
 
 ------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa
@@ -21,6 +21,68 @@ TEST STEPS
 5. Click OK button;
 6. Make sure that your new variable was created and appeared in Data Explorer view. 
 ------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa--
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac
+Entry-Name: .content
+Content-Type: text/ecl
+
+get-view Navigator | get-tree | select "MyProject/Customers.rptdesign" | double-click -nowait
+with [get-view "Data Explorer"] {
+    click
+    get-tree | select Variables | get-menu "New Variable" | click
+}
+with [get-window "New Variable"] {
+    get-editbox -after [get-label "Name:"] | set-text MyVar
+    get-button -after [get-label "Default Value:"] | click
+    with [get-window "Expression Builder (JavaScript)"] {
+        get-table | select "Native JavaScript Functions"
+        get-tree | select Date
+        get-table -after [get-label "Double Click to insert:"] -index 1 | select "Date\\(\\)" | double-click -nowait
+        with [get-editbox] {
+            set-text-offset 9 0
+            key-type "M1+SPACE"
+            type-text now
+            key-type BS
+            key-type BS
+            key-type BS
+        }
+        get-button OK | click
+    }
+    get-button OK | click
+}
+get-view "Data Explorer" | get-tree | get-item "Variables/MyVar" | get-property caption | equals MyVar | verify-true
+get-view "Property Editor - Variable" | get-editbox -after [get-label "Value:"] | get-property text 
+    | equals "new Date()" | verify-true
+get-view "Data Explorer" | get-tree | select "Variables/MyVar" | double-click -nowait
+get-window "Edit Variable" | get-button Cancel | click
+with [get-view "Data Explorer" | get-tree] {
+    select "Variables/MyVar"
+    get-item "Variables/MyVar" | drag-start 22 8
+    get-item "Variables/MyVar" | drag-enter 54 8 -detail 2 -operation 3
+    drag-over 252 128 -operation 3
+    get-item "Variables/MyVar" | drag-exit
+}
+with [get-editor "Customers.rptdesign" | get-diagram | get-edit-part -className ReportDesignEditPart] {
+    drag-enter "-17" 104 -detail 2 -operation 3
+    drag-over 24 122 -detail 1 -operation 3
+    with [get-edit-part -className TableEditPart] {
+        with [get-edit-part -className TableCellEditPart -index 8] {
+            drag-over 47 92 -detail 1 -operation 3
+            drag-over 69 106 -detail 1 -operation 3
+        }
+        get-figure "0/2/17" | drag-over 78 84 -detail 1 -operation 3
+        get-edit-part -className TableCellEditPart -index 12 | drag-over 111 98 -detail 1 -operation 3
+    }
+    drag-exit
+    get-edit-part -className TableEditPart | get-edit-part -className TableCellEditPart -index 12 | drag-accept 111 98 
+        -detail 1 -operation 3
+}
+get-view "Data Explorer" | get-tree | get-item "Data Sources" | drag-set-data "-41"
+get-editor "Customers.rptdesign" | get-diagram | get-edit-part -className ReportDesignEditPart | get-edit-part 
+    -className TableEditPart | get-edit-part -className TableCellEditPart -index 12 | drop 111 98 -detail 1 -operation 3
+get-view "Data Explorer" | get-tree | get-item "Data Sources" | drag-end "-41" -detail 2
+get-editor "Customers.rptdesign" | get-diagram | get-edit-part -className ReportDesignEditPart | get-edit-part 
+    -text "[MyVar]" | get-property text | equals "[MyVar]" | verify-true
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac--
 ------=_.q7.content-3d2e0690-ce48-3609-83e0-c704d49f1eaf
 Content-Type: q7/binary
 Entry-Name: .q7.content

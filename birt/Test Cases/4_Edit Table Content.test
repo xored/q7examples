@@ -5,7 +5,7 @@ Element-Name: 4_Edit Table Content
 External-Reference: http://jira4.xored.com/browse/QS-1457
 Element-Version: 3.0
 Contexts: _Wvr-EA9ZEeGxvukDpvV-ug,_ZQowgA9cEeGxvukDpvV-ug
-Save-Time: 11/22/11 10:19 PM
+Save-Time: 12/16/11 5:44 PM
 Id: _urMNkA9cEeGxvukDpvV-ug
 
 ------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa
@@ -116,8 +116,21 @@ with [get-editor "Customers.rptdesign" | get-diagram] {
         mouse-release 62 186 button1 524288 -height 1055 -width 815
     }
 }
+with [get-editor "Customers.rptdesign" | get-diagram | get-edit-part -className ReportDesignEditPart] {
+    with [get-edit-part -className TableEditPart] {
+        with [get-handle TableGuideHandle] {
+            mouse-move 18 7 button1 -height 22 -width 57
+            mouse-press 18 7 button1 -height 22 -width 57
+            mouse-release 18 7 button1 524288 -height 22 -width 57
+        }
+        activate-direct-edit
+        get-handle TableGuideHandle | mouse-hover 19 7 -height 22 -width 57
+    }
+    get-edit-part -text "[CUSTOMERNAME]" | mouse-hover 21 17 -height 20 -width 763
+}
 with [get-view "Property Editor - Table"] {
     get-tab-folder | get-tab-item Binding | click
+    get-combo | set-text Customers
     get-button "Add..." | click
 }
 with [get-window "New Data Binding"] {

@@ -5,7 +5,7 @@ Element-Name: 8_Add New Grid
 External-Reference: 
 Element-Version: 3.0
 Contexts: _Wvr-EA9ZEeGxvukDpvV-ug,_BsfHMBWSEeGv57d8bLRChg
-Save-Time: 11/22/11 10:28 PM
+Save-Time: 12/16/11 6:14 PM
 Id: __Q68UBWUEeGv57d8bLRChg
 
 ------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa
@@ -17,9 +17,102 @@ TEST STEPS
 1. Open report layout editor;
 2. Delete Report header;
 3. Select "Grid" on a palette and drag it to the editor;
-4. Set grid lolumns and rows number and click OK;
+4. Set grid columns and rows number and click OK;
 5. Make sure your new grid was added to a report layout. 
 ------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa--
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac
+Entry-Name: .content
+Content-Type: text/ecl
+
+get-view Navigator | get-tree | select "MyProject/Customers.rptdesign" | double-click -nowait
+with [get-editor "Customers.rptdesign" | get-diagram] {
+    with [get-edit-part -className ReportDesignEditPart | get-edit-part -className GridEditPart | get-edit-part 
+        -className TableCellEditPart | get-edit-part -text "Report Header"] {
+        mouse-move 198 51 button1 -height 20 -width 565
+        mouse-press 198 51 button1 -height 20 -width 565
+        mouse-release 198 51 button1 524288 -height 20 -width 565
+        mouse-hover 198 51 -height 20 -width 565
+    }
+    key-type DEL
+}
+with [get-view Palette | get-palette | get-palette-entry Grid] {
+    mouse-move 49 14 button1 -height 23 -width 254
+    mouse-press 49 14 button1 -height 23 -width 254
+    get-figure 0 | drag-start 49 14
+}
+with [get-editor "Customers.rptdesign" | get-diagram | get-edit-part -className ReportDesignEditPart] {
+    get-edit-part -className TableEditPart | get-edit-part -className TableCellEditPart | get-edit-part -text STATE 
+        | drag-enter 182 82 -detail 2 -operation 7
+    drag-over 168 57 -detail 1 -operation 7
+    get-edit-part -className GridEditPart | get-edit-part -className TableCellEditPart | drag-over 191 66 -detail 1 
+       -operation 7
+    get-edit-part -className TableEditPart | get-edit-part -className TableCellEditPart | get-edit-part -text STATE 
+        | drag-exit
+    get-edit-part -className GridEditPart | get-edit-part -className TableCellEditPart | drag-accept 191 66 -detail 1 
+       -operation 7
+}
+get-view Palette | get-palette | get-palette-entry Items | drag-set-data
+get-editor "Customers.rptdesign" | get-diagram | get-edit-part -className ReportDesignEditPart | get-edit-part 
+    -className GridEditPart | get-edit-part -className TableCellEditPart | drop 191 66 -detail 1 -operation 7
+with [get-view Palette | get-palette | get-palette-entry Grid] {
+    mouse-move 42 15 button1 -height 23 -width 254
+    mouse-press 42 15 button1 -height 23 -width 254
+    get-figure 0 | drag-start 42 15
+}
+with [get-editor "Customers.rptdesign" | get-diagram | get-edit-part -className ReportDesignEditPart] {
+    drag-enter "-5" 234 -detail 2 -operation 7
+    drag-over 96 269 -detail 1 -operation 7
+    drag-exit
+    drag-accept 96 269 -detail 1 -operation 7
+}
+get-view Palette | get-palette | get-palette-entry Items | drag-set-data
+get-editor "Customers.rptdesign" | get-diagram | get-edit-part -className ReportDesignEditPart | drop 96 269 -detail 1 
+    -operation 7
+with [get-window "Insert Grid"] {
+    get-editbox -after [get-label "Number of columns:"] | set-text 3
+    get-editbox -after [get-label "Number of rows:"] | set-text 1
+    get-button OK | click
+}
+get-view Palette | get-palette | get-palette-entry Items | drag-end -detail 2
+with [get-editor "Customers.rptdesign" | get-diagram | get-edit-part -className ReportDesignEditPart | get-edit-part 
+    -className GridEditPart -index 1] {
+    with [get-handle RowHandle] {
+        mouse-move 49 24 button1 -height 16 -width 40
+        mouse-press 49 24 button1 -height 16 -width 40
+        mouse-release 49 24 button1 524288 -height 16 -width 40
+    }
+    activate-direct-edit
+    get-handle RowHandle | mouse-hover 49 24 -height 16 -width 40
+}
+get-view Palette | get-palette | get-palette-entry "Pointer Select" | mouse-move 250 14 -height 23 -width 254
+with [get-editor "Customers.rptdesign" | get-diagram | get-edit-part -className ReportDesignEditPart | get-edit-part 
+    -className GridEditPart -index 1 | get-edit-part -className TableCellEditPart] {
+    mouse-move 188 9 button1 -height 16 -width 255
+    mouse-press 188 9 button1 -height 16 -width 255
+    mouse-release 188 9 button1 524288 -height 16 -width 255
+    mouse-hover 188 9 -height 16 -width 255
+}
+get-editor "Customers.rptdesign" | get-diagram | get-edit-part -className ReportDesignEditPart | get-edit-part 
+    -className GridEditPart -index 1 | get-edit-part -className TableCellEditPart | get-property className 
+    | equals "org.eclipse.birt.report.designer.internal.ui.editors.schematic.editparts.TableCellEditPart" | verify-true
+with [get-editor "Customers.rptdesign" | get-diagram | get-edit-part -className ReportDesignEditPart | get-edit-part 
+    -className GridEditPart -index 1 | get-handle TableGuideHandle] {
+    mouse-move 14 13 button1 -height 22 -width 50
+    mouse-press 14 13 button1 -height 22 -width 50
+    mouse-release 14 13 button1 524288 -height 22 -width 50
+    mouse-hover 15 13 -height 22 -width 50
+}
+with [get-view "Property Editor - Grid"] {
+    with [get-canvas -index 3] {
+        mouse-press 38 12 button1
+        mouse-release 38 12 button1 524288
+        mouse-move 64 20
+    }
+    get-editbox -after [get-label "Name:"] | set-text qqq
+}
+get-view "Property Editor - Grid" | get-editbox -after [get-label "Name:"] | get-property text | equals qqq 
+    | verify-true
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac--
 ------=_.q7.content-3d2e0690-ce48-3609-83e0-c704d49f1eaf
 Content-Type: q7/binary
 Entry-Name: .q7.content
