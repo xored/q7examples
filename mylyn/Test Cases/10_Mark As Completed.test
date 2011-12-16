@@ -1,0 +1,134 @@
+--- Q7 testcase ---
+Q7-vendor: www.xored.com/q7
+Format-Version: 1.0
+Element-Name: 10_Mark As Completed
+External-Reference: 
+Element-Version: 3.0
+Contexts: _p1n6MBo7EeGGy_u62u0leg
+Save-Time: 11/29/11 7:44 PM
+Id: _NnvdoBqHEeGGgIGCgFF7Tw
+
+------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa
+Entry-Name: .description
+Content-Type: text/plain
+
+TEST STEPS
+
+1. Create a new task;
+2. Right-click it in a Task List view and select Mark as - Completed;
+3. Make sure that "Completed' is selected in the task editor;
+4. Set task as Incompleted;
+5. Delete it from the Task List view. 
+------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa--
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac
+Entry-Name: .content
+Content-Type: text/ecl
+
+get-view "Task List" | get-button "New Task" | click -arrow
+get-menu "New Task..." | click
+get-window "New Task" | get-button Finish | click
+with [get-view "Task List"] {
+    get-button Scheduled | click
+    get-tree | select "This Week/New Task" | get-menu "Mark as/Complete" | click
+    
+}
+with [get-editor "New Task" | get-button Complete] {
+    get-property caption | equals Complete | verify-true
+    get-property selected | equals true | verify-true
+}
+
+with [get-editor "New Task" | get-button Incomplete] {
+    click
+    key-type "M1+s"
+}
+get-view "Task List" | get-tree | select "This Week/New Task" | get-menu Delete | click
+get-window "Delete Tasks" | get-button Yes | click
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac--
+------=_.q7.content-3d2e0690-ce48-3609-83e0-c704d49f1eaf
+Content-Type: q7/binary
+Entry-Name: .q7.content
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnR9kDFPwzAQhXck/oPlHTstUoOipFVb
+0dAhLDCwRVF8GKuxL7GdJv33OIiGpWI73Xv36d5LN6NuyBmsU2gyumARJWBqFMrIjPb+8+GJbtb3d2mN
+mo1oQbAuZq4GU1mFydvvQEatkpmynCiBa1wS9hn98r5NOB+GgaGWDK3kH8XxarlJno+Cyn9U3sX8qjKo
+w4oSU2kIT0dlUdkT2TqyR9024EHQv0yP0zdKZLR8NWeBu+7lGfJcHvO9PBzi94ESf2kDBuqGhqSEhKzG
+w+jdumwXZlXsMJ4uLmW/WvZRAzLlsyM0w/+vJli+AVBLBwhELgqU6QAAAGUBAABQSwECFAAUAAgACAAA
+ACEARC4KlOkAAABlAQAACAAAAAAAAAAAAAAAAAAAAAAALmNvbnRlbnRQSwUGAAAAAAEAAQA2AAAAHwEA
+AAAA
+------=_.q7.content-3d2e0690-ce48-3609-83e0-c704d49f1eaf--
+------=_.content.raw-c2dfba28-ebef-3afe-bd39-76376d333cc9
+Content-Type: q7/binary
+Entry-Name: .content.raw
+
+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
+------=_.content.raw-c2dfba28-ebef-3afe-bd39-76376d333cc9--
