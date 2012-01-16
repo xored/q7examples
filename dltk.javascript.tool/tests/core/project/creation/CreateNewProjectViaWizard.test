@@ -6,7 +6,7 @@ Tags: core/project/creation
 External-Reference: 
 Element-Version: 3.0
 Contexts: _1QSFwD0QEeGit9CrtuY7UA,_w6GvsD0QEeGit9CrtuY7UA,_qcOGQD0QEeGit9CrtuY7UA
-Save-Time: 1/13/12 9:41 AM
+Save-Time: 1/16/12 2:14 PM
 Id: _lfFXED2CEeGit9CrtuY7UA
 
 ------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa
@@ -23,6 +23,46 @@ Test Steps:
 3. Set name and press "Finish" button
 4. Make sure that new Javascript Project is added in workspace and is displayed in Script View
 ------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa--
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac
+Entry-Name: .content
+Content-Type: text/ecl
+
+get-menu "File/New/Other..." | click
+get-window New | get-editbox -after [get-label "Wizards:"] | set-text javas
+with [get-window New | get-tree] {
+    get-property itemCount | equals 1 | verify-true
+    get-item "JavaScript \\[DLTK\\]" | get-property caption | equals "JavaScript [DLTK]" | verify-true
+    get-item "JavaScript \\[DLTK\\]" | get-property childCount | equals 2 | verify-true
+    get-item "JavaScript \\[DLTK\\]/Javascript Project" | get-property caption | equals "Javascript Project" 
+        | verify-true
+    get-item "JavaScript \\[DLTK\\]/New JavaScript File" | get-property caption | equals "New JavaScript File" 
+        | verify-true
+}
+get-window New | get-tree | select "JavaScript \\[DLTK\\]/Javascript Project"
+get-window New | get-button Finish | get-property enablement | equals false | verify-true
+get-window New | get-button "Next >" | click
+with [get-window "Create Javascript project"] {
+    get-editbox -after [get-label "Project name:"] | get-property text | equals "" | verify-true
+    get-button Finish | get-property enablement | equals false | verify-true
+    get-button "Next >" | get-property enablement | equals false | verify-true
+}
+get-window "Create Javascript project" | get-editbox -after [get-label "Project name:"] | set-text "javascript.project"
+with [get-window "Create Javascript project" | get-group Interpreter 
+    | get-button "Use default interpreter (Currently \'Rhino Interpreter\')"] {
+    get-property caption | equals "Use def&ault interpreter (Currently \'Rhino Interpreter\')" | verify-true
+    get-property selected | equals true | verify-true
+}
+get-window "Create Javascript project" | get-button Finish | click
+with [get-view "Script Explorer" | get-tree] {
+    get-property itemCount | equals 1 | verify-true
+    get-item "javascript.project" | get-property caption | equals "javascript.project" | verify-true
+}
+with [get-view "Script Explorer" | get-tree] {
+    get-item "javascript.project" | get-property childCount | equals 1 | verify-true
+    get-item "javascript.project/Interpreter Libraries \\[Rhino Interpreter\\]" | get-property caption 
+        | equals "Interpreter Libraries [Rhino Interpreter]" | verify-true
+}
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac--
 ------=_.q7.content-3d2e0690-ce48-3609-83e0-c704d49f1eaf
 Content-Type: q7/binary
 Entry-Name: .q7.content
