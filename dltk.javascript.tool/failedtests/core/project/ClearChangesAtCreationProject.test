@@ -2,11 +2,11 @@
 Q7-vendor: www.xored.com/q7
 Format-Version: 1.0
 Element-Name: ClearChangesAtCreationProject
-Tags: core/project/creation
+Tags: core/project/creation, skipExecution
 External-Reference: 
 Element-Version: 3.0
 Contexts: _1QSFwD0QEeGit9CrtuY7UA,_w6GvsD0QEeGit9CrtuY7UA,_om--UD2REeGit9CrtuY7UA
-Save-Time: 1/13/12 10:45 AM
+Save-Time: 1/17/12 4:52 PM
 Id: _uV0DAD2JEeGit9CrtuY7UA
 
 ------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa
@@ -73,20 +73,20 @@ with [get-window "Create Javascript project" | get-tree] {
 get-window "Create Javascript project" | get-button Finish | click
 with [get-view "Script Explorer" | get-tree] {
     get-item "test.project" | get-property caption | equals "test.project" | verify-true
-    get-item "test.project" | get-property childCount | equals 3 | verify-true
+    get-item "test.project" | get-property childCount | equals 1 | verify-true
 }
 ------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac--
 ------=_.q7.content-3d2e0690-ce48-3609-83e0-c704d49f1eaf
 Content-Type: q7/binary
 Entry-Name: .q7.content
 
-UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnSVkdFKwzAUhu8F3yHkvklXwWppNkqr
-Q0FwGxO9GiU9dpUm6ZJ0rW9vqltFkYF3yfm/fDk5iWe9qNEetKmUZHhCfIxAclVUsmS4ta/eFZ5Nz89i
-rgTplYaC7EJiOMhcVypaHRaoF1U0WoLB4rzSRK7O8NbaJqK06zqiREmULunzw90R+dM8HnIp/UzpLqTH
-lAB3JYxkLoDhtIZcp9tclmASm2rIrWvjUas34BZ/P+5iaKsqGN60T36WZMH9Dcwre51q276E6wQjm5eG
-4cFNm6/jlB90Lnxv3GXAa+zmgZCbiLTQWzPdTBar2y7zFz91MR2JX3x3Od+bf/BKeN46C5Yn+GFz6oMc
-8gFQSwcI8858KggBAADrAQAAUEsBAhQAFAAIAAgAAAAhAPPOfCoIAQAA6wEAAAgAAAAAAAAAAAAAAAAA
-AAAAAC5jb250ZW50UEsFBgAAAAABAAEANgAAAD4BAAAAAA==
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnSVkVFLwzAQgN8F/0PIs026ClbLulHa
+ORQE55jo0yjp2UWbpEvStf57U90qigx8y9199+VyGU87UaEdaMOVjPGI+BiBZKrgsoxxY1+8SzydnJ6M
+mRKkUxoKsg2JYSBzzVW03B9QJ3g0WILe4rzSRC4f4421dURp27ZEiZIoXdKnu5sD8qd5aHJV+lml25Ae
+qgSYS2EkcwExTivIdbrJZQkmsamG3Lox7rV6BWbx9+PO+7F4EeN18+hnSRbczmDO7VWqbfMcrhKMbF6a
+GPduWn+1U7bXnSHzxutZB6zpQ8e+1+5uYBV260HILUha6KyZrEeL5XWb+Yuf9jEdiF98ezHfmX/wSnje
+KgsejvB9cOy/HPIBUEsHCMeNZlESAQAA+gEAAFBLAQIUABQACAAIAAAAIQDHjWZREgEAAPoBAAAIAAAA
+AAAAAAAAAAAAAAAAAAAuY29udGVudFBLBQYAAAAAAQABADYAAABIAQAAAAA=
 ------=_.q7.content-3d2e0690-ce48-3609-83e0-c704d49f1eaf--
 ------=_.content.raw-c2dfba28-ebef-3afe-bd39-76376d333cc9
 Content-Type: q7/binary
