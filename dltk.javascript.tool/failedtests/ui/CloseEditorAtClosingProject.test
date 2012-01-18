@@ -1,0 +1,99 @@
+--- Q7 testcase ---
+Q7-vendor: www.xored.com/q7
+Format-Version: 1.0
+Element-Name: CloseEditorAtClosingProject
+Tags: ui, skipExecution
+External-Reference: 
+Element-Version: 3.0
+Contexts: _vux-ED2qEeGit9CrtuY7UA,_k86W8D2qEeGit9CrtuY7UA
+Save-Time: 1/18/12 12:16 PM
+Id: _8WJowEGQEeGVpcuUnbgQ7g
+
+------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa
+Entry-Name: .description
+Content-Type: text/plain
+
+Pre-conditions:
+There is project with files in workspace
+
+Test Steps:
+1. Open two files 
+2. Restart Eclipse
+3. Select project and close this project
+4. Make sure that all files is closed
+------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa--
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac
+Entry-Name: .content
+Content-Type: text/ecl
+
+with [get-view "Script Explorer" | get-tree] {
+    select "javascript.project/testfolder/testfile.js" | double-click -nowait
+    select "javascript.project/testfolder/firstfile.js" | double-click -nowait
+}
+get-menu "File/Restart" | click
+wait-until-eclipse-is-ready
+get-view "Script Explorer" | get-tree | select "javascript.project" | get-menu "Close Project" | click
+get-view "Script Explorer" | get-tree | get-property itemCount | equals 3 | verify-true
+get-tab-folder | get-property tabCount | equals 0 | verify-true
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac--
+------=_.q7.content-3d2e0690-ce48-3609-83e0-c704d49f1eaf
+Content-Type: q7/binary
+Entry-Name: .q7.content
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnR9kNFLwzAQxt8F/4eQZ5foBFvLujFm
+GQqCQ+b0adT0jHFt0ibpGv97r+IqiOwtd993v9x9k1moSrIH65TRKb1g55SAFqZQWqa09W+jmM6mpycT
+YSoWjIWCNRFzAnRulUkefx4kVCoZKOOeglztEuyn9N37OuG86zpmKsmMlfz5/vZg+Zc8DKHKv1XeRPyg
+MhDYokTnFaR0URoHWaG8sXPfF7j7gzUfIDz9Pe2yX0oVKd3GmzvTZctVBsunWrRr/SpXkaTE59LhzeqM
+uJ2qswCi9TiKwmeN34AoKSZBCGahPQTvptt9G0bZzbhBlPLXC+vbl2g9n/DB8ce/i6828XF/XxyLGi1f
+UEsHCI9m1rUGAQAAtQEAAFBLAQIUABQACAAIAAAAIQCPZta1BgEAALUBAAAIAAAAAAAAAAAAAAAAAAAA
+AAAuY29udGVudFBLBQYAAAAAAQABADYAAAA8AQAAAAA=
+------=_.q7.content-3d2e0690-ce48-3609-83e0-c704d49f1eaf--
+------=_.content.raw-c2dfba28-ebef-3afe-bd39-76376d333cc9
+Content-Type: q7/binary
+Entry-Name: .content.raw
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnTtXW1v2zgS/n7A/QedFjjcHVLLcZI2
+m4u7l/hl41unKWK3XVxRBIxM22xkUaCoOtlfv0PJkuVEkmVJTBwfU6BRJGo4MxzOkDN87NNf7meW9gMz
+l1C7qe/X6rqGbZOOiD1p6h4fvznWf3n/17+cmnRWu6cMj2ocuxaqmXBdcxjl1KRWjaH5yVDcH5jYRoxQ
+7X5GTiKyDUEWOrLdE7jf1KecOyeGMZ/Pa3Q2qVE2MX6/7EVN3NUm8wO/RaNe34dm/YE5xTP0htguR7aJ
+w7cyGYzoGdDM8JsZfjNDNDMiObD4MxdFIXJOqgY0zUHZI2voeWSViv/HiqawaRHHxb668GwsVNYwOv47
+MIaaJkZxhuyRq4GOT/iDA69nSnkywBY2eSt4LSACZEaII+2O2KOm3gm6/AJ/0LmuzTyLE8ciJuEPYE66
+EfRrhB3LYuMzwdC7gzjHDAxuYDLicK1z71hAhz3la0ECiDiIYZtr5LEsP+vJEo6w6xP3Dbv2rzfa4rk2
+aP+2EFcILHh7JtmHDOOcEgo1HepxncnhmAdMg44ihuHGLGRDcHygx9mP2IAhnL7/jn6gQMuC6HegdGr4
+D+KNoGc+ptYIs7SHxMK1727saWnJ2tS7tXALtHy3kWC7oNIxYbum0zUT6xLbXvbEAh10QSMr2gofXIMy
+EeNPn225v0kfCaGPhh5XTkUj8QUR3qVsobGQqgpWuYNV/eYo2XxeQ0CKMf+yISnGyKYedEucUcui4Bk+
+Jjj4VbVnSvtsviTGQZXe5P/XDezfvH29bqCxZF6aGzhzXQwBRgOdM3LrcXiBcDxrUc+Guz+Q5cGdg1QH
+EWNxdcr4bw6BgRgn/vbspNMG5sUTXZsyPM65XfvJMDo9m6eY4oKtS+Q4sE3XFg+bumH8J2wIG+5HQri5
+lxyRVCa1OaPWWvV65CScS6aFXPcDmkFTkCqS0J3z2pyMJpi7tcEUW5bIMqDbgLOmzpkH+rmlDFaeXwif
+CjvROOEWkPlv5Ha11bWP5pI/sKARvj9F7iWxyQxun3uci/XS8gG6T37ge8yVuzEDZdQBc3n4QGERptm+
+VCBCK5TxH/9cNg6N4H2m2KdG0CjqwljpY23Xl3RExgSPEnseI8vFZXu4xhMIkYn0ba+8AL4WgLoWmNM1
+HmNwAuZyKq151S32bsc3tmS1iUEvK1YXVAP+G+NkzVUyMr0Z7tmOJ2wg2fLqpa1rMUnk6WlIqXWOmDTz
+6lMT8cB+i1gYyF7szXMIIKOCtun7LG9WsHPiSrVt4n4mLgH60kzizHKmKJF64+ioLHFYf0KAOWMYFVLt
+NQ7WKChNAZVM7DBoSfTqYnkdzLsCBjrE9zyRtbTQXN7ToUmyvqvwET71gnO1jccI1rPBekEeh5cdabRb
+YNDJo1kF9XNk3k2YcIbyolQfPVBPjARmTOacGaLbPnF5IcfxXDwG/RSz5daUWCOGC8bKC8rIH7A/QFLj
++We4R0y5fZwvth0jPk3sY78ig4V9oDw9yQ7SpondsIsi66PIL8j17W2GJm3MsZns4qpZwnrmNGvNVX5i
+E7dLTc9tBdtved7jo7+4kRdqPOZSefO2S+2Cnm9pjYnM/dSti39l+btiYu0ZbkeednNwcHR0eHjQKK8H
+hrOkqfs/VezchsRJXQtWsUKV5xYC31tkS8gfUtzq1+vOoPe/zp427A378KvVvxrAr8veB/jv7Pc9rd/p
+Dm+GVzfXvV8vht9yi3AbGWeLWpRpsH5o6o3Duq5NRH5hcX3rZyrFZUyGcWQJ/quxJ7f+/lS7b+pv9usH
+DV17gKtjXZuLqNfU9+uC5hSTyZQ39XfHh7Hka5gE9G+cGqu5x+BmnnxklPhdzUdmHEjYIPsYZNJz5B5b
+dOZQl3CclH9cJBwf5+FzbDLz5gM9UiO2yPYjqyZ4jiyxtKsFXYEk7WWtWMoklb3MGIoRWHiaxE6+UHbn
+Oqi8wvyewrVIAb8AoZOnDvkjCyofpu1imaGPxLal7pAiJYaGRwumGHrJXMbnzsjid2ICBcqtSre+CNIH
+kbhtArcqGAnJ0eHAjwxH9WVk+PndMjC83a9XHxgayYEh4zzTBoEhKEHmCAxBw6cxQfSFiC1WJ+Etv6AZ
+HSYI70ZlxFj9sIqQ8ZjJ0rkl4LNg8ivYLggC0hZqvzIy6hMbS9yNC/4vfINOpn9cPhZb3sy+EkmFgmtO
+yjj4i8C+5OTQLjAC9rLCeTXpKRjKzAJCJb0IfQVKl2aXQ+os7L5IcAtdQ/I2sBp7S++gtLEEHRR0GpGj
+LPl6unylPUIwGTJ8QmkNqrT4C6XFJSW2SmXOS9UkEzLvBUisptULENjeUyLrsvlVzbPXnM2XfRpGVQu2
+rFpQwTGQtUchqtBWueM7UTnjWY/+vN4qh/9Tvnpa/OTTs1RIXv0BqZ2q7xQ5cyOjeHP5qT/s7WkXN4PW
+9VW/v6d9jq5W6jZ7Wvvq03m/c3P+qdvtXHfaZQs5R0fLVJ24XqTq4HKTVN267By0dMOdU1z6PFDAZcMU
+OOCjBk8QgYFWHvdfWcLwXXLCMA2cpm2UMBQviv26rplogbkLUWkJ2UHoC9+LYZCV8QvZ2fYVX5nQ22tL
+WKhL9vqLRa6FGeIpwb+0R45nTiTtk6UW3VNDSQSMLZnIlbs3kBF1Pn4aXOQMINUV3vMggdbjR7cPC/Q0
+jBnLgGXE0eoKOKSAQwo4pIBDGfQVcKjiMVPAIQUcygccKhrHt3v9qFBGCmW0c+VUhTIqbrMKZZQrpaLq
+hltUN1QoI4Uy2sUqlCS3oFBGL44yyoAZpX7MnAIabeBtFdCoQE8KaFSVEtsKaJQ9FApolBobMpBGqZ+F
+qbBGZTJMCmuksEYKa6SwRpt2oLBGKjn+6pLjktJbCmu0tQdLFNbo5U+eqprBltUMFNZorcdRWKNi/Cms
+kcIabVDlUVijV4A1kggU2j9MRwolf/WMVhYr1LLo39HM+ffyS3gUbCiDvoINVb9n2FnY0OnfvrbaZ8Oz
+r2KSLSfYt2+l44VCEuXzp29zIInWfwXVa0MSxUCuCkikgEQKSKSARBn0FZCo4jFTQCIFJKoCSJQaxrd7
+9ahwRApHtHOlUoUjKm6zCkeUK8eiaoJbVBNUOCKFI9rFCpMkt6BwRC+OI0r5kLnM76lXOKINvK3CERXo
+SeGIqlJiW+GIsodC4YhSY8NxOo4oFhsUjkjhiBSOaMmkwhE91pfCESkcUbnJoHBEO5gcl5TeUjiirT1X
+onBEL38UVdUMdq5moIBEO1jsUECiV3GmaqfKPApItKNAItEiIQkHHXBqUqvG0PxkKO4PTGwjRii88ydQ
+SwcIf6b5oLEJAAAypwAAUEsBAhQAFAAIAAgAAAAhAH+m+aCxCQAAMqcAAAgAAAAAAAAAAAAAAAAAAAAA
+AC5jb250ZW50UEsFBgAAAAABAAEANgAAAOcJAAAAAA==
+------=_.content.raw-c2dfba28-ebef-3afe-bd39-76376d333cc9--

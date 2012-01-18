@@ -1,0 +1,179 @@
+--- Q7 testcase ---
+Q7-vendor: www.xored.com/q7
+Format-Version: 1.0
+Element-Name: RestoreDefaultsButtonDoesNotWorkPropertyForQuickDiffPreferences
+Tags: preferences, skipExecution
+External-Reference: https://bugs.eclipse.org/bugs/show_bug.cgi?id=211990
+Element-Version: 3.0
+Contexts: _vux-ED2qEeGit9CrtuY7UA
+Save-Time: 1/18/12 11:36 AM
+Id: _RpsRIEGMEeGVpcuUnbgQ7g
+
+------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa
+Entry-Name: .description
+Content-Type: text/plain
+
+Test Steps:
+1. Open Preferences
+2. Switch to "General >Editors > Text Editors > Quick Deff"
+2. Uncheck Enable Quick Diff checkbox(options become disabled), save changes
+3. Click "Restore Defaults" button
+4. Make sure that options are enabled
+
+------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa--
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac
+Entry-Name: .content
+Content-Type: text/ecl
+
+get-preferences-menu | click
+with [get-window Preferences] {
+    get-tree | select "General/Editors/Text Editors/Quick Diff"
+    get-button "Enable quick diff" | click
+    get-button Apply | click
+}
+with [get-window Preferences] {
+    with [get-button "Show differences in overview ruler"] {
+        get-property enablement | equals false | verify-true
+        get-property caption | equals "Show differences in &overview ruler" | verify-true
+    }
+    with [get-group Colors] {
+        get-button | get-property enablement | equals false | verify-true
+        get-button -after [get-label "Additions:"] | get-property enablement | equals false | verify-true
+        get-button -after [get-label "Deletions:"] | get-property enablement | equals false | verify-true
+    }
+    with [get-combo -after [get-label "Use this reference source:"]] {
+        get-property enablement | equals false | verify-true
+        get-property values -index 0 | equals "Version on Disk" | verify-true
+        get-property values -index 1 | equals "Latest CVS Revision" | verify-true
+    }
+}
+get-window Preferences | get-button "Restore Defaults" | click
+with [get-window Preferences | get-button "Enable quick diff"] {
+    get-property enablement | equals true | verify-true
+    get-property caption | equals "&Enable quick diff" | verify-true
+    get-property selected | equals true | verify-true
+}
+with [get-window Preferences] {
+    get-button Apply | click
+    with [get-button "Show differences in overview ruler"] {
+        get-property enablement | equals true | verify-true
+        get-property caption | equals "Show differences in &overview ruler" | verify-true
+    }
+    with [get-group Colors] {
+        get-button | get-property enablement | equals true | verify-true
+        get-button -after [get-label "Additions:"] | get-property enablement | equals true | verify-true
+        get-button -after [get-label "Deletions:"] | get-property enablement | equals true | verify-true
+    }
+    with [get-combo -after [get-label "Use this reference source:"]] {
+        get-property enablement | equals true | verify-true
+        get-property values -index 0 | equals "Version on Disk" | verify-true
+        get-property values -index 1 | equals "Latest CVS Revision" | verify-true
+    }
+    get-button OK | click
+}
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac--
+------=_.q7.content-3d2e0690-ce48-3609-83e0-c704d49f1eaf
+Content-Type: q7/binary
+Entry-Name: .q7.content
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnR9UctuwjAQvFfqP0Q+FxvoISUioLZJ
+EQcqSEUfJxTMJlgktvEDwt93oQUuVW+7O7Ojmd3+sKmrYAfGCiVj0qFtEoDkaiVkGRPvitYDGQ5ub/pc
+1bRRBlZ0G1LLQeZGqOjttwiaWkQXle5RBXWljXAek7VzOmJsv99TVZdUmZJ9TsZnyp/KlyVE2Qll25Cd
+UQocRySQeQ0xycA6bBMocl85++SdUzJRYF+V+1BmMzVKg3GHF2VmXvBNIopiaqAAg0nBkmv8+6NxsYrJ
+ItM2G6ejSQqjd839XC7LWViSwOWljYm+bt8FdiN02gD3DjWQcdDoCXiFh2wcGJlX2Zn9k8pirKUvLaao
+hLZwOshxwOxa7RdYUV6KIfrodjq9Xpvg/YMAPyAdKtrBYuebVpp0t2hOuN6zcf4rnD/22YWB/2L/Pwwp
+31BLBwilfePuQwEAAPsBAABQSwECFAAUAAgACAAAACEApX3j7kMBAAD7AQAACAAAAAAAAAAAAAAAAAAA
+AAAALmNvbnRlbnRQSwUGAAAAAAEAAQA2AAAAeQEAAAAA
+------=_.q7.content-3d2e0690-ce48-3609-83e0-c704d49f1eaf--
+------=_.content.raw-c2dfba28-ebef-3afe-bd39-76376d333cc9
+Content-Type: q7/binary
+Entry-Name: .content.raw
+
+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
+dFBLBQYAAAAAAQABADYAAADzEwAAAAA=
+------=_.content.raw-c2dfba28-ebef-3afe-bd39-76376d333cc9--
