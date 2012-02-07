@@ -4,10 +4,12 @@ Format-Version: 1.0
 Element-Name: RenameFunctionViaExplorerWithUpdateReferences
 Tags: functionality/rename/function
 External-Reference: 
+Element-Type: testcase
 Element-Version: 3.0
 Contexts: _vux-ED2qEeGit9CrtuY7UA,_k86W8D2qEeGit9CrtuY7UA
-Save-Time: 1/17/12 4:26 PM
+Save-Time: 2/7/12 5:35 PM
 Id: _dQ4MYEDsEeGVpcuUnbgQ7g
+Testcase-Type: ecl
 
 ------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa
 Entry-Name: .description
@@ -24,151 +26,48 @@ Test Steps:
 5. Press "Ok" button
 6. Make sure that function is changed and all references are changed too
 ------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa--
-------=_.q7.content-3d2e0690-ce48-3609-83e0-c704d49f1eaf
-Content-Type: q7/binary
-Entry-Name: .q7.content
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac
+Entry-Name: .content
+Content-Type: text/ecl
 
-UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnR9kV1PwjAUhu9N/A9N72kVjcNlgxiZ
-xgsugAzkiszubDRu7Wg7GP/eM8JmYgxXPT3v0/d8NJg0ZUEOYKzUKqT37I4SUEKnUuUhrV02GNHJ+PYm
-ELpkjTaQsr3HrACVGKn95SUgTSn93mXYuqCvsj7mQ7pzrvI5Px6PTJc50ybnn7OPDvnXuX+EKj+rfO/x
-TmUgMEWJSkoI6QLa861WwmH5lUyipipQN2vpdnGVJg4WkIHBucDS32Ef2jZlGtJtOn+cbaKpjeB9VYk6
-Vl/53MspcUluQ5pdnJNCuhM352q8SyJ0qrAJEAXFPRGCm1IOGmfH20PdDKLpcI+20j2/GldvvPgl4D3x
-h/8ePa1H1/n2cu0jEPkBUEsHCGmuHCUVAQAA0wEAAFBLAQIUABQACAAIAAAAIQBprhwlFQEAANMBAAAI
-AAAAAAAAAAAAAAAAAAAAAAAuY29udGVudFBLBQYAAAAAAQABADYAAABLAQAAAAA=
-------=_.q7.content-3d2e0690-ce48-3609-83e0-c704d49f1eaf--
-------=_.content.raw-c2dfba28-ebef-3afe-bd39-76376d333cc9
-Content-Type: q7/binary
-Entry-Name: .content.raw
-
-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
-Mh4AAAAA
-------=_.content.raw-c2dfba28-ebef-3afe-bd39-76376d333cc9--
+get-view "Script Explorer" | get-tree | select "javascript.project/testfolder/testfile.js/help\\(message\\)" 
+    | get-menu "Refactor/Rename..." | click
+get-window "Rename Method" | get-editbox -after [get-label "New name:"] | set-text test
+with [get-window "Rename Method" | get-button "Update references"] {
+    get-property enablement | equals true | verify-true
+    get-property caption | equals "Update &references" | verify-true
+    get-property selected | equals true | verify-true
+}
+get-window "Rename Method" | get-button OK | click
+with [get-view "Script Explorer" | get-tree] {
+    get-item "javascript.project/testfolder/testfile.js" | get-property caption | equals "testfile.js" | verify-true
+    get-item "javascript.project/testfolder/testfile.js" | get-property childCount | equals 3 | verify-true
+    get-item "javascript.project/testfolder/testfile.js/closewindow\\(\\)" | get-property caption 
+        | equals "closewindow()" | verify-true
+    get-item "javascript.project/testfolder/testfile.js/test\\(message\\)" | get-property caption 
+        | equals "test(message)" | verify-true
+    get-item "javascript.project/testfolder/testfile.js/checkField\\(field\\)" | get-property caption 
+        | equals "checkField(field)" | verify-true
+}
+get-view "Script Explorer" | get-tree | select "javascript.project/testfolder/testfile.js" | double-click
+get-editor "testfile.js" | get-editbox | get-property text | equals "function closewindow() {\n"
+    + "\tif (document.all) {\n"
+    + "\t\tdocument.all.orderwindow.style.visibility=\"hidden\"\n"
+    + "\t}\n"
+    + "\tif (document.layers) {\n"
+    + "\t\tdocument.orderwindow.visibility=\"hidden\"\n"
+    + "\t}\n}\n\n"
+    + "function test(message) \n"
+    + "{ \n"
+    + "return true; \n"
+    + "} \n\n"
+    + "function checkField(field) \n"
+    + "{ \n"
+    + "if (field.value == \"\") \n"
+    + "test(\"Test Fields\"); \n"
+    + "else \n"
+    + "test(\"\"); \n"
+    + "return true; \n"
+    + "}" | verify-true
+get-view Problems | get-tree | get-property itemCount | equals 0 | verify-true
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac--
