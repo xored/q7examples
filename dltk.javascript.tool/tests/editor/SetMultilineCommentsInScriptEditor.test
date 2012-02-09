@@ -1,0 +1,53 @@
+--- Q7 testcase ---
+Q7-vendor: www.xored.com/q7
+Format-Version: 1.0
+Element-Name: SetMultilineCommentsInScriptEditor
+Tags: scripteditor
+External-Reference: 
+Element-Type: testcase
+Element-Version: 3.0
+Contexts: _vux-ED2qEeGit9CrtuY7UA,_k86W8D2qEeGit9CrtuY7UA
+Save-Time: 2/9/12 1:29 PM
+Id: _NqDs0FLlEeGmP_qg32bX8Q
+Testcase-Type: ecl
+
+------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa
+Entry-Name: .description
+Content-Type: text/plain
+
+1. Open file in editor
+2. Enter "/*" and press "Enter" keyboard button
+3. Make sure that comment lines are added
+------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa--
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac
+Entry-Name: .content
+Content-Type: text/ecl
+
+get-view "Script Explorer" | get-tree | select "javascript.project/testfolder/firstfile.js" | double-click
+with [get-editor "firstfile.js" | get-text-viewer] {
+    set-caret-pos 2 1
+    key-type Enter
+    type-text "/*"
+    key-type Enter
+    key-type "M1+s"
+}
+get-editor "firstfile.js" | get-editbox | get-property text | equals "function click(e) {\n\n"
+    + "\t/*\n"
+    + "\t * \n"
+    + "\t */\n"
+    + "\t\n"
+    + "}" | verify-true
+with [get-editor "firstfile.js" | get-text-viewer] {
+    set-caret-pos 4 8
+    type-text " test line"
+    key-type Enter
+    key-type "M1+s"
+}
+get-editor "firstfile.js" | get-editbox | get-property text | equals "function click(e) {\n\n"
+    + "\t/*\n"
+    + "\t *  test line\n"
+    + "\t *  \n"
+    + "\t */\n"
+    + "\t\n"
+    + "}" | verify-true
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac--
