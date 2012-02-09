@@ -1,0 +1,55 @@
+--- Q7 testcase ---
+Q7-vendor: www.xored.com/q7
+Format-Version: 1.0
+Element-Name: ErrorMarkersInScriptEditor
+Tags: scripteditor
+External-Reference: 
+Element-Type: testcase
+Element-Version: 3.0
+Contexts: _vux-ED2qEeGit9CrtuY7UA,_k86W8D2qEeGit9CrtuY7UA
+Save-Time: 2/9/12 2:48 PM
+Id: _uQAqUFLwEeGVlNL1lkWsEw
+Testcase-Type: ecl
+
+------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa
+Entry-Name: .description
+Content-Type: text/plain
+
+1. Open file in editor
+2. Enter code with error
+3. Make sure that error marker is displayed 
+4. Make sure that error is displayed in "Problems" view
+------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa--
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac
+Entry-Name: .content
+Content-Type: text/ecl
+
+get-view "Script Explorer" | get-tree | select "javascript.project/testfolder/testfile.js" | double-click
+with [get-editor "testfile.js"] {
+    with [get-text-viewer] {
+        set-caret-pos 1 22
+        key-type Del
+        key-type "M1+s"
+    }
+    get-left-ruler | hover-ruler -line 1
+}
+get-window -from "Information Window" | get-editbox | get-property text | equals "Mismatched input {, ) expected" 
+    | verify-true
+with [get-view Problems | get-tree] {
+    get-property itemCount | equals 1 | verify-true
+    get-item "Errors \\(1 item\\)" | get-property caption | equals "Errors (1 item)" | verify-true
+    get-item "Errors \\(1 item\\)" | get-property childCount | equals 1 | verify-true
+    get-item "Errors \\(1 item\\)/Mismatched input {, \\) expected" | get-property caption 
+        | equals "Mismatched input {, ) expected" | verify-true
+    get-item "Errors \\(1 item\\)/Mismatched input {, \\) expected" | get-property columns -index 0 
+        | equals "Mismatched input {, ) expected" | verify-true
+    get-item "Errors \\(1 item\\)/Mismatched input {, \\) expected" | get-property columns -index 1 
+        | equals "testfile.js" | verify-true
+    get-item "Errors \\(1 item\\)/Mismatched input {, \\) expected" | get-property columns -index 2 
+        | equals "/javascript.project/testfolder" | verify-true
+    get-item "Errors \\(1 item\\)/Mismatched input {, \\) expected" | get-property columns -index 3 | equals "line 1" 
+        | verify-true
+    get-item "Errors \\(1 item\\)/Mismatched input {, \\) expected" | get-property columns -index 4 
+        | equals "JavaScript Problem" | verify-true
+}
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac--
