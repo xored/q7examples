@@ -7,7 +7,7 @@ External-Reference:
 Element-Type: testcase
 Element-Version: 3.0
 Contexts: _vux-ED2qEeGit9CrtuY7UA,_k86W8D2qEeGit9CrtuY7UA
-Save-Time: 2/7/12 6:32 PM
+Save-Time: 2/9/12 4:41 PM
 Id: _4Oqg0Ec0EeGh_eW0moBGMA
 Testcase-Type: ecl
 
@@ -24,18 +24,16 @@ Test Steps:
 Entry-Name: .content
 Content-Type: text/ecl
 
-get-view "Script Explorer" | get-tree | select "javascript.project/testfolder/testfile.js" | double-click -nowait
+get-view "Script Explorer" | get-tree | select "javascript.project/testfolder/testfile.js" | double-click
 with [get-editor "testfile.js"] {
-    with [get-editbox] {
-        hover-at-text-offset 6 16
-        set-text-offset 1 16
+    with [get-left-ruler] {
+        with [get-ruler-column -index 2] {
+            click-ruler -line 17
+            click-ruler -line 17 -button Right
+        }
+        get-menu "Toggle Breakpoint" | click
     }
-    with [get-canvas -index 4] {
-        mouse-press 5 248 button3
-        mouse-release 5 248 button3 2097152
-    }
-    get-canvas -index 1 | get-menu "Toggle Breakpoint" | click
-    get-editbox | hover-at-text-offset 2 17
+    get-text-viewer | hover-text 18 3
 }
 get-button "Open Perspective" | click
 get-menu "Other..." | click
@@ -48,6 +46,5 @@ with [get-view Breakpoints | get-tree] {
     get-property itemCount | equals 1 | verify-true
     get-item "Javascript: testfile.js: \\[line: 17\\]" | get-property caption 
         | equals "Javascript: testfile.js: [line: 17]" | verify-true
-    get-item "Javascript: testfile.js: \\[line: 17\\]" | get-property checked | equals true | verify-true
 }
 ------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac--
