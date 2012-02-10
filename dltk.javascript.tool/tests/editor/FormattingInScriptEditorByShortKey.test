@@ -1,0 +1,49 @@
+--- Q7 testcase ---
+Q7-vendor: www.xored.com/q7
+Format-Version: 1.0
+Element-Name: FormattingInScriptEditorByShortKey
+Tags: scripteditor
+External-Reference: 
+Element-Type: testcase
+Element-Version: 3.0
+Contexts: _vux-ED2qEeGit9CrtuY7UA,_k86W8D2qEeGit9CrtuY7UA
+Save-Time: 2/10/12 12:59 PM
+Id: _hzKeIVOrEeGS0tnq09p7JQ
+Testcase-Type: ecl
+
+------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa
+Entry-Name: .description
+Content-Type: text/plain
+
+1. Open file in editor
+2. Press "Ctrl+Shift+F" (for windows)
+3. Make sure that formatting is applied
+------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa--
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac
+Entry-Name: .content
+Content-Type: text/ecl
+
+get-view "Script Explorer" | get-tree | select "javascript.project/testfolder/testfile.js" | double-click
+with [get-editor "testfile.js" | get-text-viewer] {
+    set-caret-pos 11 3
+    key-type "M1+M2+f"
+    set-caret-pos 21 1
+    key-type "M1+s"
+}
+get-editor "testfile.js" | get-editbox | get-property text | equals "function closewindow() {\n"
+    + "\tif (document.all) {\n"
+    + "\t\tdocument.all.orderwindow.style.visibility = \"hidden\"\n"
+    + "\t}\n"
+    + "\tif (document.layers) {\n"
+    + "\t\tdocument.orderwindow.visibility = \"hidden\"\n"
+    + "\t}\n}\n\n"
+    + "function help(message) {\n"
+    + "\treturn true;\n}\n\n"
+    + "function checkField(field) {\n"
+    + "\tif (field.value == \"\")\n"
+    + "\t\thelp(\"Test Fields\");\n"
+    + "\telse\n"
+    + "\t\thelp(\"\");\n"
+    + "\treturn true;\n"
+    + "}" | verify-true
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac--
