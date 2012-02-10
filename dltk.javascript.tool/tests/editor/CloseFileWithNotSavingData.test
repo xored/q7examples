@@ -1,0 +1,70 @@
+--- Q7 testcase ---
+Q7-vendor: www.xored.com/q7
+Format-Version: 1.0
+Element-Name: CloseFileWithNotSavingData
+Tags: scripteditor
+External-Reference: 
+Element-Type: testcase
+Element-Version: 3.0
+Contexts: _vux-ED2qEeGit9CrtuY7UA,_k86W8D2qEeGit9CrtuY7UA
+Save-Time: 2/10/12 6:30 PM
+Id: _gZUZsFPUEeGS0tnq09p7JQ
+Testcase-Type: ecl
+
+------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa
+Entry-Name: .description
+Content-Type: text/plain
+
+1. Open file in editor
+2. Change file
+3. Try close file without saving
+4. Press "Cancel" button in dialog 
+5. Make sure that editor is opened
+6. Press "No" and make sure that changes are not saved
+7. Press "Yes" and make sure that changes are saved
+------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa--
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac
+Entry-Name: .content
+Content-Type: text/ecl
+
+get-view "Script Explorer" | get-tree | select "javascript.project/testfolder/firstfile.js" | double-click
+with [get-editor "firstfile.js"] {
+    with [get-text-viewer] {
+        set-caret-pos 3 5
+        type-text "var a = 5;"
+    }
+    close
+}
+get-window "Save Resource" | get-button Cancel | click
+get-editor "firstfile.js" | get-editbox | get-property text | equals "function click(e) {\n"
+    + "\t\n"
+    + "\tvar a = 5;\n"
+    + "}" | verify-true
+get-tab-folder | get-property activePage | equals "*firstfile.js" | verify-true
+get-editor "firstfile.js" | close
+get-window "Save Resource" | get-button No | click
+with [get-view "Script Explorer"] {
+    click
+    get-tree | select "javascript.project/testfolder/firstfile.js" | double-click
+}
+get-editor "firstfile.js" | get-editbox | get-property text | equals "function click(e) {\n"
+    + "\t\n"
+    + "\t\n"
+    + "}" | verify-true
+with [get-editor "firstfile.js"] {
+    with [get-text-viewer] {
+        set-caret-pos 2 5
+        type-text "var t = 6;"
+    }
+    close
+}
+get-window "Save Resource" | get-button Yes | click
+with [get-view "Script Explorer"] {
+    click
+    get-tree | select "javascript.project/testfolder/firstfile.js" | double-click
+}
+get-editor "firstfile.js" | get-editbox | get-property text | equals "function click(e) {\n"
+    + "\tvar t = 6;\n"
+    + "\t\n"
+    + "}" | verify-true
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac--

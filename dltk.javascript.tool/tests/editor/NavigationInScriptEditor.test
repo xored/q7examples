@@ -1,0 +1,50 @@
+--- Q7 testcase ---
+Q7-vendor: www.xored.com/q7
+Format-Version: 1.0
+Element-Name: NavigationInScriptEditor
+Tags: scripteditor
+External-Reference: 
+Element-Type: testcase
+Element-Version: 3.0
+Contexts: _vux-ED2qEeGit9CrtuY7UA,_k86W8D2qEeGit9CrtuY7UA
+Save-Time: 2/10/12 6:29 PM
+Id: _Af1EIFPKEeGS0tnq09p7JQ
+Testcase-Type: ecl
+
+------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa
+Entry-Name: .description
+Content-Type: text/plain
+
+1. Open file in editor
+2. Press "End" and verify position of cursor
+3. Press "Home" and verify position of cursor
+4. Press "Page Up" and "Page Down" and verify position of cursor
+------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa--
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac
+Entry-Name: .content
+Content-Type: text/ecl
+
+get-view "Script Explorer" | get-tree | select "new.project/creationbutton.js" | double-click
+with [get-editor "creationbutton.js" | get-text-viewer] {
+    hover-text 12 4
+    set-caret-pos 12 5
+    key-type End
+}
+get-label "12 : 47" | get-property caption | equals "12 : 47" | verify-true
+with [get-editor "creationbutton.js" | get-text-viewer] {
+    hover-text 12 19
+    set-caret-pos 13 32
+    key-type Home
+}
+get-label "13 : 1" | get-property caption | equals "13 : 1" | verify-true
+//with [get-editor "creationbutton.js" | get-text-viewer] {
+//    set-caret-pos 1 1
+//    key-type PageDown
+//}
+//get-label "22 : 1" | get-property caption | equals "22 : 1" | verify-true
+//with [get-editor "creationbutton.js" | get-text-viewer] {
+//    set-caret-pos 19 25
+//    key-type PageUp
+//}
+//get-label "1 : 1" | get-property caption | equals "1 : 1" | verify-true
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac--
