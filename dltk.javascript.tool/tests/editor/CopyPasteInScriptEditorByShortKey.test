@@ -1,0 +1,47 @@
+--- Q7 testcase ---
+Q7-vendor: www.xored.com/q7
+Format-Version: 1.0
+Element-Name: CopyPasteInScriptEditorByShortKey
+Tags: scripteditor
+External-Reference: 
+Element-Type: testcase
+Element-Version: 3.0
+Contexts: _vux-ED2qEeGit9CrtuY7UA,_k86W8D2qEeGit9CrtuY7UA
+Save-Time: 2/10/12 4:31 PM
+Id: _7HLWsFPEEeGS0tnq09p7JQ
+Testcase-Type: ecl
+
+------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa
+Entry-Name: .description
+Content-Type: text/plain
+
+1. Open file in editor
+2. Press "Ctrl+A" and press "Ctrl+C" 
+3. Create new js-file and press "Ctrl+V" 
+4. Make sure that text is copied
+------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa--
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac
+Entry-Name: .content
+Content-Type: text/ecl
+
+get-view "Script Explorer" | get-tree | select "javascript.project/testfolder/firstfile.js" | double-click
+with [get-editor "firstfile.js" | get-text-viewer] {
+    set-caret-pos 4 2
+    key-type "M1+a"
+    key-type "M1+c"
+}
+get-view "Script Explorer" | get-tree | select "javascript.project/testfolder" | get-menu "New/New JavaScript File" 
+    | click
+with [get-window "Create Javascript file"] {
+    get-editbox -after [get-label "Name:"] | set-text test
+    get-button Finish | click
+}
+with [get-editor "test.js" | get-text-viewer] {
+    key-type "M1+v"
+    key-type "M1+s"
+}
+get-editor "test.js" | get-editbox | get-property text | equals "function click(e) {\n"
+    + "\t\n"
+    + "\t\n"
+    + "}" | verify-true
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac--

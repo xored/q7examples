@@ -1,0 +1,63 @@
+--- Q7 testcase ---
+Q7-vendor: www.xored.com/q7
+Format-Version: 1.0
+Element-Name: CutPasteInScriptEditorByShortKey
+Tags: scripteditor
+External-Reference: 
+Element-Type: testcase
+Element-Version: 3.0
+Contexts: _vux-ED2qEeGit9CrtuY7UA,_k86W8D2qEeGit9CrtuY7UA
+Save-Time: 2/10/12 4:33 PM
+Id: _ATbZIFPFEeGS0tnq09p7JQ
+Testcase-Type: ecl
+
+------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa
+Entry-Name: .description
+Content-Type: text/plain
+
+1. Open file in editor
+2. Press "Ctrl+A" and press "Ctrl+X" 
+3. Create new js-file and press "Ctrl+V" 
+4. Make sure that text is copied to the second file and is removed from first file
+------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa--
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac
+Entry-Name: .content
+Content-Type: text/ecl
+
+get-view "Script Explorer" | get-tree | select "new.project/creationbutton.js" | double-click
+with [get-editor "creationbutton.js" | get-text-viewer] {
+    set-caret-pos 9 5
+    hover-text 9 7
+    key-type "M1+a"
+    key-type "M1+x"
+    set-caret-pos 1 1
+}
+get-view "Script Explorer" | get-tree | select "new.project" | get-menu "New/New JavaScript File" | click
+with [get-window "Create Javascript file"] {
+    get-editbox -after [get-label "Name:"] | set-text test
+    get-button Finish | click
+}
+with [get-editor "test.js" | get-text-viewer] {
+    key-type "M1+v"
+    key-type "M1+M2+s"
+}
+get-editor "test.js" | get-editbox | get-property text | equals "var position=0\n"
+    + "var numofloop=10\n"
+    + "function banner()  {    \n"
+    + "var nor = new Date() \n"
+    + "var minutes = nor.getMinutes() \n"
+    + "var hours = nor.getHours() \n"
+    + "var seconds = nor.getSeconds() \n"
+    + "var nortime = \"Test\" \n"
+    + "nortime += ((hours > 12) ? hours - 12 : hours) \n"
+    + "nortime += ((minutes < 10) ? \":0\" : \":\") + minutes \n"
+    + "nortime += ((seconds < 10) ? \":0\" : \":\") + seconds \n"
+    + "nortime += (hours >= 12) ? \"test1\" : \"test2\" \n"
+    + "var msg=\"Test text\" + nortime + \"                                                 \";\n\n"
+    + "if  (position++==msg.length)  {\n"
+    + "if  (numofloop-- < 2) return;\n"
+    + "position=0;\n}\n"
+    + "}" | verify-true
+get-editor "creationbutton.js" | click
+get-editor "creationbutton.js" | get-editbox | get-property text | equals "" | verify-true
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac--

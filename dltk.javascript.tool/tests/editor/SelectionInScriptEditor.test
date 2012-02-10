@@ -1,0 +1,56 @@
+--- Q7 testcase ---
+Q7-vendor: www.xored.com/q7
+Format-Version: 1.0
+Element-Name: SelectionInScriptEditor
+Tags: scripteditor
+External-Reference: 
+Element-Type: testcase
+Element-Version: 3.0
+Contexts: _vux-ED2qEeGit9CrtuY7UA,_k86W8D2qEeGit9CrtuY7UA
+Save-Time: 2/10/12 4:15 PM
+Id: _ijEHsFPEEeGS0tnq09p7JQ
+Testcase-Type: ecl
+
+------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa
+Entry-Name: .description
+Content-Type: text/plain
+
+1. Open file in editor 
+2. Double click on mouse button
+3. Make sure that word is selected
+4. Triple click on mouse button
+5. Make sure that line is selected
+------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa--
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac
+Entry-Name: .content
+Content-Type: text/ecl
+
+get-view "Script Explorer" | get-tree | select "javascript.project/testfolder/testfile.js" | double-click
+with [get-editor "testfile.js" | get-text-viewer] {
+    set-caret-pos 10 6
+    select-range 10 1 10 9
+}
+get-editor "testfile.js" | get-editbox | get-property "getSelectionText()" | equals function | verify-true
+with [get-editor "testfile.js" | get-text-viewer] {
+    set-caret-pos 15 1
+    select-range 15 1 16 1
+}
+get-editor "testfile.js" | get-editbox | get-property "getSelectionText()" | equals "function checkField(field)" 
+    | verify-true
+with [get-editor "testfile.js" | get-text-viewer] {
+    hover-text 17 7
+    set-caret-pos 17 11
+    key-type "M2+End"
+    set-caret-pos 17 23
+    select-range 17 11 17 23
+    hover-text 15 15
+}
+get-editor "testfile.js" | get-editbox | get-property "getSelectionText()" | equals "value == \"\")" | verify-true
+with [get-editor "testfile.js" | get-text-viewer] {
+    set-caret-pos 18 10
+    key-type "M2+Home"
+    set-caret-pos 18 1
+    select-range 18 10 18 1
+}
+get-editor "testfile.js" | get-editbox | get-property "getSelectionText()" | equals "help(\"Tes" | verify-true
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac--

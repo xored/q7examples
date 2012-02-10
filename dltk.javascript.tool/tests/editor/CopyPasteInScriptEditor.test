@@ -1,0 +1,78 @@
+--- Q7 testcase ---
+Q7-vendor: www.xored.com/q7
+Format-Version: 1.0
+Element-Name: CopyPasteInScriptEditor
+Tags: scripteditor
+External-Reference: 
+Element-Type: testcase
+Element-Version: 3.0
+Contexts: _vux-ED2qEeGit9CrtuY7UA,_k86W8D2qEeGit9CrtuY7UA
+Save-Time: 2/10/12 4:28 PM
+Id: _2YXeMFPEEeGS0tnq09p7JQ
+Testcase-Type: ecl
+
+------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa
+Entry-Name: .description
+Content-Type: text/plain
+
+1. Open file in editor
+2. Select text in file and press "Copy" in context menu
+3. Open second file and press "Paste" in context menu
+4. Make sure that text is copied
+
+------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa--
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac
+Entry-Name: .content
+Content-Type: text/ecl
+
+get-view "Script Explorer" | get-tree | select "javascript.project/testfolder/testfile.js" | double-click
+with [get-editor "testfile.js" | get-text-viewer] {
+    set-caret-pos 10 2
+    select-range 10 1 13 3
+    get-menu Copy | click
+}
+get-view "Script Explorer" | get-tree | select "new.project/creationbutton.js" | double-click
+with [get-editor "creationbutton.js" | get-text-viewer] {
+    set-caret-pos 22 2
+    key-type Enter
+    get-menu Paste | click
+}
+get-button "Save (M1+S)" | click
+get-editor "creationbutton.js" | get-editbox | get-property text | contains "function help(message) \n"
+    + "{ \n"
+    + "return true; \n"
+    + "}" | verify-true
+get-editor "testfile.js" | click
+get-editor "testfile.js" | get-editbox | get-property text | contains "function help(message) \n"
+    + "{ \n"
+    + "return true; \n"
+    + "} \n\n" | verify-true
+with [get-editor "testfile.js" | get-text-viewer] {
+    set-caret-pos 7 1
+    select-range 8 2 1 1
+}
+get-menu "Edit/Copy" | click
+get-view "Script Explorer" | get-tree | select "javascript.project/testfolder/firstfile.js" | double-click
+with [get-editor "firstfile.js" | get-text-viewer] {
+    set-caret-pos 4 2
+    key-type Enter
+}
+get-menu "Edit/Paste" | click
+get-editor "firstfile.js" | get-text-viewer | key-type "M1+s"
+get-editor "firstfile.js" | get-editbox | get-property text | contains "function closewindow() {\n"
+    + "\tif (document.all) {\n"
+    + "\t\tdocument.all.orderwindow.style.visibility=\"hidden\"\n"
+    + "\t}\n"
+    + "\tif (document.layers) {\n"
+    + "\t\tdocument.orderwindow.visibility=\"hidden\"\n"
+    + "\t}\n"
+    + "}" | verify-true
+get-editor "testfile.js" | click
+get-editor "testfile.js" | get-editbox | get-property text | contains "function closewindow() {\n"
+    + "\tif (document.all) {\n"
+    + "\t\tdocument.all.orderwindow.style.visibility=\"hidden\"\n"
+    + "\t}\n"
+    + "\tif (document.layers) {\n"
+    + "\t\tdocument.orderwindow.visibility=\"hidden\"\n"
+    + "\t}\n}\n" | verify-true
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac--
