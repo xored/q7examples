@@ -1,0 +1,66 @@
+--- Q7 testcase ---
+Q7-vendor: www.xored.com/q7
+Format-Version: 1.0
+Element-Name: RevertUnsavedFileAfterChanges
+Tags: scripteditor
+External-Reference: 
+Element-Type: testcase
+Element-Version: 3.0
+Contexts: _vux-ED2qEeGit9CrtuY7UA,_k86W8D2qEeGit9CrtuY7UA
+Save-Time: 2/13/12 12:30 PM
+Id: _x3Zc8FX_EeGYCNS2vfKxwQ
+Testcase-Type: ecl
+
+------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa
+Entry-Name: .description
+Content-Type: text/plain
+
+1. Open file in editor
+2. Enter text in file, set comments on the several lines
+3. Select "Revert file" from context menu
+4. Make sure that all changes in file are revert
+
+------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa--
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac
+Entry-Name: .content
+Content-Type: text/ecl
+
+get-view "Script Explorer" | get-tree | select "javascript.project/testfolder/firstfile.js" | double-click
+with [get-editor "firstfile.js" | get-text-viewer] {
+    set-caret-pos 3 5
+    type-text "var newLine = \"test"
+    key-type Right
+    type-text ";"
+    key-type Enter
+    type-text comment
+    hover-text 4 8
+    set-caret-pos 4 7
+}
+with [get-editor "firstfile.js" | get-text-viewer] {
+    set-caret-pos 3 23
+    get-menu "Revert File" | click
+}
+get-editor "firstfile.js" | get-editbox | get-property text | equals "function click(e) {\n"
+    + "\t\n"
+    + "\t\n"
+    + "}" | verify-true
+get-editor "firstfile.js" | close
+with [get-view "Script Explorer"] {
+    click
+    get-tree | select "javascript.project/testfolder/testfile.js" | double-click
+}
+with [get-editor "testfile.js" | get-text-viewer] {
+    set-caret-pos 12 1
+    select-range 13 2 10 1
+    get-menu "Source/Toggle Comment" | click
+}
+get-editor "testfile.js" | get-editbox | get-property text | contains "//function help(message) \n"
+    + "//{ \n"
+    + "//return true; \n"
+    + "//} \n\n" | verify-true
+get-editor "testfile.js" | get-editbox | get-menu "Revert File" | click
+get-editor "testfile.js" | get-editbox | get-property text | contains "function help(message) \r\n"
+    + "{ \r\n"
+    + "return true; \r\n"
+    + "} \r\n" | verify-true
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac--

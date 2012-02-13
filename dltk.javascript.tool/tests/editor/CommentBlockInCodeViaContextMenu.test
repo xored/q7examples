@@ -1,0 +1,57 @@
+--- Q7 testcase ---
+Q7-vendor: www.xored.com/q7
+Format-Version: 1.0
+Element-Name: CommentBlockInCodeViaContextMenu
+Tags: scripteditor
+External-Reference: 
+Element-Type: testcase
+Element-Version: 3.0
+Contexts: _vux-ED2qEeGit9CrtuY7UA,_k86W8D2qEeGit9CrtuY7UA
+Save-Time: 2/13/12 11:25 AM
+Id: _2UfpcFX2EeGYCNS2vfKxwQ
+Testcase-Type: ecl
+
+------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa
+Entry-Name: .description
+Content-Type: text/plain
+
+1. Open file script
+2. Select several lines and choose "Source\Add Block Comments" from context menu
+3. Make sure that lines are commented
+4. Choose "Source\Remove Block Comments" from context menu
+5. Make sure that lines are uncommented
+------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa--
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac
+Entry-Name: .content
+Content-Type: text/ecl
+
+get-view "Script Explorer" | get-tree | select "javascript.project/testfolder/testfile.js" | double-click
+with [get-editor "testfile.js" | get-text-viewer] {
+    set-caret-pos 13 2
+    select-range 13 3 10 1
+    get-menu "Source/Add Block Comment" | click
+    key-type "M1+s"
+}
+with [get-editor "testfile.js" | get-editbox] {
+    get-property text | contains "/*function help(message) \r\n"
+        + "{ \r\n"
+        + "return true; \r\n"
+        + "} */\r\n" | verify-true
+    get-property "styles.text" -index 30 | equals "/*function help(message) \r\n"
+        + "{ \r\n"
+        + "return true; \r\n"
+        + "} */" | verify-true
+    get-property "styles.fontStyle" -index 30 | equals normal | verify-true
+    get-property "styles.foregroundColor" -index 30 | equals "#3F7F5F" | verify-true
+}
+with [get-editor "testfile.js" | get-text-viewer] {
+    set-caret-pos 12 5
+    select-range 13 5 9 1
+    get-menu "Source/Remove Block Comment" | click
+}
+get-button "Save (M1+S)" | click
+get-editor "testfile.js" | get-editbox | get-property text | contains "/*function help(message) \r\n"
+        + "{ \r\n"
+        + "return true; \r\n"
+        + "} */\r\n" | verify-false
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac--

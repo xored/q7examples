@@ -1,0 +1,54 @@
+--- Q7 testcase ---
+Q7-vendor: www.xored.com/q7
+Format-Version: 1.0
+Element-Name: CommentCodeViaContextMenu
+Tags: scripteditor
+External-Reference: 
+Element-Type: testcase
+Element-Version: 3.0
+Contexts: _vux-ED2qEeGit9CrtuY7UA,_k86W8D2qEeGit9CrtuY7UA
+Save-Time: 2/13/12 11:22 AM
+Id: _yMiVkVX2EeGYCNS2vfKxwQ
+Testcase-Type: ecl
+
+------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa
+Entry-Name: .description
+Content-Type: text/plain
+
+1. Open file script
+2. Select code and choose "Source\Comment" from context menu
+3. Make sure that line is commented
+4. Choose "Source\Uncomment" from context menu
+5. Make sure that line is uncommented
+------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa--
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac
+Entry-Name: .content
+Content-Type: text/ecl
+
+get-view "Script Explorer" | get-tree | select "javascript.project/testfolder/testfile.js" | double-click
+with [get-editor "testfile.js" | get-text-viewer] {
+    hover-text 15 20
+    set-caret-pos 12 1
+    get-menu "Source/Comment" | click
+}
+with [get-editor "testfile.js" | get-editbox] {
+    get-property text | contains "//return true; \n" | verify-true
+    get-property "styles.text" -index 36 | equals "//return true; \r\n" | verify-true
+    get-property "styles.fontStyle" -index 36 | equals normal | verify-true
+    get-property "styles.foregroundColor" -index 36 | equals "#3F7F5F" | verify-true
+}
+with [get-editor "testfile.js" | get-text-viewer] {
+    set-caret-pos 12 4
+    get-menu "Source/Uncomment" | click
+}
+get-button "Save (M1+S)" | click
+with [get-editor "testfile.js" | get-editbox] {
+    get-property text | contains "//return true; \n" | verify-false
+    get-property "styles.text" -index 36 | equals return | verify-true
+    get-property "styles.fontStyle" -index 36 | equals bold | verify-true
+    get-property "styles.foregroundColor" -index 36 | equals "#7F0055" | verify-true
+    get-property "styles.text" -index 38 | equals true | verify-true
+    get-property "styles.fontStyle" -index 38 | equals bold | verify-true
+    get-property "styles.foregroundColor" -index 38 | equals "#7F0055" | verify-true
+}
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac--

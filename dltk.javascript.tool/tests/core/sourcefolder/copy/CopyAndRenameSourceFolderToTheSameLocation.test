@@ -1,0 +1,67 @@
+--- Q7 testcase ---
+Q7-vendor: www.xored.com/q7
+Format-Version: 1.0
+Element-Name: CopyAndRenameSourceFolderToTheSameLocation
+Tags: core/sourcefolder/copy
+External-Reference: 
+Element-Type: testcase
+Element-Version: 3.0
+Contexts: _vux-ED2qEeGit9CrtuY7UA,_k86W8D2qEeGit9CrtuY7UA
+Save-Time: 2/13/12 1:32 PM
+Id: _xDLjAFYFEeGYCNS2vfKxwQ
+Testcase-Type: ecl
+
+------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa
+Entry-Name: .description
+Content-Type: text/plain
+
+1. Select source folder and select "Edit\Copy" from main menu
+2. Select the same project and select "Edit\Paste" from main menu
+3. Enter new name in "Name Conflict" window
+4. Press "Ok" button
+5. Make sure that source folder is copied and pasted with another name to the same project
+------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa--
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac
+Entry-Name: .content
+Content-Type: text/ecl
+
+get-view "Script Explorer" | get-tree | select "javascript.project/testfolder"
+get-menu "Edit/Copy" | click
+get-view "Script Explorer" | get-tree | select "javascript.project"
+get-menu "Edit/Paste" | click
+get-window "Name Conflict" | get-editbox -after [get-label "Enter a new name for \'testfolder\':"] | get-property text 
+    | equals "Copy of testfolder" | verify-true
+get-window "Name Conflict" | get-editbox -after [get-label "Enter a new name for \'testfolder\':"] | set-text testfolder
+with [get-window "Name Conflict"] {
+    get-editbox -after [get-label "Enter a new name for \'testfolder\':"] -index 1 | get-property text 
+        | equals "Resource with this name already exists" | verify-true
+    get-button OK | get-property enablement | equals false | verify-true
+}
+with [get-window "Name Conflict"] {
+    get-editbox -after [get-label "Enter a new name for \'testfolder\':"] | set-text "testfolder_new"
+    get-button OK | click
+}
+with [get-view "Script Explorer" | get-tree] {
+    get-item "javascript.project" | get-property caption | equals "javascript.project" | verify-true
+    get-item "javascript.project" | get-property childCount | equals 3 | verify-true
+}
+with [get-view "Script Explorer" | get-tree] {
+    get-item "javascript.project/testfolder" | get-property caption | equals testfolder | verify-true
+    get-item "javascript.project/testfolder" | get-property childCount | equals 2 | verify-true
+    get-item "javascript.project/testfolder/firstfile.js" | get-property caption | equals "firstfile.js" | verify-true
+    get-item "javascript.project/testfolder/testfile.js" | get-property caption | equals "testfile.js" | verify-true
+    get-item "javascript.project/testfolder_new" | get-property caption | equals "testfolder_new" | verify-true
+    get-item "javascript.project/testfolder_new" | get-property childCount | equals 2 | verify-true
+    get-item "javascript.project/testfolder_new/firstfile.js" | get-property caption | equals "firstfile.js" 
+        | verify-true
+    get-item "javascript.project/testfolder_new/testfile.js" | get-property caption | equals "testfile.js" | verify-true
+}
+with [get-view "Script Explorer" | get-tree] {
+    select "javascript.project/testfolder_new/testfile.js" | double-click
+    select "javascript.project/testfolder_new/firstfile.js" | double-click
+}
+get-editor "firstfile.js" | get-editbox | get-property text | equals "function click(e) {\n"
+    + "\t\n"
+    + "\t\n"
+    + "}" | verify-true
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac--

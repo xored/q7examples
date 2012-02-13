@@ -1,0 +1,52 @@
+--- Q7 testcase ---
+Q7-vendor: www.xored.com/q7
+Format-Version: 1.0
+Element-Name: CopySourceFolderToAnotherProject
+Tags: core/sourcefolder/copy
+External-Reference: 
+Element-Type: testcase
+Element-Version: 3.0
+Contexts: _vux-ED2qEeGit9CrtuY7UA,_k86W8D2qEeGit9CrtuY7UA
+Save-Time: 2/13/12 1:15 PM
+Id: _SWmg8FYFEeGYCNS2vfKxwQ
+Testcase-Type: ecl
+
+------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa
+Entry-Name: .description
+Content-Type: text/plain
+
+1. Select source folder and press "Copy" from context menu
+2. Select another project and press "Paste" in context menu
+3. Make sure that source folder is copied
+------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa--
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac
+Entry-Name: .content
+Content-Type: text/ecl
+
+with [get-view "Script Explorer" | get-tree] {
+    select "javascript.project/testfolder" | get-menu Copy | click
+    select "test.project" | get-menu Paste | click
+}
+with [get-view "Script Explorer" | get-tree] {
+    get-item "javascript.project" | get-property childCount | equals 2 | verify-true
+    get-item "javascript.project/testfolder" | get-property caption | equals testfolder | verify-true
+    get-item "javascript.project/testfolder" | get-property childCount | equals 2 | verify-true
+    get-item "javascript.project/testfolder/firstfile.js" | get-property caption | equals "firstfile.js" | verify-true
+    get-item "javascript.project/testfolder/testfile.js" | get-property caption | equals "testfile.js" | verify-true
+}
+with [get-view "Script Explorer" | get-tree] {
+    get-item "test.project" | get-property caption | equals "test.project" | verify-true
+    get-item "test.project" | get-property childCount | equals 2 | verify-true
+    get-item "test.project/testfolder" | get-property caption | equals testfolder | verify-true
+    get-item "test.project/testfolder" | get-property childCount | equals 2 | verify-true
+    get-item "test.project/testfolder/firstfile.js" | get-property caption | equals "firstfile.js" | verify-true
+    get-item "test.project/testfolder/testfile.js" | get-property caption | equals "testfile.js" | verify-true
+}
+get-view "Script Explorer" | get-tree | select "test.project/testfolder/firstfile.js" | double-click
+get-editor "firstfile.js" | get-editbox | get-property text | equals "function click(e) {\n"
+    + "\t\n"
+    + "\t\n"
+    + "}" | verify-true
+get-editor "firstfile.js" | close
+get-view "Script Explorer" | click
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac--

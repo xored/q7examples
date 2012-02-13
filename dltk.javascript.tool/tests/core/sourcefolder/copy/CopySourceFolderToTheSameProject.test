@@ -1,0 +1,50 @@
+--- Q7 testcase ---
+Q7-vendor: www.xored.com/q7
+Format-Version: 1.0
+Element-Name: CopySourceFolderToTheSameProject
+Tags: core/sourcefolder/copy
+External-Reference: 
+Element-Type: testcase
+Element-Version: 3.0
+Contexts: _vux-ED2qEeGit9CrtuY7UA,_k86W8D2qEeGit9CrtuY7UA
+Save-Time: 2/13/12 1:21 PM
+Id: _nilWgFYFEeGYCNS2vfKxwQ
+Testcase-Type: ecl
+
+------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa
+Entry-Name: .description
+Content-Type: text/plain
+
+1. Select source folder and press "Ctrl+C" (for windows)
+2. Select the same project and press "Ctrl+V" (for windows)
+3. Make sure that source folder is copied and pasted with another name to the same project
+------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa--
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac
+Entry-Name: .content
+Content-Type: text/ecl
+
+with [get-view "Script Explorer" | get-tree] {
+    select "javascript.project/testfolder" | key-type "M1+c"
+    select "javascript.project" | key-type "M1+v"
+}
+get-window "Name Conflict" | get-editbox -after [get-label "Enter a new name for \'testfolder\':"] | get-property text 
+    | equals "Copy of testfolder" | verify-true
+get-window "Name Conflict" | get-button OK | click
+with [get-view "Script Explorer" | get-tree] {
+    get-item "javascript.project" | get-property caption | equals "javascript.project" | verify-true
+    get-item "javascript.project" | get-property childCount | equals 3 | verify-true
+}
+with [get-view "Script Explorer" | get-tree] {
+    get-item "javascript.project/testfolder" | get-property caption | equals testfolder | verify-true
+    get-item "javascript.project/testfolder" | get-property childCount | equals 2 | verify-true
+    get-item "javascript.project/Copy of testfolder" | get-property caption | equals "Copy of testfolder" | verify-true
+    get-item "javascript.project/Copy of testfolder" | get-property childCount | equals 2 | verify-true
+}
+get-view "Script Explorer" | get-tree | select "javascript.project/Copy of testfolder/firstfile.js" | double-click
+get-editor "firstfile.js" | get-editbox | get-property text | equals "function click(e) {\n"
+    + "\t\n"
+    + "\t\n"
+    + "}" | verify-true
+get-editor "firstfile.js" | close
+get-view "Script Explorer" | click
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac--
