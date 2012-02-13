@@ -1,0 +1,170 @@
+--- Q7 testcase ---
+Q7-vendor: www.xored.com/q7
+Format-Version: 1.0
+Element-Name: WSContextWithDuplicateData
+Context-Type: com.xored.q7.workspace.context
+Element-Type: context
+Element-Version: 2.0
+Save-Time: 2/13/12 2:32 PM
+Id: _11WTsFYUEeGYCNS2vfKxwQ
+
+------=_contents/project.withduplicate/.project-67f5ad9d-a096-3617-b58f-921566e9cbdc
+Content-Type: q7/binary
+Entry-Name: contents/project.withduplicate/.project
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnRlUEsOwiAUXGviHZruBd25wLrQeAH1
+AAgvFaVAgFaPL79qqjtm3sybeZDdq5PVANYJrbb1Gq3qChTTXKh2W1/Ox+Wm3jWLOTFW34H5AzhmhfFB
+HdgZUbSDpszQU/gb740UjHogOM2iiOmuA+UbgsdXZIvLJYAn6NoLyU8GWEQF7oOVKp6Ykqtti4BJYRwg
+Lv0DMW0B5YLJA/bbIpiobfsY7wrGU4Lg36DCjE1Cqu8tFHUG/yXudKC5Q+6TdbFI0qe130Wfy6c/+wZQ
+SwcINeWC9skAAACYAQAAUEsBAhQAFAAIAAgAAAAhADXlgvbJAAAAmAEAAAgAAAAAAAAAAAAAAAAAAAAA
+AC5jb250ZW50UEsFBgAAAAABAAEANgAAAP8AAAAAAA==
+------=_contents/project.withduplicate/.project-67f5ad9d-a096-3617-b58f-921566e9cbdc--
+------=_contents/project.withduplicate/testfolder/creationbutton.js-363d2562-2cca-3755-a693-8b33622f57f1
+Content-Type: q7/binary
+Entry-Name: contents/project.withduplicate/testfolder/creationbutton.js
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnSVUr1OwzAQ3pH6DqebElmpko4Bw9Kh
+CxO8QCiX1FJjV44NSIh351z/UCoWHA+57+d85/PqZsXf22DhZBbllNGyjbH2sxmPxpxkx8jo9T6w8DJo
+TbaqAT6BV9IaCxI0vcN2cMRkhGelvaMlUMauJ3KPESiCg/H2gt6FsJAL7Y1+vaCfIlAEDDs1EwvwmRaH
+DGdISKiqmP0euk0ND+mshiPoY1BfG3K9d9C1wYJ9iyzGHmsQpZsrUy7zb1Nmf5tSZTKVhpzWdWdX+Ntg
+vr9lkufWwNEH9ydKywIQ/rvwNoxajQBVnrUQUvIh6yPpyR3CTJOgDL9puDEu0pLzVnOGn2fCwRfvb1BL
+Bwi9ZZLxBAEAAEICAABQSwECFAAUAAgACAAAACEAvWWS8QQBAABCAgAACAAAAAAAAAAAAAAAAAAAAAAA
+LmNvbnRlbnRQSwUGAAAAAAEAAQA2AAAAOgEAAAAA
+------=_contents/project.withduplicate/testfolder/creationbutton.js-363d2562-2cca-3755-a693-8b33622f57f1--
+------=_contents/new.project/.buildpath-2af52bd0-b998-3626-aeeb-d2d3c7dca54f
+Content-Type: q7/binary
+Entry-Name: contents/new.project/.buildpath
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnSzsa/IzVEoSy0qzszPs1Uy1DNQUkjN
+S85PycxLt1UKDXHTtVCyt+PlskkqzcxJKUgsyQByOBG81LySokqF7My8FFul4qJkJQWQoK2Skj5uZcn5
+eTBl+UXpeqnJOZkFxal6KTkl2Xo5iaV5yRlAu/U8/UJcgwKCXIFkvLO/X4ijp59rENhYG31ktwAAUEsH
+CIOvWPWLAAAAwQAAAFBLAQIUABQACAAIAAAAIQCDr1j1iwAAAMEAAAAIAAAAAAAAAAAAAAAAAAAAAAAu
+Y29udGVudFBLBQYAAAAAAQABADYAAADBAAAAAAA=
+------=_contents/new.project/.buildpath-2af52bd0-b998-3626-aeeb-d2d3c7dca54f--
+------=_contents/javascript.project/.project-530ad53a-fee0-37a9-986c-aab33c75064c
+Content-Type: q7/binary
+Entry-Name: contents/javascript.project/.project
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnRlkEEOwiAURNeaeIeGvaA7F7QuNF5A
+PQDCT0Mt0ABtPL5AqbW6Y4b3meHT40u1xQDWSaNLtMc7VIDmRkhdl+h+u2wP6Fht1rSzpgHuz+C4lZ0P
+dHBXVDMFVcMGNto4Y5Ski0hwoxRoX1EynaKbOZcEWahHL1tx7YBHleUpjDItkpNDja0x8FZ2DrBo/RNz
+YwGPNdIM2LlFGGK27mO8y5osDUp+g7IzNQmpvreQ6VH8l/haReozcrFI4tOz80Ofny/X+gZQSwcI2fN2
+RsMAAACVAQAAUEsBAhQAFAAIAAgAAAAhANnzdkbDAAAAlQEAAAgAAAAAAAAAAAAAAAAAAAAAAC5jb250
+ZW50UEsFBgAAAAABAAEANgAAAPkAAAAAAA==
+------=_contents/javascript.project/.project-530ad53a-fee0-37a9-986c-aab33c75064c--
+------=_contents/javascript.project/testfolder/firstfile.js-a976b48a-0b0a-3c8d-8abd-6ed892a6ee9f
+Content-Type: q7/binary
+Entry-Name: contents/javascript.project/testfolder/firstfile.js
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnRLK81LLsnMz1NIzslMztZI1VSo5uXi
+BKNaAFBLBwiGDDwHGgAAABwAAABQSwECFAAUAAgACAAAACEAhgw8BxoAAAAcAAAACAAAAAAAAAAAAAAA
+AAAAAAAALmNvbnRlbnRQSwUGAAAAAAEAAQA2AAAAUAAAAAAA
+------=_contents/javascript.project/testfolder/firstfile.js-a976b48a-0b0a-3c8d-8abd-6ed892a6ee9f--
+------=_contents/javascript.project/testfolder/testfile.js-167ce8b5-d7ea-3d08-9bec-c088a68eb1b3
+Content-Type: q7/binary
+Entry-Name: contents/javascript.project/testfolder/testfile.js
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnR1jk2KwzAMRtcN5A7Cq2TjCwzZzgl6
+gdT+MhFV7WLZLaH07pMfOrRlCrLAn3hPGkpwmWMgJ1Fx5eDjtWnpVlc7Hqjx0ZUTQra9yJbuniMbk0fa
+KKt5EtgLKx9YOE+dGdl7BDNT93ef9BOSviufdR9Fc9XV8Lh7hJybE1T7H7RUV7f5JeSSAuVU8DV/7/RC
+uBHu+M0Q3wxLf1DLfWtgL70UUNeRMctwXWH20EwrpqZdtBDF33SL/ln8C1BLBwhhFGtKuQAAAGEBAABQ
+SwECFAAUAAgACAAAACEAYRRrSrkAAABhAQAACAAAAAAAAAAAAAAAAAAAAAAALmNvbnRlbnRQSwUGAAAA
+AAEAAQA2AAAA7wAAAAAA
+------=_contents/javascript.project/testfolder/testfile.js-167ce8b5-d7ea-3d08-9bec-c088a68eb1b3--
+------=_contents/javascript.project/.buildpath-4f9b8a24-099d-3258-b3b5-fe3251e48e02
+Content-Type: q7/binary
+Entry-Name: contents/javascript.project/.buildpath
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnR1jrEKwjAURWcF/yG83VQ3h8YiEqFL
+lVJnqcmzDY0vJUlF/94qiC4uF86Fc7lpdr9adkMfjCMBS74AhqScNtQIOFa7+Qqy9WyangdjdV/HdoTJ
+l5Cif7DOkBYQvAL2KgVEDPHirEYPyX9BOfoIzjcclTV9QK5t7LitB1Lt+ILnRSXLQynHPG33RbXJC1m+
+Z9Pk99UTUEsHCCIHYPiUAAAAywAAAFBLAQIUABQACAAIAAAAIQAiB2D4lAAAAMsAAAAIAAAAAAAAAAAA
+AAAAAAAAAAAuY29udGVudFBLBQYAAAAAAQABADYAAADKAAAAAAA=
+------=_contents/javascript.project/.buildpath-4f9b8a24-099d-3258-b3b5-fe3251e48e02--
+------=_contents/test.project/.buildpath-5650d494-f8a2-32ce-b08e-d28c52774988
+Content-Type: q7/binary
+Entry-Name: contents/test.project/.buildpath
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnR1jzELwjAUhGcF/0N5u6luDo0iUqFL
+lVJnia/PmpomIUlF/71VFB10ObjjuI9LFtdWRRdyXhrNYcomEJFGU0ldc9iV6/EMFvPRMDl0UlVWhFNv
+Bh9HOrhbdJa64uAdQvQIOUD8v4ZGv2vG1YxQSeuJVSqcmRKdxlPPZllepsW2SHvdrzZ5uczytPg9i6Y9
+SE0Ckbx3nSLP4SiUJ3gRrWvexLgRF+HRSRuYdaYhDM/RJP4+eAdQSwcIQvd5kLQAAAAWAQAAUEsBAhQA
+FAAIAAgAAAAhAEL3eZC0AAAAFgEAAAgAAAAAAAAAAAAAAAAAAAAAAC5jb250ZW50UEsFBgAAAAABAAEA
+NgAAAOoAAAAAAA==
+------=_contents/test.project/.buildpath-5650d494-f8a2-32ce-b08e-d28c52774988--
+------=_contents/project.withduplicate/testfolder/firstfile.js-6bc0462f-7b05-37c7-b181-4ac82a9ac855
+Content-Type: q7/binary
+Entry-Name: contents/project.withduplicate/testfolder/firstfile.js
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnRLK81LLsnMz1NIzslMztbQVKjm5eIs
+SyxSSFSwVTC1hnKSgBwzGCcZyElU0FZIAgkUpZaUFgF1g9i8XLUAUEsHCN6tQfY9AAAATwAAAFBLAQIU
+ABQACAAIAAAAIQDerUH2PQAAAE8AAAAIAAAAAAAAAAAAAAAAAAAAAAAuY29udGVudFBLBQYAAAAAAQAB
+ADYAAABzAAAAAAA=
+------=_contents/project.withduplicate/testfolder/firstfile.js-6bc0462f-7b05-37c7-b181-4ac82a9ac855--
+------=_contents/test.project/.project-8e65b250-4019-3f14-ab55-5ee25904f371
+Content-Type: q7/binary
+Entry-Name: contents/test.project/.project
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnRlkE0OwiAUhNeaeIeGvaA7F7RdaLyA
+egCEl4baQgO08fjyV5vqjhnmvfmA1u++KyYwVmpVoiM+oAIU10KqpkSP+3V/QnW129LB6Ba4u4DlRg7O
+p727oYr1UDmwDucAJdEKd1z3PShXUTKfgptzNgqyUs9RduI2AA8qy7MfZUpEJ9dp02DgnRwsYNG5F+ba
+AE5ccQbMQuGHmGnGUG+zJmuDkt+i7MwkvtWNBnI6iX+Ilk0sMSSelAsgMR/XLou+L19/6AdQSwcIzFPQ
+b8MAAACPAQAAUEsBAhQAFAAIAAgAAAAhAMxT0G/DAAAAjwEAAAgAAAAAAAAAAAAAAAAAAAAAAC5jb250
+ZW50UEsFBgAAAAABAAEANgAAAPkAAAAAAA==
+------=_contents/test.project/.project-8e65b250-4019-3f14-ab55-5ee25904f371--
+------=_contents/new.project/creationbutton.js-04e82901-81c7-3012-8d1c-36b5ec39dd4f
+Content-Type: q7/binary
+Entry-Name: contents/new.project/creationbutton.js
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnSVUr1OwzAQ3pH6DqebElmpko4Bw9Kh
+CxO8QCiX1FJjV44NSIh351z/UCoWHA+57+d85/PqZsXf22DhZBbllNGyjbH2sxmPxpxkx8jo9T6w8DJo
+TbaqAT6BV9IaCxI0vcN2cMRkhGelvaMlUMauJ3KPESiCg/H2gt6FsJAL7Y1+vaCfIlAEDDs1EwvwmRaH
+DGdISKiqmP0euk0ND+mshiPoY1BfG3K9d9C1wYJ9iyzGHmsQpZsrUy7zb1Nmf5tSZTKVhpzWdWdX+Ntg
+vr9lkufWwNEH9ydKywIQ/rvwNoxajQBVnrUQUvIh6yPpyR3CTJOgDL9puDEu0pLzVnOGn2fCwRfvb1BL
+Bwi9ZZLxBAEAAEICAABQSwECFAAUAAgACAAAACEAvWWS8QQBAABCAgAACAAAAAAAAAAAAAAAAAAAAAAA
+LmNvbnRlbnRQSwUGAAAAAAEAAQA2AAAAOgEAAAAA
+------=_contents/new.project/creationbutton.js-04e82901-81c7-3012-8d1c-36b5ec39dd4f--
+------=_contents/new.project/.project-517504f5-e30f-3288-a0c9-c83ba5764d25
+Content-Type: q7/binary
+Entry-Name: contents/new.project/.project
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnRlkE0OwiAUhNeaeIeGvaA7F7QuNF5A
+PQDSl4ZKoQFaPb781aa6Y+bNYz6gx3cnixGMFVqVaI93qADFdS1UU6L77bI9oGO1WdPe6Ba4O4PlRvTO
+p727oop1UCl44TynJDphxHXXgXIVJdMpuDlnoyAL9RiErK898KCyPPlVpuro5DZtGgxcit4CrqV7Yq4N
+4IQVd8DMFH6JmWYI9TZrsjQo+S3KzkTiW91gIKeT+Ido2cgSQ+JJuQAS8/Ha+aLvy5f/+QFQSwcIHqBk
+6cMAAACOAQAAUEsBAhQAFAAIAAgAAAAhAB6gZOnDAAAAjgEAAAgAAAAAAAAAAAAAAAAAAAAAAC5jb250
+ZW50UEsFBgAAAAABAAEANgAAAPkAAAAAAA==
+------=_contents/new.project/.project-517504f5-e30f-3288-a0c9-c83ba5764d25--
+------=_contents/project.withduplicate/.buildpath-5b149818-4dcb-325f-8e9d-00579b161620
+Content-Type: q7/binary
+Entry-Name: contents/project.withduplicate/.buildpath
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnR1jrEKwjAURWcF/yG83VQ3h8YiEqFL
+lVJnqcmzDY0vJUlF/94qiC4uF86Fc7lpdr9adkMfjCMBS74AhqScNtQIOFa7+Qqy9WyangdjdV/HdoTJ
+l5Cif7DOkBYQvAL2KgVEDPHirEYPyX9BOfoIzjcclTV9QK5t7LitB1Lt+ILnRSXLQynHPG33RbXJC1m+
+Z9Pk99UTUEsHCCIHYPiUAAAAywAAAFBLAQIUABQACAAIAAAAIQAiB2D4lAAAAMsAAAAIAAAAAAAAAAAA
+AAAAAAAAAAAuY29udGVudFBLBQYAAAAAAQABADYAAADKAAAAAAA=
+------=_contents/project.withduplicate/.buildpath-5b149818-4dcb-325f-8e9d-00579b161620--
+------=_contents/project.withduplicate/testfolder/modultests.js-4c08c7cd-da9d-349a-b270-57575777e7df
+Content-Type: q7/binary
+Entry-Name: contents/project.withduplicate/testfolder/modultests.js
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnRLK81LLsnMz1MoSS0uKdbQVKjm5eIs
+SyxSyMnMS1WwVVACiYM5StZAmaLUktKiPDAfxOXlqgUAUEsHCD/uYqY3AAAAQQAAAFBLAQIUABQACAAI
+AAAAIQA/7mKmNwAAAEEAAAAIAAAAAAAAAAAAAAAAAAAAAAAuY29udGVudFBLBQYAAAAAAQABADYAAABt
+AAAAAAA=
+------=_contents/project.withduplicate/testfolder/modultests.js-4c08c7cd-da9d-349a-b270-57575777e7df--
+------=_.q7.content-3d2e0690-ce48-3609-83e0-c704d49f1eaf
+Content-Type: q7/binary
+Entry-Name: .q7.content
+
+UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnTFVF1PgzAUfTfxP5C+27q9zBBwD5sa
+YzQx0+CeTFfK1gktay+Dn+9lwkami8aP+NZ7z+k593CBYFhlqbeW1imjQ9Kjp8STWphY6XlICkhOzsjw
+/PgoECajlbEypqsBLY19cTkX0o/a08hokBV4Vab8rVy/lkMD7Xzsh2QBkPuMlWVJTTanxs7Z0+11S/nY
+YnuLIc42OFsN2BanUmCPeJpnyI0mzSCRgsW4yFMlOMgxB048FYfkudeLHtzl9PFCXk1Hd5P+OrmpynuC
+ET0PQ+JdDZsCy9yapRTgGu0lX3MnrMqBNghpmMhNVCpbIp0VKo1zDgvCDjBagS5u0hgfXMMA6eCtszPZ
+E0mURQ426NJ1hPZYG6F3pIA1dm1W1oY9EF7L8m9Sd3BhJQd8cWYFgNHdgT8drylpiWuP27X/73oOp/nm
+JjMTF2lt7H64y1rj95e5Zxuw3ddUn7/0+0DuK1BLBwilGUu6XgEAAJIEAABQSwECFAAUAAgACAAAACEA
+pRlLul4BAACSBAAACAAAAAAAAAAAAAAAAAAAAAAALmNvbnRlbnRQSwUGAAAAAAEAAQA2AAAAlAEAAAAA
+
+------=_.q7.content-3d2e0690-ce48-3609-83e0-c704d49f1eaf--

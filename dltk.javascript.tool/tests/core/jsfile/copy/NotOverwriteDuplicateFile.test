@@ -1,0 +1,75 @@
+--- Q7 testcase ---
+Q7-vendor: www.xored.com/q7
+Format-Version: 1.0
+Element-Name: NotOverwriteDuplicateFile
+Tags: core/jsfile/copy
+External-Reference: 
+Element-Type: testcase
+Element-Version: 3.0
+Contexts: _vux-ED2qEeGit9CrtuY7UA,_11WTsFYUEeGYCNS2vfKxwQ
+Save-Time: 2/13/12 2:56 PM
+Id: _u_zxgFYPEeGYCNS2vfKxwQ
+Testcase-Type: ecl
+
+------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa
+Entry-Name: .description
+Content-Type: text/plain
+
+1. Copy file from first project
+2. Paste this file to project with duplicate file
+3. Press "No" in "Confirm Overwriting" window
+4. Make sure that file is not overwrote
+------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa--
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac
+Entry-Name: .content
+Content-Type: text/ecl
+
+with [get-view "Script Explorer" | get-tree] {
+    select "javascript.project/testfolder/firstfile.js" | get-menu Copy | click
+    select "project.withduplicate/testfolder" | get-menu Paste | click
+}
+get-window "Confirm Overwriting" | get-button No | click
+get-view "Script Explorer" | get-tree | select "project.withduplicate/testfolder/firstfile.js" | double-click
+get-editor "firstfile.js" | get-editbox | get-property text | equals "function click() {\n"
+    + "\tvar a = 5;\n"
+    + "\tvar b = 6;\n"
+    + "\tvar c = a + b;\n"
+    + "\treturn c;\n"
+    + "\t\n"
+    + "}" | verify-true
+get-editor "firstfile.js" | close
+with [get-view "Script Explorer"] {
+    click
+    get-tree | select "javascript.project/testfolder/firstfile.js" | double-click
+}
+get-editor "firstfile.js" | get-editbox | get-property text | equals "function click(e) {\n"
+    + "\t\n"
+    + "\t\n"
+    + "}" | verify-true
+get-editor "firstfile.js" | close
+with [get-view "Script Explorer"] {
+    click
+    with [get-tree] {
+        select "javascript.project/testfolder/firstfile.js" | get-menu Copy | click
+        select "project.withduplicate/testfolder" | get-menu Paste | click
+    }
+}
+get-window "Confirm Overwriting" | get-button "No To All" | click
+get-view "Script Explorer" | get-tree | select "project.withduplicate/testfolder/firstfile.js" | double-click
+get-editor "firstfile.js" | get-editbox | get-property text | equals "function click() {\n"
+    + "\tvar a = 5;\n"
+    + "\tvar b = 6;\n"
+    + "\tvar c = a + b;\n"
+    + "\treturn c;\n"
+    + "\t\n"
+    + "}" | verify-true
+get-editor "firstfile.js" | close
+with [get-view "Script Explorer"] {
+    click
+    get-tree | select "javascript.project/testfolder/firstfile.js" | double-click
+}
+get-editor "firstfile.js" | get-editbox | get-property text | equals "function click(e) {\n"
+    + "\t\n"
+    + "\t\n"
+    + "}" | verify-true
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac--
