@@ -1,0 +1,70 @@
+--- Q7 testcase ---
+Q7-vendor: www.xored.com/q7
+Format-Version: 1.0
+Element-Name: MinimumLinesRequiredToEnableFolding
+Tags: scripteditor/folding
+External-Reference: 
+Element-Type: testcase
+Element-Version: 3.0
+Contexts: _vux-ED2qEeGit9CrtuY7UA,_k86W8D2qEeGit9CrtuY7UA
+Save-Time: 2/14/12 10:26 AM
+Id: _sk9pAFa6EeGYCNS2vfKxwQ
+Testcase-Type: ecl
+
+------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa
+Entry-Name: .description
+Content-Type: text/plain
+
+1. Open "Preferences\JavaScript\Folding" 
+2. Set "5" in "Minimum lines required to enable folding" field and save this change
+3. Make sure that setting is applied
+4. Set "4" in "Minimum lines required to enable folding" field and save this change
+5. Make sure that setting is applied
+------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa--
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac
+Entry-Name: .content
+Content-Type: text/ecl
+
+get-view "Script Explorer" | get-tree | select "javascript.project/testfolder/testfile.js" | double-click
+with [get-editor "testfile.js" | get-text-viewer] {
+    set-caret-pos 14 1
+    key-type "M1+M2+NUMPAD_DIVIDE" 
+    set-caret-pos 5 5
+}
+get-editor "testfile.js" | get-editbox | get-property text | equals "function closewindow() {\n\n"
+    + "function help(message) \n\n"
+    + "function checkField(field)" | verify-true
+get-preferences-menu | click
+with [get-window Preferences] {
+    get-tree | select "JavaScript/Editor/Folding"
+    get-editbox -after [get-label "Minimum lines required to enable folding (>=2)"] | set-text 5
+    get-button Apply | click
+    get-button OK | click
+}
+with [get-editor "testfile.js" | get-text-viewer] {
+    set-caret-pos 23 1
+    key-type "M1+M2+NUMPAD_DIVIDE" 
+    set-caret-pos 5 5
+}
+get-editor "testfile.js" | get-editbox | get-property text | equals "function closewindow() {\n\n"
+    + "function help(message) \n"
+    + "{ \n"
+    + "return true; \n"
+    + "} \n\n"
+    + "function checkField(field)" | verify-true
+get-preferences-menu | click
+with [get-window Preferences] {
+    get-tree | select "JavaScript/Editor/Folding"
+    get-editbox -after [get-label "Minimum lines required to enable folding (>=2)"] | set-text 4
+    get-button Apply | click
+    get-button OK | click
+}
+with [get-editor "testfile.js" | get-text-viewer] {
+    set-caret-pos 23 1
+    key-type "M1+M2+NUMPAD_DIVIDE" 
+    set-caret-pos 15 7
+}
+get-editor "testfile.js" | get-editbox | get-property text | equals "function closewindow() {\n\n"
+    + "function help(message) \n\n"
+    + "function checkField(field)" | verify-true
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac--
