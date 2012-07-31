@@ -20,9 +20,9 @@
       <url>http://maven.xored.com/nexus/content/repositories/thirdparty/</url>
     </repository>
   </repositories>
- 
+
   <properties>
-    <q7-maven-version>1.1.4</q7-maven-version>
+    <q7-maven-version>1.2.2</q7-maven-version>
   </properties>  
   
   <build>
@@ -40,25 +40,23 @@
 
             <injections>
               <injection>
-                <site>http://download.eclipse.org/technology/dltk/updates-dev/4.0-stable/</site>
+                <site>http://hudson.eclipse.org/hudson/job/dltk-nightly/lastBuild/artifact/org.eclipse.dltk.releng/build/update.site/target/site/</site>
                 <features>
                   <feature>org.eclipse.dltk.core.feature.group</feature>
                   <feature>org.eclipse.dltk.javascript.feature.group</feature>
                 </features>
               </injection>
               <injection>
-		<site>http://download.xored.com/mirrors/antlr_3.0</site>
-		<features>
-			<feature>org.antlr.runtime</feature>
-		</features>
-	      </injection>
-              <injection>
-              </injection>
+		        <site>http://download.xored.com/mirrors/antlr_3.0</site>
+		        <features>
+			      <feature>org.antlr.runtime</feature>
+		        </features>
+	          </injection>
             </injections>
           </aut>
           <q7>
             <licenseFile>${project.basedir}/q7.license</licenseFile>
-            <version>${q7-maven-version}</version>
+            <version>1.2.3-RC4</version>
           </q7>
         </configuration>
       </plugin>
