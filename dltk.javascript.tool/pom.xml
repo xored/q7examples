@@ -23,6 +23,7 @@
 
   <properties>
     <q7-maven-version>1.2.2</q7-maven-version>
+    <q7-runner-version>1.2.3-RC4</q7-runner-version>
   </properties>  
   
   <build>
@@ -56,7 +57,7 @@
           </aut>
           <q7>
             <licenseFile>${project.basedir}/q7.license</licenseFile>
-            <version>1.2.3-RC4</version>
+            <version>${q7-runner-version}</version>
           </q7>
         </configuration>
       </plugin>
