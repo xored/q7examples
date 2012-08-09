@@ -11,6 +11,11 @@
       <name>Xored Q7 Maven repository</name>
       <url>http://maven.xored.com/nexus/content/repositories/q7-releases/</url>
     </pluginRepository>
+    <pluginRepository>
+      <id>q7-snapshots</id>
+      <name>Xored Q7 Maven repository</name>
+      <url>http://maven.xored.com/nexus/content/repositories/q7-snapshots/</url>
+    </pluginRepository>
   </pluginRepositories>
 
   <repositories>
