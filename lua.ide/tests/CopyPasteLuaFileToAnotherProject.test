@@ -3,10 +3,12 @@ Q7-vendor: www.xored.com/q7
 Format-Version: 1.0
 Element-Name: CopyPasteLuaFileToAnotherProject
 External-Reference: 
+Element-Type: testcase
 Element-Version: 3.0
 Contexts: _OjkVsByVEeGHEuYO1A29OQ,_Ye2ywByYEeGHEuYO1A29OQ,_MO4BQB_tEeGHEuYO1A29OQ
-Save-Time: 12/7/11 8:42 AM
+Save-Time: 8/9/12 11:51 AM
 Id: __LIIAB_1EeGHEuYO1A29OQ
+Testcase-Type: ecl
 
 ------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa
 Entry-Name: .description
@@ -24,170 +26,64 @@ Actions:
 6. Select "reference" project and paste file by short key (Ctrl+V)
 7. Make sure that file is copied correctly to another project
 ------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa--
-------=_.q7.content-3d2e0690-ce48-3609-83e0-c704d49f1eaf
-Content-Type: q7/binary
-Entry-Name: .q7.content
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac
+Entry-Name: .content
+Content-Type: text/ecl
 
-UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnSNkdFKwzAUhu8F3yHk3sRWYVrajVam
-Fja6oQx3VUp67DLbpEtS2769qbiKIsO75Pzf+chP/FlXlegdlOZSBNghlxiBYDLnoghwY14vbvBsen7m
-M1mRTirIyWFCNAORKS69p68D6irujRZ3sFiv0J6dB3hnTO1R2rYtkVVBpCroyzI+In+axyWb0s+UHib0
-mBJgdoSRyCoI8J2s+1WmDSya7J6X8CxDIc0O1ErJPTCDv/tdDS/jeYDTdBHHYZQ6c3h4nDfbxAnd22SN
-kelrqwRWYtsaIdtbGOiMnqbJ/m2jo37zc8OnI/GL34Lbt1G//S+/TK6jdZSaE/xwOfUNFvkAUEsHCMp2
-gEwAAQAA0QEAAFBLAQIUABQACAAIAAAAIQDKdoBMAAEAANEBAAAIAAAAAAAAAAAAAAAAAAAAAAAuY29u
-dGVudFBLBQYAAAAAAQABADYAAAA2AQAAAAA=
-------=_.q7.content-3d2e0690-ce48-3609-83e0-c704d49f1eaf--
-------=_.content.raw-c2dfba28-ebef-3afe-bd39-76376d333cc9
-Content-Type: q7/binary
-Entry-Name: .content.raw
-
-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
-------=_.content.raw-c2dfba28-ebef-3afe-bd39-76376d333cc9--
+with [get-view "Script Explorer" | get-tree] {
+    select "reference/src/ref.lua" | get-menu Copy | click
+    select "lua.project/src" | get-menu Paste | click
+}
+with [get-view "Script Explorer" | get-tree] {
+    get-item reference | get-property caption | equals reference | verify-true
+    get-item reference | get-property childCount | equals 1 | verify-true
+    get-item "reference/src" | get-property caption | equals src | verify-true
+    get-item "reference/src" | get-property childCount | equals 1 | verify-true
+    get-item "reference/src/ref.lua" | get-property caption | equals "ref.lua" | verify-true
+    get-item "lua.project" | get-property caption | equals "lua.project" | verify-true
+    get-item "lua.project" | get-property childCount | equals 1 | verify-true
+    get-item "lua.project/src" | get-property caption | equals src | verify-true
+    get-item "lua.project/src" | get-property childCount | equals 2 | verify-true
+    get-item "lua.project/src/main.lua" | get-property caption | equals "main.lua" | verify-true
+    get-item "lua.project/src/ref.lua" | get-property caption | equals "ref.lua" | verify-true
+}
+get-view "Script Explorer" | get-tree | select "lua.project/src/ref.lua" | double-click
+wait 500
+get-editor ref | get-editbox | get-property text | equals "module(...)\n"
+    + "function specification(some, parameters)\n"
+    + "\treturn nil\n"
+    + "end\n"
+    + "function another(s, parameters)\n"
+    + "\treturn nil\n"
+    + "end" | verify-true
+with [get-view "Script Explorer" | get-tree] {
+    select "lua.test/src/main.lua" | key-type "M1+c"
+    select "reference/src" | key-type "M1+v"
+}
+with [get-view "Script Explorer" | get-tree] {
+    get-item "lua.test" | get-property caption | equals "lua.test" | verify-true
+    get-item "lua.test" | get-property childCount | equals 1 | verify-true
+}
+with [get-view "Script Explorer" | get-tree] {
+    get-item "lua.test/src" | get-property caption | equals src | verify-true
+    get-item "lua.test/src" | get-property childCount | equals 4 | verify-true
+}
+get-view "Script Explorer" | get-tree | get-item "lua.test/src/main.lua" | get-property caption | equals "main.lua" 
+    | verify-true
+with [get-view "Script Explorer" | get-tree] {
+    get-item reference | get-property caption | equals reference | verify-true
+    get-item reference | get-property childCount | equals 1 | verify-true
+}
+with [get-view "Script Explorer" | get-tree] {
+    get-item "reference/src" | get-property caption | equals src | verify-true
+    get-item "reference/src" | get-property childCount | equals 2 | verify-true
+}
+get-view "Script Explorer" | get-tree | get-item "reference/src/main.lua" | get-property caption | equals "main.lua" 
+    | verify-true
+get-view "Script Explorer" | get-tree | get-item "reference/src/ref.lua" | get-property caption | equals "ref.lua" 
+    | verify-true
+get-view "Script Explorer" | get-tree | select "reference/src/main.lua" | double-click
+get-editor main | get-editbox | get-property text | equals "local function main()\n\n"
+    + "end\n"
+    + "main()" | verify-true
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac--
