@@ -7,7 +7,7 @@ External-Reference:
 Element-Type: testcase
 Element-Version: 3.0
 Contexts: _vux-ED2qEeGit9CrtuY7UA,_k86W8D2qEeGit9CrtuY7UA
-Save-Time: 8/8/12 2:09 PM
+Save-Time: 8/9/12 11:30 AM
 Id: _dQ4MYEDsEeGVpcuUnbgQ7g
 Testcase-Type: ecl
 
@@ -30,6 +30,15 @@ Test Steps:
 Entry-Name: .content
 Content-Type: text/ecl
 
+//Workaround for DLTK bug 386818 (https://bugs.eclipse.org/bugs/show_bug.cgi?id=386818)
+get-view "Script Explorer" | get-tree | select "javascript.project/testfolder/testfile.js" | double-click
+with [get-editor "testfile.js" | get-text-viewer] {
+    type-text " "
+    key-type BackSpace
+}
+get-button "Save (M1+S)" | click
+get-editor "testfile.js" | close
+//
 get-view "Script Explorer" | get-tree | select "javascript.project/testfolder/testfile.js/help\\(message\\)" 
     | get-menu "Refactor/Rename..." | click
 get-window "Rename Method" | get-editbox -after [get-label "New name:"] | set-text test

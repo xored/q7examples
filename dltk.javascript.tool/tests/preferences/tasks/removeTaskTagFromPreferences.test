@@ -4,10 +4,12 @@ Format-Version: 1.0
 Element-Name: removeTaskTagFromPreferences
 Tags: preferences/javascript/tasks
 External-Reference: 
+Element-Type: testcase
 Element-Version: 3.0
 Contexts: _vux-ED2qEeGit9CrtuY7UA,_k86W8D2qEeGit9CrtuY7UA
-Save-Time: 1/16/12 2:53 PM
+Save-Time: 8/9/12 11:16 AM
 Id: _aEECQD2jEeGit9CrtuY7UA
+Testcase-Type: ecl
 
 ------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa
 Entry-Name: .description
@@ -33,6 +35,7 @@ with [get-editor "testfile.js" | get-editbox] {
     key-type "M1+s"
 }
 get-view Tasks | click
+wait 500
 with [get-view Tasks | get-tree] {
     get-property itemCount | equals 2 | verify-true
     get-item "" | get-property columns -index 0 | equals "" | verify-true
@@ -71,15 +74,3 @@ with [get-view Tasks | get-tree] {
 }
 get-editor "testfile.js" | get-editbox | get-property text | contains "// XXX\n\n" | verify-true
 ------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac--
-------=_.q7.content-3d2e0690-ce48-3609-83e0-c704d49f1eaf
-Content-Type: q7/binary
-Entry-Name: .q7.content
-
-UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnR9kF9LwzAUxd8Fv0PI+xKtYGtpNmSr
-4oOgOFGfRkjvarYlaZP0j9/edLgORfZ27z3n/pJ7slmvdqgF66TRDF+SC4xAC1NIXTLc+PUkwbPp+Vkm
-jCK9sVCQOiZOgOZWmvTlp0C9kulIiQZK4GqXhjnDn95XKaVd1xGjSmJsSd8fHw6Wf8njUlDpXqV1TA8q
-ARFGGGmugGELyrSw5G675OWdNerJwhpsOAMcPt52NfxKFgyveJ7PnxfRJod76W/m1jcf8estRp6XjuHq
-uE03vOVOWFl56gM/4PxXFZ4EscMhFYRCLtpD79101Tb9JF9E9W9qRkfHH/82uX5LTvuH5lTswfINUEsH
-CByn02MDAQAAwQEAAFBLAQIUABQACAAIAAAAIQAcp9NjAwEAAMEBAAAIAAAAAAAAAAAAAAAAAAAAAAAu
-Y29udGVudFBLBQYAAAAAAQABADYAAAA5AQAAAAA=
-------=_.q7.content-3d2e0690-ce48-3609-83e0-c704d49f1eaf--
