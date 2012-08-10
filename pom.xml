@@ -34,5 +34,6 @@
   <modules>
     <module>dltk.javascript.tool</module>
     <module>lua.ide</module>
+    <module>rcp.browser</module>
   </modules>
 </project> 
