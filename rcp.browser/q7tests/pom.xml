@@ -22,7 +22,7 @@
   </repositories>
  
   <properties>
-    <q7-maven-version>1.1.1</q7-maven-version>
+    <q7-maven-version>1.2.4</q7-maven-version>
   </properties>  
   
   <build>
@@ -36,6 +36,7 @@
           <aut>
             <explicit>${project.basedir}/../product/target/products/org.eclipse.ui.examples.rcp.browser.product-[classifier].zip</explicit>
           </aut>
+          <q7><version>1.2.4</version></q7>
           <!--q7>
             <licenseFile>${project.basedir}/q7-runner-license.l9</licenseFile>
           </q7-->

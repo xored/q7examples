@@ -17,7 +17,7 @@ with [get-tab-folder] {
 get-button -index 1 | click
 wait 1000
 with [get-tab-folder] {
-    get-property pages -index 0 | equals "Eclipse Users" | verify-true
+    get-property pages -index 0 | equals "Getting Started with Eclipse" | verify-true
     get-property tabCount | equals 1 | verify-true
 }
 get-button -index 0 | click
@@ -29,7 +29,7 @@ with [get-tab-folder] {
 get-menu "View/Forward" | click
 wait 1000
 with [get-tab-folder] {
-    get-property pages -index 0 | equals "Eclipse Users" | verify-true
+    get-property pages -index 0 | equals "Getting Started with Eclipse" | verify-true
     get-property tabCount | equals 1 | verify-true
 }]]></content>
   </content>
@@ -110,7 +110,7 @@ with [get-tab-folder] {
         <parent id="EclipseWindow11" kind="EclipseWindow" description="Browser Example"/>
       </data>
     </commands>
-    <commands xsi:type="com.xored.tesla.core.protocol:Assert" attribute="pages" value="Eclipse Users" index="0">
+    <commands xsi:type="com.xored.tesla.core.protocol:Assert" attribute="pages" value="Getting Started with Eclipse" index="0">
       <element id="TabFolder5" kind="TabFolder"/>
       <valueType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </commands>
@@ -188,7 +188,7 @@ with [get-tab-folder] {
         <parent id="EclipseWindow15" kind="EclipseWindow" description="Browser Example"/>
       </data>
     </commands>
-    <commands xsi:type="com.xored.tesla.core.protocol:Assert" attribute="pages" value="Eclipse Users" index="0">
+    <commands xsi:type="com.xored.tesla.core.protocol:Assert" attribute="pages" value="Getting Started with Eclipse" index="0">
       <element id="TabFolder7" kind="TabFolder"/>
       <valueType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </commands>
@@ -283,8 +283,8 @@ with [get-tab-folder] {
     </elementMapping>
     <elementMapping command="//@teslaContent/@commands.20">
       <elements id="TabFolder5" kind="TabFolder"/>
-      <controls xsi:type="com.xored.tesla.core.ui:TabFolder" activePage="Eclipse Users" tabCount="1">
-        <pages>Eclipse Users</pages>
+      <controls xsi:type="com.xored.tesla.core.ui:TabFolder" activePage="Getting Started with Eclipse" tabCount="1">
+        <pages>Getting Started with Eclipse</pages>
       </controls>
     </elementMapping>
     <elementMapping command="//@teslaContent/@commands.23">
@@ -352,8 +352,8 @@ with [get-tab-folder] {
     </elementMapping>
     <elementMapping command="//@teslaContent/@commands.42">
       <elements id="TabFolder7" kind="TabFolder"/>
-      <controls xsi:type="com.xored.tesla.core.ui:TabFolder" activePage="Eclipse Users" tabCount="1">
-        <pages>Eclipse Users</pages>
+      <controls xsi:type="com.xored.tesla.core.ui:TabFolder" activePage="Getting Started with Eclipse" tabCount="1">
+        <pages>Getting Started with Eclipse</pages>
       </controls>
     </elementMapping>
   </teslaContent>
