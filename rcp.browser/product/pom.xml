@@ -5,13 +5,13 @@
 	
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<artifactId>example.rcp.browser</artifactId>
-		<groupId>eclipse</groupId>
+		<artifactId>rcp.browser</artifactId>
+		<groupId>com.xored.q7.examples</groupId>
 		<version>3.7.1-SNAPSHOT</version>
 	</parent>
 	
-	<groupId>eclipse</groupId>
-	<artifactId>rcp.browser</artifactId>
+	<groupId>com.xored.q7.examples</groupId>
+	<artifactId>rcp.browser.product</artifactId>
 	<version>3.7.1-SNAPSHOT</version>
 	<packaging>eclipse-repository</packaging>
 
