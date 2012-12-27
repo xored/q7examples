@@ -1,16 +1,18 @@
 --- Q7 testcase ---
-Q7-vendor: www.xored.com/q7
 Format-Version: 1.0
-Element-Name: 5_Change Row Color
-External-Reference: 
-Element-Version: 3.0
+Q7-vendor: www.xored.com/q7
 Contexts: _Wvr-EA9ZEeGxvukDpvV-ug,_BsfHMBWSEeGv57d8bLRChg
-Save-Time: 12/16/11 5:53 PM
+Element-Name: 5_Change Row Color
+Element-Type: testcase
+Element-Version: 3.0
+External-Reference: 
 Id: _36AggRWREeGv57d8bLRChg
+Save-Time: 12/27/12 9:35 PM
+Testcase-Type: ecl
 
 ------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa
-Entry-Name: .description
 Content-Type: text/plain
+Entry-Name: .description
 
 TEST STEPS
 
@@ -19,8 +21,8 @@ TEST STEPS
 3. Make sure that your colours changes were applied. 
 ------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa--
 ------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac
-Entry-Name: .content
 Content-Type: text/ecl
+Entry-Name: .content
 
 get-view Navigator | get-tree | select "MyProject/Customers.rptdesign" | double-click -nowait
 with [get-editor "Customers.rptdesign" | get-diagram | get-edit-part -className ReportDesignEditPart | get-edit-part 
@@ -91,115 +93,13 @@ with [get-editor "Customers.rptdesign" | get-diagram | get-edit-part -className 
     mouse-release 12 128 button1 524288 -height 1055 -width 815
     get-edit-part -className TableEditPart | get-handle RowHandle -index 2 | mouse-hover 26 13 -height 26 -width 40
 }
-set-dialog-result Color "255,255,128"
-get-view "Property Editor - Row" | get-button | click // -after [get-label "Color:"] | click
-get-editor "Customers.rptdesign" | get-diagram | get-edit-part -className ReportDesignEditPart | get-edit-part 
-    -className TableEditPart | get-handle RowHandle -index 2 | mouse-hover 21 7 -height 26 -width 40
 set-dialog-result Color "255,255,0"
-get-view "Property Editor - Row" | get-button | click
+get-view "Property Editor - Row" | get-button "Open color panel" -after [get-label "Color:"] | click
+set-dialog-result Color "0,0,255"
+get-view "Property Editor - Row" | get-button "Open color panel" | click
 with [get-editor "Customers.rptdesign" | get-diagram | get-edit-part -className ReportDesignEditPart | get-edit-part 
     -className TableEditPart | get-edit-part -className TableCellEditPart -index 8 | get-edit-part -text "[CITY]"] {
     get-property backgroundColor | equals "#FFFFFF" | verify-true
-    get-property foregroundColor | equals "#0080FF" | verify-true
+    get-property foregroundColor | equals "#FFFF00" | verify-true
 }
 ------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac--
-------=_.q7.content-3d2e0690-ce48-3609-83e0-c704d49f1eaf
-Content-Type: q7/binary
-Entry-Name: .q7.content
-
-UEsDBBQACAAIAAAAIQAAAAAAAAAAAAAAAAAIAAAALmNvbnRlbnR9kF9PgzAUxd9N/A7NfadVl8kksGXD
-RU3cC0tk8YUgdKURWtaWP357i9kwM2Zv997zu+f21F/0VYlaqjSXIoBbfAOIikzmXLAAGrN3ZrCYX1/5
-maxwLxXN8cHFOqMiVVx622OB+op7o8vd4GJ9hfbsPIDCmNojpOs6LCuGpWJkt3k5If86j0tWJT8qObjk
-pGKa2REgkVY0gGkSFqlgFEWyQ6EspYLfRJPhLTwPIJncLxmL4mhNn9qpm88+XqOwYIDMV21NaFaCzYmQ
-TSoM7Y2eJ3GrnPXy4d1u9G3z+Vi3b07DfDISf/iV3j9vVvH2/MIZPzSXPtIi31BLBwgcjElA+AAAAJMB
-AABQSwECFAAUAAgACAAAACEAHIxJQPgAAACTAQAACAAAAAAAAAAAAAAAAAAAAAAALmNvbnRlbnRQSwUG
-AAAAAAEAAQA2AAAALgEAAAAA
-------=_.q7.content-3d2e0690-ce48-3609-83e0-c704d49f1eaf--
-------=_.content.raw-c2dfba28-ebef-3afe-bd39-76376d333cc9
-Content-Type: q7/binary
-Entry-Name: .content.raw
-
-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
-------=_.content.raw-c2dfba28-ebef-3afe-bd39-76376d333cc9--
