@@ -1,19 +1,19 @@
 --- Q7 testcase ---
-Q7-vendor: www.xored.com/q7
 Format-Version: 1.0
+Q7-vendor: www.xored.com/q7
+Contexts: _vux-ED2qEeGit9CrtuY7UA,_k86W8D2qEeGit9CrtuY7UA
 Element-Name: RenameVariableInJSFileWithUpdating
-Tags: functionality/rename/variable, Unstable, skipExecution
-External-Reference: 
 Element-Type: testcase
 Element-Version: 3.0
-Contexts: _vux-ED2qEeGit9CrtuY7UA,_k86W8D2qEeGit9CrtuY7UA
-Save-Time: 8/14/12 2:06 PM
+External-Reference: 
 Id: _FXotwUcrEeGh_eW0moBGMA
+Save-Time: 2/22/13 2:24 PM
+Tags: functionality/rename/variable, skipExecution
 Testcase-Type: ecl
 
 ------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa
-Entry-Name: .description
 Content-Type: text/plain
+Entry-Name: .description
 
 Test Steps:
 1. Open js-file with variables and function
@@ -23,8 +23,8 @@ Test Steps:
 5. Make sure that variable is renamed and in the function variable is renamed
 ------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa--
 ------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac
-Entry-Name: .content
 Content-Type: text/ecl
+Entry-Name: .content
 
 //Workaround for DLTK bug 386818 (https://bugs.eclipse.org/bugs/show_bug.cgi?id=386818)
 get-view "Script Explorer" | get-tree | select "new.project/creationbutton.js" | double-click
@@ -51,7 +51,7 @@ with [get-view "Script Explorer" | get-tree] {
     get-item "new.project/creationbutton.js/testname" | get-property caption | equals testname | verify-true
     get-item "new.project/creationbutton.js/banner\\(\\)" | get-property caption | equals "banner()" | verify-true
 }
-wait 500
+get-view Problems | get-tree | key-type F5
 get-view Problems | get-tree | get-property itemCount | equals 0 | verify-true
 get-view "Script Explorer" | get-tree | select "new.project/creationbutton.js/banner\\(\\)" | double-click -nowait
 with [get-editor "creationbutton.js" | get-editbox] {

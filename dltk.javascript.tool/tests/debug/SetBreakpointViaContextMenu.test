@@ -1,19 +1,19 @@
 --- Q7 testcase ---
-Q7-vendor: www.xored.com/q7
 Format-Version: 1.0
+Q7-vendor: www.xored.com/q7
+Contexts: _vux-ED2qEeGit9CrtuY7UA,_k86W8D2qEeGit9CrtuY7UA
 Element-Name: SetBreakpointViaContextMenu
-Tags: functionality/debug, Unstable, skipExecution
-External-Reference: 
 Element-Type: testcase
 Element-Version: 3.0
-Contexts: _vux-ED2qEeGit9CrtuY7UA,_k86W8D2qEeGit9CrtuY7UA
-Save-Time: 8/14/12 2:06 PM
+External-Reference: 
 Id: _4Oqg0Ec0EeGh_eW0moBGMA
+Save-Time: 2/22/13 2:20 PM
+Tags: functionality/debug, Unstable
 Testcase-Type: ecl
 
 ------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa
-Entry-Name: .description
 Content-Type: text/plain
+Entry-Name: .description
 
 Test Steps:
 1. Open js file
@@ -21,8 +21,8 @@ Test Steps:
 3. Make sure that breakpoint is set 
 ------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa--
 ------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac
-Entry-Name: .content
 Content-Type: text/ecl
+Entry-Name: .content
 
 get-view "Script Explorer" | get-tree | select "javascript.project/testfolder/testfile.js" | double-click -nowait
 with [get-editor "testfile.js"] {
@@ -37,8 +37,7 @@ with [get-editor "testfile.js"] {
     get-canvas -index 1 | get-menu "Toggle Breakpoint" | click
     get-editbox | hover-at-text-offset 2 17
 }
-get-button "Open Perspective" | click
-get-menu "Other..." | click
+get-menu "Window/Open Perspective/Other..." | click
 with [get-window "Open Perspective"] {
     get-table | select Debug
     get-button OK | click

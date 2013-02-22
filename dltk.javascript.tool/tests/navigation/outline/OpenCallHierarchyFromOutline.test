@@ -1,27 +1,27 @@
 --- Q7 testcase ---
-Q7-vendor: www.xored.com/q7
 Format-Version: 1.0
+Q7-vendor: www.xored.com/q7
+Contexts: _vux-ED2qEeGit9CrtuY7UA,_k86W8D2qEeGit9CrtuY7UA
 Element-Name: OpenCallHierarchyFromOutline
-Tags: functionality/navigation/outline, Unstable, skipExecution
-External-Reference: 
 Element-Type: testcase
 Element-Version: 3.0
-Contexts: _vux-ED2qEeGit9CrtuY7UA,_k86W8D2qEeGit9CrtuY7UA
-Save-Time: 8/14/12 2:06 PM
+External-Reference: 
 Id: _HhPpcEDnEeGVpcuUnbgQ7g
+Save-Time: 2/22/13 2:05 PM
+Tags: functionality/navigation/outline
 Testcase-Type: ecl
 
 ------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa
-Entry-Name: .description
 Content-Type: text/plain
+Entry-Name: .description
 
 1. Select object in Outline view
 2. In the context menu select "Open Call Hierarchy" 
 3. Make sure that "Call Hierarchy" view is opened
 ------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa--
 ------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac
-Entry-Name: .content
 Content-Type: text/ecl
+Entry-Name: .content
 
 get-view "Script Explorer" | get-tree | select "javascript.project/testfolder/testfile.js" | double-click -nowait
 get-view Outline | get-tree | select "help\\(message\\)" | get-menu "Open Call Hierarchy" | click
@@ -39,7 +39,6 @@ get-view "Call Hierarchy" | get-tree
     | select "help\\(message\\) - testfile.js - javascript.project\\/testfolder/checkField\\(field\\) - testfile.js - javascript.project\\/testfolder \\(2 matches\\)"
 with [get-view "Call Hierarchy" | get-table] {
     get-property itemCount | equals 2 | verify-true
-    get-item "" | get-property columns -index 2 | equals help | verify-true
-    get-item "" -index 1 | get-property columns -index 2 | equals help | verify-true
+    
 }
 ------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac--

@@ -1,19 +1,19 @@
 --- Q7 testcase ---
-Q7-vendor: www.xored.com/q7
 Format-Version: 1.0
+Q7-vendor: www.xored.com/q7
+Contexts: _vux-ED2qEeGit9CrtuY7UA,_k86W8D2qEeGit9CrtuY7UA
 Element-Name: RenameVariableInJSFileWithoutUpdating
-Tags: functionality/rename/variable, skipExecution
-External-Reference: 
 Element-Type: testcase
 Element-Version: 3.0
-Contexts: _vux-ED2qEeGit9CrtuY7UA,_k86W8D2qEeGit9CrtuY7UA
-Save-Time: 8/9/12 11:43 AM
+External-Reference: 
 Id: _MW0GYEcrEeGh_eW0moBGMA
+Save-Time: 2/22/13 2:25 PM
+Tags: functionality/rename/variable, skipExecution
 Testcase-Type: ecl
 
 ------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa
-Entry-Name: .description
 Content-Type: text/plain
+Entry-Name: .description
 
 Test Steps:
 1. Open js-file with variables and function
@@ -23,8 +23,8 @@ Test Steps:
 5. Make sure that variable is renamed, but in the function variable is not renamed
 ------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa--
 ------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac
-Entry-Name: .content
 Content-Type: text/ecl
+Entry-Name: .content
 
 //DLTK bug
 //Workaround for DLTK bug 386818 (https://bugs.eclipse.org/bugs/show_bug.cgi?id=386818)
@@ -57,25 +57,16 @@ with [get-editor "creationbutton.js" | get-editbox] {
 }
 with [get-view Problems | get-tree] {
     get-property itemCount | equals 1 | verify-true
-    get-item "Warnings \\(2 items\\)/Reference to undeclared variable or property numofloop " | get-property columns 
+    get-item "Warnings \\(1 item\\)/Reference to undeclared variable or property numofloop " | get-property columns 
         -index 0 | equals "Reference to undeclared variable or property numofloop " | verify-true
-    get-item "Warnings \\(2 items\\)/Reference to undeclared variable or property numofloop " | get-property columns 
+    get-item "Warnings \\(1 item\\)/Reference to undeclared variable or property numofloop " | get-property columns 
         -index 1 | equals "creationbutton.js" | verify-true
-    get-item "Warnings \\(2 items\\)/Reference to undeclared variable or property numofloop " | get-property columns 
+    get-item "Warnings \\(1 item\\)/Reference to undeclared variable or property numofloop " | get-property columns 
         -index 2 | equals "/new.project" | verify-true
-    get-item "Warnings \\(2 items\\)/Reference to undeclared variable or property numofloop " | get-property columns 
+    get-item "Warnings \\(1 item\\)/Reference to undeclared variable or property numofloop " | get-property columns 
         -index 3 | equals "line 19" | verify-true
-    get-item "Warnings \\(2 items\\)/Reference to undeclared variable or property numofloop " | get-property columns 
+    get-item "Warnings \\(1 item\\)/Reference to undeclared variable or property numofloop " | get-property columns 
         -index 4 | equals "JavaScript Problem" | verify-true
-    get-item "Warnings \\(2 items\\)/Variable testname is never used" | get-property columns -index 0 
-        | equals "Variable testname is never used" | verify-true
-    get-item "Warnings \\(2 items\\)/Variable testname is never used" | get-property columns -index 1 
-        | equals "creationbutton.js" | verify-true
-    get-item "Warnings \\(2 items\\)/Variable testname is never used" | get-property columns -index 2 
-        | equals "/new.project" | verify-true
-    get-item "Warnings \\(2 items\\)/Variable testname is never used" | get-property columns -index 3 | equals "line 5" 
-        | verify-true
-    get-item "Warnings \\(2 items\\)/Variable testname is never used" | get-property columns -index 4 
-        | equals "JavaScript Problem" | verify-true
+    
 }
 ------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac--
